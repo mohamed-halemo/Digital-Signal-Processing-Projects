@@ -1,13 +1,4 @@
-# -*- coding: utf-8 -*-
-# Subscribe to PyShine Youtube channel for more detail! 
-#
-# Form implementation generated from reading ui file 'main.ui'
-#
-# Created by: PyQt5 UI code generator 5.11.3
-#
-# WARNING! All changes made in this file will be lost!
-#
-# WEBSITE: www.pyshine.com
+
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 import matplotlib
@@ -19,12 +10,11 @@ from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg, NavigationTool
 from matplotlib.figure import Figure
 import seaborn as sns
 import pandas as pd
-import sip # can be installed : pip install sip
+import sip
 
 # We require a canvas class
 import platform
 
-# Use NSURL as a workaround to pyside/Qt4 behaviour for dragging and dropping on OSx
 op_sys = platform.system()
 if op_sys == 'Darwin':
     from Foundation import NSURL
@@ -164,7 +154,7 @@ class Ui_MainWindow(object):
 		self.Title = os.path.splitext(base_name)[0]
 		print('FILE',self.Title )
 		self.df = pd.read_csv(self.filename,encoding = 'utf-8').fillna(0)
-		self.Update(self.themes[0]) # lets 0th theme be the default : bmh
+		self.Update(self.themes[0]) 
 	
 
 	
@@ -177,9 +167,8 @@ class Ui_MainWindow(object):
 		self.actionOpen_csv_file.setText(_translate("MainWindow", "Open csv file"))
 		self.actionExit.setText(_translate("MainWindow", "Exit"))
 
-# Subscribe to PyShine Youtube channel for more detail! 
+ 
 
-# WEBSITE: www.pyshine.com
 
 if __name__ == "__main__":
 	import sys
