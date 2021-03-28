@@ -68,9 +68,9 @@ class Ui_MainWindow(object):
         self.label_7.setObjectName("label_7")
         self.gridLayout.addWidget(self.label_7, 1, 0, 1, 1)
         self.verticalLayout.addLayout(self.gridLayout)
-        self.pushButton_2 = QtWidgets.QPushButton(self.groupBox)
-        self.pushButton_2.setObjectName("pushButton_2")
-        self.verticalLayout.addWidget(self.pushButton_2)
+        #self.pushButton_2 = QtWidgets.QPushButton(self.groupBox)
+        #self.pushButton_2.setObjectName("pushButton_2")
+        #self.verticalLayout.addWidget(self.pushButton_2)
         self.gridLayout_3.addLayout(self.verticalLayout, 2, 1, 1, 1)
         self.gridLayout_4.addWidget(self.groupBox, 1, 1, 1, 1)
         spacerItem = QtWidgets.QSpacerItem(20, 0, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
@@ -104,7 +104,7 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        self.label.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" font-size:14pt; font-weight:600;\">PyShine Live Signal Plot GUI</span></p></body></html>"))
+        self.label.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" font-size:14pt; font-weight:600;\">Signal Viewer</span></p></body></html>"))
         self.groupBox.setTitle(_translate("MainWindow", "Parameters"))
         self.label_2.setText(_translate("MainWindow", "Signal"))
         self.pushButton.setText(_translate("MainWindow", "Browse"))
@@ -115,7 +115,7 @@ class Ui_MainWindow(object):
         self.label_5.setText(_translate("MainWindow", "To PDF"))
         self.pushButton_4.setText(_translate("MainWindow", "Click Here"))
         self.label_7.setText(_translate("MainWindow", "SpectroGram"))
-        self.pushButton_2.setText(_translate("MainWindow", "Plot it"))
+        #self.pushButton_2.setText(_translate("MainWindow", "Plot it"))
         self.label_9.setText(_translate("MainWindow", "Signal"))
         self.label_8.setText(_translate("MainWindow", "Spectrogram"))
 
