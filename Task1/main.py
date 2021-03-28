@@ -49,7 +49,7 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         self.browse=self.ui.pushButton
         self.browse.clicked.connect(self.Browse_Handler2)
         self.PDF=self.ui.pushButton_2
-        self.PDF.clicked.connect(self.click_handler)
+        self.PDF.clicked.connect(self.save)
         self.graph=self.ui.Graph1
         self.graph2=self.ui.Graph1_2
         self.xGraph2=[]
