@@ -8,6 +8,7 @@ from scipy.fftpack import fft
 from tkinter import *
 from PyQt5.QtGui import * 
 
+from reportlab.pdfgen import canvas 
 import matplotlib
 import matplotlib.pyplot as plt
 matplotlib.use('Qt5Agg')
@@ -28,9 +29,6 @@ import matplotlib.backends.backend_pdf
 #imports
 
 
-
-
-
 class ApplicationWindow(QtWidgets.QMainWindow):
 
     def __init__(self):
@@ -48,7 +46,7 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         
         self.browse=self.ui.pushButton
         self.browse.clicked.connect(self.Browse_Handler2)
-        self.PDF=self.ui.pushButton_2
+        self.PDF=self.ui.pushButton_3
         self.PDF.clicked.connect(self.save)
         self.graph=self.ui.Graph1
         self.graph2=self.ui.Graph1_2
@@ -105,27 +103,24 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         canvasPainter = QPainter(self)
         canvasPainter.drawImage(self.rect(), self.image,
                                       self.image.rect())
-                      
-    def save(self):
-          
-        # selecting file path
-        filePath, _ = QFileDialog.getSaveFileName(self, "Save Image", "",
-                         "PNG(*.png);;JPEG(*.jpg *.jpeg);;All Files(*.*) ")
-  
-        # if file path is blank return back
-        if filePath == "":
-            return
-          
-        # saving canvas at desired path
-        self.image.save(filePath)
+
         
-    def click_handler(self):
+       
+
+    def save(self):
        w = QtWidgets.QWidget()
        screen = QtWidgets.QApplication.primaryScreen()
        screenshot=screen.grabWindow(QApplication.desktop().winId())
        screenshot.save('shot.jpg', 'jpg')
+       image='shot.jpg'
        w.close()
-
+       pdf = canvas.Canvas("Report.pdf")
+       pdf.drawInlineImage(image, 10 ,-60,550,1120)
+       
+       pdf.save()
+        
+        
+   
 
 def main():
     app = QtWidgets.QApplication(sys.argv)
