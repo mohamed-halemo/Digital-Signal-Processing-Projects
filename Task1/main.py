@@ -5,6 +5,8 @@ import sys
 from PyQt5 import QtGui, QtWidgets ,QtCore , QtSerialPort
 from PyQt5.QtCore import Qt
 from scipy.fftpack import fft
+from tkinter import *
+from PyQt5.QtGui import * 
 
 import matplotlib
 import matplotlib.pyplot as plt
@@ -21,10 +23,9 @@ import matplotlib.animation as animation
 import platform
 import time
 import numpy as np
+import matplotlib.backends.backend_pdf
 
-
-#3araf ba2et immportatak hena 
-
+#imports
 
 
 
@@ -37,14 +38,18 @@ class ApplicationWindow(QtWidgets.QMainWindow):
        
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
-
-        #intialize hagtak hena b2a 
-        # 3araf el graphs we keda zai ma oltelak 
-        # ekteb functionatak kolaha gowa el class 
-        # mafesh haga tetla3 bara el class wa2ela hatedy error we mayrunsh 
+        self.image = QImage(self.size(), QImage.Format_RGB32)
+  
+        # setting canvas color to white
+        self.image.fill(Qt.white)
+        
+        
+      
         
         self.browse=self.ui.pushButton
         self.browse.clicked.connect(self.Browse_Handler2)
+        self.PDF=self.ui.pushButton_2
+        self.PDF.clicked.connect(self.click_handler)
         self.graph=self.ui.Graph1
         self.graph2=self.ui.Graph1_2
         self.xGraph2=[]
@@ -96,9 +101,30 @@ class ApplicationWindow(QtWidgets.QMainWindow):
 
             time.sleep(0.01)    
 
-                
+    def paintEvent(self, event):
+        canvasPainter = QPainter(self)
+        canvasPainter.drawImage(self.rect(), self.image,
+                                      self.image.rect())
+                      
+    def save(self):
+          
+        # selecting file path
+        filePath, _ = QFileDialog.getSaveFileName(self, "Save Image", "",
+                         "PNG(*.png);;JPEG(*.jpg *.jpeg);;All Files(*.*) ")
+  
+        # if file path is blank return back
+        if filePath == "":
+            return
+          
+        # saving canvas at desired path
+        self.image.save(filePath)
         
-        
+    def click_handler(self):
+       w = QtWidgets.QWidget()
+       screen = QtWidgets.QApplication.primaryScreen()
+       screenshot=screen.grabWindow(QApplication.desktop().winId())
+       screenshot.save('shot.jpg', 'jpg')
+       w.close()
 
 
 def main():
