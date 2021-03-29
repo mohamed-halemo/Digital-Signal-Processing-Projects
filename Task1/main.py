@@ -1,4 +1,4 @@
-from mainWindow import Ui_MainWindow
+from GuiUp import Ui_MainWindow
 import ntpath
 import os
 import sys
@@ -12,7 +12,7 @@ import matplotlib
 import matplotlib.pyplot as plt
 matplotlib.use('Qt5Agg')
 from PyQt5 import QtCore, QtWidgets
-from PyQt5.QtWidgets import QFileDialog
+from PyQt5.QtWidgets import QFileDialog,QScrollArea
 from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg, NavigationToolbar2QT as Navi
 from matplotlib.figure import Figure
 import seaborn as sns
@@ -42,13 +42,25 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         self.increment=0
         self.timer=QTimer(self)
 
-        
+        #self.scroll_bar = QScrollBar(self)
+  
+        # setting style sheet to the scroll bar
+        #self.scroll_bar.setStyleSheet("background : lightgreen;")
+        self.scroll = QScrollArea()
+        self.scroll.setWidgetResizable(True)
+        self.scroll.setFixedHeight(400)
+        self.layout = QVBoxLayout(self)
+        self.layout.addWidget(scroll)
+        self.show()
+
+
+
         self.image = QImage(self.size(), QImage.Format_RGB32)
   
         # setting canvas color to white
         self.image.fill(Qt.white)
        
-        self.stop=self.ui.pushButton_5
+        self.stop=self.ui.pushButton_2
         self.stop.clicked.connect(self.wa2f)
         self.browse=self.ui.pushButton
         self.browse.clicked.connect(self.Browse_Handler2)
@@ -110,7 +122,7 @@ class ApplicationWindow(QtWidgets.QMainWindow):
             QtCore.QCoreApplication.processEvents()
             self.counter=self.counter+1
             self.PlotValue+=self.IncreaseValue
-            self.btn.setText("pause")
+            self.btn.setText("Plotting..")
             
             if(self.xGraph2[self.counter]>=self.c):
                 print(self.counter)
