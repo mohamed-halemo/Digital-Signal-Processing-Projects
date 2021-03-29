@@ -170,19 +170,19 @@ class ApplicationWindow(QtWidgets.QMainWindow):
        screenshot=screen.grabWindow(QApplication.desktop().winId())
        screenshot.save('shot.jpg', 'jpg')
        image=('shot.jpg')
-       screenshot.save('shot2.jpg', 'jpg')
-
-       image2=('shot2.jpg')
+       #screenshot.save('shot2.jpg', 'jpg')
+       #image2=('shot2.jpg')
        w.close()
        pdf = canvas.Canvas("Report.pdf")
-           
-       pdf2=canvas.Canvas("Report2.pdf")
-           
-       pdf2.drawInlineImage(image2,20,-30,255,666)
+      
+       #pdf2=canvas.Canvas("Report2.pdf")
+          
+       #pdf2.drawInlineImage(image2,20,-30,255,666)
        
-       pdf.drawInlineImage(image, 10 ,-60,550,1120)
+       pdf.drawInlineImage(image, 10 ,-60,550,1170)
 
        pdf.save()
+       #pdf2.save()
         
 
 
