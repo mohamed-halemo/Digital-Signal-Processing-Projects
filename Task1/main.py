@@ -7,8 +7,7 @@ from PyQt5.QtCore import Qt
 from scipy.fftpack import fft
 from tkinter import *
 from PyQt5.QtGui import * 
-
-from reportlab.pdfgen import canvas 
+from PIL import Image
 import matplotlib
 import matplotlib.pyplot as plt
 matplotlib.use('Qt5Agg')
@@ -25,8 +24,12 @@ import platform
 import time
 import numpy as np
 import matplotlib.backends.backend_pdf
-
+from reportlab.pdfgen import canvas 
+from matplotlib.backends.backend_qt5agg import NavigationToolbar2QT as NavigationToolbar
 #imports
+from matplotlib.backends.backend_qt4agg import FigureCanvasQTAgg as FigureCanvas
+
+
 
 
 class ApplicationWindow(QtWidgets.QMainWindow):
@@ -36,18 +39,18 @@ class ApplicationWindow(QtWidgets.QMainWindow):
        
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
+        
         self.image = QImage(self.size(), QImage.Format_RGB32)
   
         # setting canvas color to white
         self.image.fill(Qt.white)
-        
-        
-      
+       
         
         self.browse=self.ui.pushButton
         self.browse.clicked.connect(self.Browse_Handler2)
         self.PDF=self.ui.pushButton_3
-        self.PDF.clicked.connect(self.save)
+        self.PDF.clicked.connect(self.click_handler)
+        self.zoom=self.ui.pushButton_4
         self.graph=self.ui.Graph1
         self.graph2=self.ui.Graph1_2
         self.xGraph2=[]
@@ -73,8 +76,11 @@ class ApplicationWindow(QtWidgets.QMainWindow):
                X.append(values[0])
                Y.append(values[1])
                
-
-
+        def paintEvent(self):
+            qp=QPainter(self)
+            qp.setPen(QPen(Qcolor(Qt.black),5))
+            qp.drawRect(500,500,1000,1000)
+            
                                        
         while self.drawbool==1 and self.counter <= len(self.xGraph2):
             self.graph.clear()
@@ -89,38 +95,60 @@ class ApplicationWindow(QtWidgets.QMainWindow):
             fs= 1/ts
             freq_axis= np.linspace(0, np.max(fs), np.size(X)//2,dtype=np.float32)
             self.graph2.plot(freq_axis,sig_f)
+            
             if(self.xGraph2[self.counter]>=self.c):
                 print(self.counter)
-                self.lastidx=self.lastidx+650
+                self.lastidx=self.lastidx+65
                 self.PlotValue+=self.IncreaseValue
                 self.graph.plot(self.xGraph2[self.lastidx:self.PlotValue],self.yGraph2[self.lastidx:self.PlotValue],pen=(75))
                 self.c=self.c+0.025
+            while True:
+                asleep=False
+            while(asleep==False):
 
-
-            time.sleep(0.01)    
-
-    def paintEvent(self, event):
-        canvasPainter = QPainter(self)
-        canvasPainter.drawImage(self.rect(), self.image,
-                                      self.image.rect())
-
+                if self.zoom.clicked.connect(self):
+                    asleep=True
+            time.sleep(0.01)  
+              
         
-       
 
+    #    input("Downloading....")
+
+                      
     def save(self):
+          
+        # selecting file path
+        filePath, _ = QFileDialog.getSaveFileName(self, "Save Image", "",
+                         "PNG(*.png);;JPEG(*.jpg *.jpeg);;All Files(*.*) ")
+  
+        # if file path is blank return back
+        if filePath == "":
+            return
+          
+        # saving canvas at desired path
+        self.image.save(filePath)
+        
+    def click_handler(self):
        w = QtWidgets.QWidget()
        screen = QtWidgets.QApplication.primaryScreen()
        screenshot=screen.grabWindow(QApplication.desktop().winId())
        screenshot.save('shot.jpg', 'jpg')
-       image='shot.jpg'
+       image=('shot.jpg')
+       screenshot.save('shot2.jpg', 'jpg')
+
+       image2=('shot2.jpg')
        w.close()
        pdf = canvas.Canvas("Report.pdf")
-       pdf.drawInlineImage(image, 10 ,-60,550,1120)
+           
+       pdf2=canvas.Canvas("Report2.pdf")
+           
+       pdf2.drawInlineImage(image2,20,-30,255,666)
        
+       pdf.drawInlineImage(image, 10 ,-60,550,1120)
+
        pdf.save()
         
-        
-   
+
 
 def main():
     app = QtWidgets.QApplication(sys.argv)
