@@ -68,7 +68,9 @@ class Ui_MainWindow(object):
         self.label_7.setObjectName("label_7")
         self.gridLayout.addWidget(self.label_7, 1, 0, 1, 1)
         self.verticalLayout.addLayout(self.gridLayout)
-        
+        self.pushButton_5 = QtWidgets.QPushButton(self.groupBox)
+        self.pushButton_5.setObjectName("pushButton_2")
+        self.verticalLayout.addWidget(self.pushButton_5)
         self.gridLayout_3.addLayout(self.verticalLayout, 2, 1, 1, 1)
         self.gridLayout_4.addWidget(self.groupBox, 1, 1, 1, 1)
         spacerItem = QtWidgets.QSpacerItem(20, 0, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
@@ -112,8 +114,11 @@ class Ui_MainWindow(object):
         self.pushButton_3.setText(_translate("MainWindow", "Convert to PDF"))
         self.label_5.setText(_translate("MainWindow", "To PDF"))
         self.pushButton_4.setText(_translate("MainWindow", "Click Here"))
-        self.label_7.setText(_translate("MainWindow", "SpectroGram"))
+        self.label_7.setText(_translate("MainWindow", "Start"))
+
+        self.pushButton_5.setText(_translate("MainWindow", "Pause"))
+
         self.label_9.setText(_translate("MainWindow", "Signal"))
-        self.label_8.setText(_translate("MainWindow", "Spectrogram"))
+        self.label_8.setText(_translate("MainWindow", "Start"))
 
 from pyqtgraph import PlotWidget
