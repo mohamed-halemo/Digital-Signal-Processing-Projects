@@ -117,7 +117,7 @@ class Ui_MainWindow(object):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
         self.label_8.setText(_translate("MainWindow", "Spectrogram"))
-        self.label.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" font-size:14pt; font-weight:600;\">PyShine Live Signal Plot GUI</span></p></body></html>"))
+        self.label.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" font-size:14pt; font-weight:600;\">Live Signal Plot </span></p></body></html>"))
         self.label_9.setText(_translate("MainWindow", "Signal"))
         self.groupBox.setTitle(_translate("MainWindow", "Parameters"))
         self.label_6.setText(_translate("MainWindow", "update interval(ms)"))
@@ -130,10 +130,10 @@ class Ui_MainWindow(object):
         self.pushButton_5.setText(_translate("MainWindow", "Zoom out"))
         self.pushButton.setText(_translate("MainWindow", "Browse"))
         self.label_2.setText(_translate("MainWindow", "Signal"))
-        self.label_3.setText(_translate("MainWindow", "zoom out"))
+        self.label_3.setText(_translate("MainWindow", "zoom "))
         self.label_4.setText(_translate("MainWindow", "sampling rate(Hz)"))
         self.pushButton_6.setText(_translate("MainWindow", "Zoom in"))
-        self.pushButton_7.setText(_translate("MainWindow", "shot it"))
+        self.pushButton_7.setText(_translate("MainWindow", "Print pdf"))
 from pyqtgraph import PlotWidget
 
 
