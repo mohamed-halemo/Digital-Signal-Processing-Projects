@@ -1,4 +1,4 @@
-from mainWindow import Ui_MainWindow
+from GuiUp import Ui_MainWindow
 import ntpath
 import os
 import sys
@@ -12,7 +12,7 @@ import matplotlib
 import matplotlib.pyplot as plt
 matplotlib.use('Qt5Agg')
 from PyQt5 import QtCore, QtWidgets
-from PyQt5.QtWidgets import QFileDialog
+from PyQt5.QtWidgets import QFileDialog,QScrollArea
 from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg, NavigationToolbar2QT as Navi
 from matplotlib.figure import Figure
 import seaborn as sns
@@ -42,13 +42,21 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         self.increment=0
         self.timer=QTimer(self)
 
-        
+        #self.scroll_bar = QScrollBar(self)
+  
+        # setting style sheet to the scroll bar
+        #self.scroll_bar.setStyleSheet("background : lightgreen;")
+        self.zoombtn=self.ui.pushButton_6
+        self.zoombtn.clicked.connect(self.zooming)
+
+
+
         self.image = QImage(self.size(), QImage.Format_RGB32)
   
         # setting canvas color to white
         self.image.fill(Qt.white)
        
-        self.stop=self.ui.pushButton_5
+        self.stop=self.ui.pushButton_2
         self.stop.clicked.connect(self.wa2f)
         self.browse=self.ui.pushButton
         self.browse.clicked.connect(self.Browse_Handler2)
@@ -105,12 +113,14 @@ class ApplicationWindow(QtWidgets.QMainWindow):
                self.timer.stop()
             else:
                self.increment+=1
+               
             self.graph.clear()
+            
             self.graph.plot(self.xGraph2[self.lastidx:self.PlotValue],self.yGraph2[self.lastidx:self.PlotValue],pen=(75))
             QtCore.QCoreApplication.processEvents()
             self.counter=self.counter+1
             self.PlotValue+=self.IncreaseValue
-            self.btn.setText("pause")
+            self.btn.setText("Plotting..")
             
             if(self.xGraph2[self.counter]>=self.c):
                 print(self.counter)
@@ -137,6 +147,13 @@ class ApplicationWindow(QtWidgets.QMainWindow):
     def wa2f(self):
         os.system("pause")
     #    input("Downloading....")
+
+    def zooming(self):
+       self.graph.setXRange(0,2)
+       self.graph.setYRange(0,1)
+       
+
+
 
                       
     def save(self):
