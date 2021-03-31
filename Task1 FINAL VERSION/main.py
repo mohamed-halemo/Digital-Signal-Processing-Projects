@@ -35,7 +35,7 @@ class ApplicationWindow(QtWidgets.QMainWindow):
 
     def __init__(self):
         super(ApplicationWindow, self).__init__()
-        self.ImageLIST=[]
+       
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
         
@@ -52,8 +52,6 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         self.zoomoutbtn.clicked.connect(self.out)
         self.scrollbtn=self.ui.pushButton_8
         self.scrollbtn.clicked.connect(self.scrollit)
-        self.savepdf=self.ui.pushButton_7
-        self.savepdf.clicked.connect(self.PrintPDF)
 
         self.image = QImage(self.size(), QImage.Format_RGB32)
   
@@ -74,15 +72,17 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         self.yGraph2=[]
         self.PlotValue=2
         self.counter=0
-        self.IncreaseValue=12
+        self.IncreaseValue=3
         self.drawbool=1
         self.c=0.025
         self.lastidx=0
     def Browse_Handler2(self):
-        self.graph.clear()  
+        self.graph.clear()      
         self.xGraph2=[]
         self.yGraph2=[]
-        self.PlotValue=2
+        self.plotvalue=2
+                   
+
         
         # random data
         filename=QFileDialog.getOpenFileName()
@@ -90,7 +90,6 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         X, Y = [], []
 
         with open(path,"r") as f:
-            
             for line in f:
                values = [float(s) for s in line.split()]
                self.xGraph2.append(values[0])
@@ -112,7 +111,6 @@ class ApplicationWindow(QtWidgets.QMainWindow):
                                        
       
     def Draw(self):
-        
         if self.increment>=1000:
             self.timer.stop()
         else:
@@ -125,21 +123,23 @@ class ApplicationWindow(QtWidgets.QMainWindow):
                self.increment+=1
                
             self.graph.clear()
-            
             self.graph.plot(self.xGraph2[self.lastidx:self.PlotValue],self.yGraph2[self.lastidx:self.PlotValue],pen=(75))
+
             QtCore.QCoreApplication.processEvents()
             self.counter=self.counter+1
             self.PlotValue+=self.IncreaseValue
+            #self.lastidx=self.lastidx+1
+
             self.btn.setText("Plotting..")
             
             if(self.xGraph2[self.counter]>=self.c):
                 print(self.counter)
                 self.lastidx=self.lastidx+65
-                self.PlotValue+=self.IncreaseValue
+                self.PlotValue+=self.IncreaseValue-1
                 self.graph.plot(self.xGraph2[self.lastidx:self.PlotValue],self.yGraph2[self.lastidx:self.PlotValue],pen=(75))
                 self.c=self.c+0.025
            
-        time.sleep(0.01)  
+        time.sleep(2000)  
               
 
     def Pause(self):
@@ -187,30 +187,22 @@ class ApplicationWindow(QtWidgets.QMainWindow):
     def click_handler(self):
        w = QtWidgets.QWidget()
        screen = QtWidgets.QApplication.primaryScreen()
-       screenshot=screen.grabWindow(self.winId())
+       screenshot=screen.grabWindow(QApplication.desktop().winId())
        screenshot.save('shot.jpg', 'jpg')
-       image=Image.open('shot.jpg')
-       width , height = image.size
-       leftOfImage = 10
-       topOfImage = height / 3.5
-       rightOfImage = 600
-       bottomOfImage = 3.75 * height / 4
-       image1=image.crop((leftOfImage,topOfImage,rightOfImage,bottomOfImage))
-       NewSize=(220,220)
-       image1 = image1 . resize(NewSize)
+       image=('shot.jpg')
+       screenshot.save('shot2.jpg', 'jpg')
+
+       image2=('shot2.jpg')
        w.close()
-       self.ImageLIST.append(image1)
-       #image1.show()    
+       pdf = canvas.Canvas("Report.pdf")
+           
+       pdf2=canvas.Canvas("Report2.pdf")
+           
+       pdf2.drawInlineImage(image2,20,-30,255,666)
+       
+       pdf.drawInlineImage(image, 10 ,-60,550,1120)
 
-    def PrintPDF(self):
-       pdf=canvas.Canvas("Report.pdf")
-       pdf.drawInlineImage(self.ImageLIST[0],0, 600)
-       
-       pdf.drawInlineImage(self.ImageLIST[1],300, 600)
-       
-       pdf.drawInlineImage(self.ImageLIST[2],0, 300)
        pdf.save()
-
         
     def scrollit(self):
         
