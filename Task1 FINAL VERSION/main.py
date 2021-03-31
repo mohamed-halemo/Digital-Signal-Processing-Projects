@@ -79,8 +79,10 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         self.c=0.025
         self.lastidx=0
     def Browse_Handler2(self):
-        self.graph.clear()                      
-
+        self.graph.clear()  
+        self.xGraph2=[]
+        self.yGraph2=[]
+        self.PlotValue=2
         
         # random data
         filename=QFileDialog.getOpenFileName()
@@ -88,6 +90,7 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         X, Y = [], []
 
         with open(path,"r") as f:
+            
             for line in f:
                values = [float(s) for s in line.split()]
                self.xGraph2.append(values[0])
@@ -109,6 +112,7 @@ class ApplicationWindow(QtWidgets.QMainWindow):
                                        
       
     def Draw(self):
+        
         if self.increment>=1000:
             self.timer.stop()
         else:
