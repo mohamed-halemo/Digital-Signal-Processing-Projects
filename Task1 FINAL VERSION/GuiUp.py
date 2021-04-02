@@ -133,7 +133,7 @@ class Ui_MainWindow(object):
         self.label_3.setText(_translate("MainWindow", "zoom out"))
         self.label_4.setText(_translate("MainWindow", "sampling rate(Hz)"))
         self.pushButton_6.setText(_translate("MainWindow", "Zoom in"))
-        self.pushButton_7.setText(_translate("MainWindow", "shot it"))
+        self.pushButton_7.setText(_translate("MainWindow", "add to pdf"))
 from pyqtgraph import PlotWidget
 
 

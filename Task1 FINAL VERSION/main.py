@@ -35,7 +35,7 @@ class ApplicationWindow(QtWidgets.QMainWindow):
 
     def __init__(self):
         super(ApplicationWindow, self).__init__()
-       
+        self.ImageLIST=[]
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
         
@@ -52,6 +52,8 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         self.zoomoutbtn.clicked.connect(self.out)
         self.scrollbtn=self.ui.pushButton_8
         self.scrollbtn.clicked.connect(self.scrollit)
+        self.AddToPdf=self.ui.pushButton_7
+        self.AddToPdf.clicked.connect(self.PrintPDF)
 
         self.image = QImage(self.size(), QImage.Format_RGB32)
   
@@ -80,7 +82,7 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         self.graph.clear()      
         self.xGraph2=[]
         self.yGraph2=[]
-        self.plotvalue=1
+        self.plotvalue=2
         self.counter=0
         self.IncreaseValue=3
         self.lastidx=0
@@ -192,22 +194,33 @@ class ApplicationWindow(QtWidgets.QMainWindow):
     def click_handler(self):
        w = QtWidgets.QWidget()
        screen = QtWidgets.QApplication.primaryScreen()
-       screenshot=screen.grabWindow(QApplication.desktop().winId())
+       screenshot=screen.grabWindow(self.winId())
        screenshot.save('shot.jpg', 'jpg')
        image=('shot.jpg')
-       screenshot.save('shot2.jpg', 'jpg')
-
-       image2=('shot2.jpg')
+       image=Image.open('shot.jpg')
+       width , height = image.size
+       leftOfImage = 10
+       topOfImage = height / 3.5
+       rightOfImage = 600
+       bottomOfImage = 3.75 * height / 4
+       image1=image.crop((leftOfImage,topOfImage,rightOfImage,bottomOfImage))
+       NewSize=(220,220)
+       image1 = image1 . resize(NewSize)
        w.close()
-       pdf = canvas.Canvas("Report.pdf")
-           
-       pdf2=canvas.Canvas("Report2.pdf")
-           
-       pdf2.drawInlineImage(image2,20,-30,255,666)
+       self.ImageLIST.append(image1)
+   
+    def PrintPDF(self):
        
-       pdf.drawInlineImage(image, 10 ,-60,550,1120)
-
+       pdf=canvas.Canvas("Report.pdf")
+       
+       pdf.drawInlineImage(self.ImageLIST[0],0, 600)
+       
+       pdf.drawInlineImage(self.ImageLIST[1],300, 600)
+       
+       pdf.drawInlineImage(self.ImageLIST[2],0, 300)
+       
        pdf.save()
+        
         
     def scrollit(self):
         
