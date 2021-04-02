@@ -74,13 +74,20 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         self.counter=0
         self.IncreaseValue=3
         self.drawbool=1
-        self.c=0.025
+        self.c=0.0025
         self.lastidx=0
     def Browse_Handler2(self):
         self.graph.clear()      
         self.xGraph2=[]
         self.yGraph2=[]
-        self.plotvalue=2
+        self.plotvalue=1
+        self.counter=0
+        self.IncreaseValue=3
+        self.lastidx=0
+        self.c=0.025
+
+
+
                    
 
         
@@ -111,10 +118,7 @@ class ApplicationWindow(QtWidgets.QMainWindow):
                                        
       
     def Draw(self):
-        if self.increment>=1000:
-            self.timer.stop()
-        else:
-            self.increment+=1
+       
                 
         while self.drawbool==1 and self.counter <= len(self.xGraph2)  :
             if self.increment>=1000:
@@ -139,7 +143,7 @@ class ApplicationWindow(QtWidgets.QMainWindow):
                 self.graph.plot(self.xGraph2[self.lastidx:self.PlotValue],self.yGraph2[self.lastidx:self.PlotValue],pen=(75))
                 self.c=self.c+0.025
            
-        time.sleep(2000)  
+        time.sleep(0.01)  
               
 
     def Pause(self):
@@ -157,6 +161,7 @@ class ApplicationWindow(QtWidgets.QMainWindow):
             return 1
 
     def wa2f(self):
+        
         self.drawbool=0
     #    input("Downloading....")
 
