@@ -1,0 +1,11 @@
+1)New Tap Option
+2)another plot widget to be added(first shows before 2nd shows after, 3rd shows spectrogram)
+3)equalizer should be added as a slider (10)(No Repeatation)
+4)To validate your work, each group should prepare a synthetic signal file.
+(Notes):
+To able to properly visualize the spectrogram, the user should be able to control:
+Min and max values (i.e. the pixels intensity range) 
+to plot through two sliders for the min value and one for the max.
+ Each slider should goes from min and max values of the spectrogram.
+The color palette that is used in the spectrogram through a combo-box/drop-menu that
+ has 5 different palettes to use from.
