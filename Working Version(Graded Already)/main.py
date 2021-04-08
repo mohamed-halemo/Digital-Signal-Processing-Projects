@@ -44,15 +44,16 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         self.timer=QTimer(self)
         self.timer.setInterval(1000)
         self.timer.timeout.connect(self.Draw)
-
+        #ctrl H
         #self.scroll_bar = QScrollBar(self)
-    
+        #alt page ,ctrl shift K,enter
         # setting style sheet to the scroll bar
+        #shift alt up or down 
         #self.scroll_bar.setStyleSheet("background : lightgreen;")
         self.zoombtn=self.ui.pushButton_6
         self.zoombtn.clicked.connect(self.zooming)
         self.zoomoutbtn=self.ui.pushButton_5
-        self.zoomoutbtn.clicked.connect(self.out)
+        self.zoomoutbtn.clicked.connect(self.zoomingout)
         self.scrollbtn=self.ui.pushButton_8
         self.scrollbtn.clicked.connect(self.scrollit)
         self.AddToPdf=self.ui.pushButton_7
@@ -64,7 +65,7 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         self.image.fill(Qt.white)
         
         self.stop=self.ui.pushButton_2
-        self.stop.clicked.connect(self.wa2f)
+        self.stop.clicked.connect(self.stopit)
         self.browse=self.ui.pushButton
         self.browse.clicked.connect(self.Browse_Handler2)
         self.PDF=self.ui.pushButton_3
@@ -115,8 +116,8 @@ class ApplicationWindow(QtWidgets.QMainWindow):
             self.graph.setXRange(0,x_range[0]+x_range[1]/20)
             print(x_range[0])
             print(x_range[1])
-            #self.graph.setYRange(y_range[0]/2,y_range[1]/2)
-            self.graph2.plot(freq_axis,sig_f)   
+            self.graph2.plot(freq_axis,sig_f)
+            self.Draw()   
         def paintEvent(self):
             qp=QPainter(self)
             qp.setPen(QPen(Qcolor(Qt.black),5))
@@ -135,32 +136,14 @@ class ApplicationWindow(QtWidgets.QMainWindow):
             self.btn.setText("Plotting..")
             x_range,y_range=self.graph.viewRange()
             x_range2=(x_range[1]-x_range[0])/500  #3shan ymshy 7eta 7eta
-            self.graph.setXRange(x_range[0]+x_range2, x_range[1]+x_range2,0) 
+            self.graph.setXRange(x_range[0]+x_range2, x_range[1]+x_range2,0)
+             
                 
                 
                 
                 
             
-            # if self.increment>=1000:
-            #    self.timer.stop()
-            # else:
-            #    self.increment+=1
-                
-            # self.graph.clear()
-            # self.graph.plot(self.xGraph2[self.lastidx:self.PlotValue],self.yGraph2[self.lastidx:self.PlotValue],pen=(75))
-
-            # self.counter=self.counter+1
-            # self.PlotValue+=self.IncreaseValue
-            #self.lastidx=self.lastidx+1
-            
-        #     if(self.xGraph2[self.counter]>=self.c):
-        #         print(self.counter)
-        #         self.lastidx=self.lastidx+65
-        #         self.PlotValue+=self.IncreaseValue-1
-        #         self.graph.plot(self.xGraph2[self.lastidx:self.PlotValue],self.yGraph2[self.lastidx:self.PlotValue],pen=(75))
-        #         self.c=self.c+0.025
-            
-        # time.sleep(0.01)  
+        
                 
 
     def Pause(self):
@@ -174,7 +157,7 @@ class ApplicationWindow(QtWidgets.QMainWindow):
             self.timer.start()
             return 1
 
-    def wa2f(self):
+    def stopit(self):
         self.drawbool=0
     #    input("Downloading....")
 
@@ -186,9 +169,9 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         #self.graph.setRange((x_range[0]/2,x_range[1]/2),(y_range[0]/2,y_range[1]/2))
         
         
-        
+  
 
-    def out(self):
+    def zoomingout(self):
         x_range,y_range=self.graph.viewRange()
         self.graph.setXRange(x_range[0],x_range[0]+x_range[1]*2)
         self.graph.setYRange(y_range[0]*2,y_range[1]*2)
@@ -249,40 +232,7 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         x_range2=(x_range[1]-x_range[0])/500
         self.graph.setXRange(x_range[0]+x_range2, x_range[1]+x_range2,0)
                 
-    #     self.graph.clear()
-            
-    #     self.graph.plot(self.xGraph2[self.lastidx:self.PlotValue],self.yGraph2[self.lastidx:self.PlotValue],pen=(75))
-    #     QtCore.QCoreApplication.processEvents()
-    #     self.counter=self.counter+1
-    #     self.PlotValue+=self.IncreaseValue
-    #     self.btn.setText("Plotting..")
-            
-    #     if(self.xGraph2[self.counter]>=self.c):
-    #         print(self.counter)
-    #         self.lastidx=self.lastidx+65
-    #         self.PlotValue+=self.IncreaseValue
-    #         self.graph.plot(self.xGraph2[self.lastidx:self.PlotValue],self.yGraph2[self.lastidx:self.PlotValue],pen=(75))
-    #         self.c=self.c+0.025
-           
-    # time.sleep(0.01)
-        #pass
-        
-    #     self.graph.clear()
-            
-    #     self.graph.plot(self.xGraph2[self.lastidx:self.PlotValue],self.yGraph2[self.lastidx:self.PlotValue],pen=(75))
-    #     QtCore.QCoreApplication.processEvents()
-    #     self.counter=self.counter+1
-    #     self.PlotValue+=self.IncreaseValue
-    #     self.btn.setText("Plotting..")
-            
-    #     if(self.xGraph2[self.counter]>=self.c):
-    #         print(self.counter)
-    #         self.lastidx=self.lastidx+65
-    #         self.PlotValue+=self.IncreaseValue
-    #         self.graph.plot(self.xGraph2[self.lastidx:self.PlotValue],self.yGraph2[self.lastidx:self.PlotValue],pen=(75))
-    #         self.c=self.c+0.025
-            
-    # time.sleep(0.01)  
+   
 
 def main():
     app = QtWidgets.QApplication(sys.argv)
