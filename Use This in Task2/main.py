@@ -38,7 +38,8 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
-        self.ImageLIST=[]
+        self.signalLIST=[]
+        self.spectrogramarray=[]
 
         self.increment=0
         self.timer=QTimer(self)
@@ -204,31 +205,40 @@ class ApplicationWindow(QtWidgets.QMainWindow):
     def click_handler(self):
        w = QtWidgets.QWidget()
        screen = QtWidgets.QApplication.primaryScreen()
-       screenshot=screen.grabWindow(self.winId())
+       screenshot=screen.grabWindow(self.graph.winId())
+       screenshot2=screen.grabWindow(self.graph2.winId())
        screenshot.save('shot.jpg', 'jpg')
+       screenshot2.save('shot2.jpg', 'jpg')
        image=('shot.jpg')
+       image2=('shot2.jpg')
        image=Image.open('shot.jpg')
+       image2=Image.open('shot2.jpg')
        width , height = image.size
-       leftOfImage = 10
+       width , height = image2.size
+       leftOfImage = 20
        topOfImage = height / 3.5
        rightOfImage = 600
        bottomOfImage = 3.75 * height / 4
        image1=image.crop((leftOfImage,topOfImage,rightOfImage,bottomOfImage))
-       NewSize=(220,220)
+       image3=image2.crop((leftOfImage,topOfImage,rightOfImage,bottomOfImage))
+       NewSize=(250,250)
        image1 = image1 . resize(NewSize)
+       image3 = image3 . resize(NewSize)
        w.close()
-       self.ImageLIST.append(image1)
+       self.signalLIST.append(image1)
+       self.spectrogramarray.append(image3)
 
 
     def PrintPDF(self):
        
        pdf=canvas.Canvas("Report.pdf")
        
-       pdf.drawInlineImage(self.ImageLIST[0],0, 600)
-       
-       pdf.drawInlineImage(self.ImageLIST[1],300, 600)
-       
-       pdf.drawInlineImage(self.ImageLIST[2],0, 300)
+       pdf.drawInlineImage(self.signalLIST[0],10, 600)
+       pdf.drawInlineImage(self.spectrogramarray[0],300, 600)
+       pdf.drawInlineImage(self.signalLIST[1],10, 300)
+       pdf.drawInlineImage(self.spectrogramarray[1],300, 300)
+       pdf.drawInlineImage(self.signalLIST[2],10, 0)
+       pdf.drawInlineImage(self.spectrogramarray[2],300, 0,250,200)
        
        pdf.save()   
         
