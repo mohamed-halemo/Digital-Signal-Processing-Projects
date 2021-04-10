@@ -1,5 +1,5 @@
     
-from GuiT4 import Ui_MainWindow
+from GuiT5 import Ui_MainWindow
 import ntpath
 import os
 import sys
@@ -45,13 +45,12 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         self.timer=QTimer(self)
         self.timer.setInterval(1000)
         self.timer.timeout.connect(self.Draw)
-        self.setFixedSize(1300,1024)
+        #self.setFixedSize(1300,1040)
         self.tab=self.ui.tabWidget
         self.newtab=self.ui.Newtabbtn
         self.newtab.clicked.connect(self.NewTabCreation)
         self.removetab=self.ui.Removetabbtn
         self.removetab.clicked.connect(self.RemovingTab)
-        self.lay=self.ui.layoutWidget
 
         #ctrl H
         #self.scroll_bar = QScrollBar(self)
