@@ -237,7 +237,7 @@ class ApplicationWindow(QtWidgets.QMainWindow):
        pdf.drawInlineImage(self.signalLIST[1],10, 300)
        pdf.drawInlineImage(self.spectrogramarray[1],300, 300)
        pdf.drawInlineImage(self.signalLIST[2],10, 0)
-       pdf.drawInlineImage(self.spectrogramarray[2],300, 0,250,200)
+       pdf.drawInlineImage(self.spectrogramarray[2],300, 0)
        
        pdf.save()   
         
