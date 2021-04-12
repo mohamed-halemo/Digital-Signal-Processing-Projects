@@ -41,6 +41,7 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
         self.signalLIST=[]
+        self.spectrogramarray=[]
         #fig = Figure(figsize=(8, 8), dpi=100)
         #self.Spec =fig.add_subplot(212)
         #########added for spectrogram
@@ -145,15 +146,9 @@ class ApplicationWindow(QtWidgets.QMainWindow):
             self.lay.addWidget(self.plotWidget)
             
             self.ax1.specgram(self.yGraph2,NFFT=10240,Fs=10,noverlap=900)
+            self.Draw()
             self.ax1.show()
-            
-
-         
-
-
-
-
-            self.Draw()   
+               
         def paintEvent(self):
             qp=QPainter(self)
             qp.setPen(QPen(Qcolor(Qt.black),5))
@@ -233,7 +228,7 @@ class ApplicationWindow(QtWidgets.QMainWindow):
        w = QtWidgets.QWidget()
        screen = QtWidgets.QApplication.primaryScreen()
        screenshot=screen.grabWindow(self.graph.winId())
-       screenshot2=screen.grabWindow(self.graph2.winId())
+       screenshot2=screen.grabWindow(self.graph3.winId())
        screenshot.save('shot.jpg', 'jpg')
        screenshot2.save('shot2.jpg', 'jpg')
        image=('shot.jpg')
