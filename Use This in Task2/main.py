@@ -11,6 +11,8 @@ from PyQt5.QtGui import *
 from PIL import Image
 import matplotlib
 import matplotlib.pyplot as plt
+import pyqtgraph as pg
+
 matplotlib.use('Qt5Agg')
 from PyQt5 import QtCore, QtWidgets
 from PyQt5.QtWidgets import QFileDialog,QScrollArea
@@ -39,7 +41,15 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
         self.signalLIST=[]
-        self.spectrogramarray=[]
+        #fig = Figure(figsize=(8, 8), dpi=100)
+        #self.Spec =fig.add_subplot(212)
+        #########added for spectrogram
+        self.graph3=self.ui.Graph1_3
+        self.fig,self.ax1 = plt.subplots()
+        self.plotWidget=FigureCanvas(self.fig)
+        ####
+
+
 
         self.increment=0
         self.timer=QTimer(self)
@@ -113,7 +123,7 @@ class ApplicationWindow(QtWidgets.QMainWindow):
             ts = X[1]-X[0]
             sig_f= fft(Y)
             sig_f= np.abs(sig_f[0:np.size(sig_f)//2])
-    
+         
             fs= 1/ts
             freq_axis= np.linspace(0, np.max(fs), np.size(X)//2,dtype=np.float32)
             self.graph.clear()
@@ -125,6 +135,24 @@ class ApplicationWindow(QtWidgets.QMainWindow):
             print(x_range[0])
             print(x_range[1])
             self.graph2.plot(freq_axis,sig_f)
+          
+            #self.graph3.plot(self.yGraph2,Fs=1000)
+            #plt.specgram(self.yGraph2,1024,100,900)
+           # plt.show()
+            #spectrogram
+            self.lay = QtWidgets.QVBoxLayout(self.graph3)  
+            self.lay.setContentsMargins(0, 0, 0, 0)      
+            self.lay.addWidget(self.plotWidget)
+            
+            self.ax1.specgram(self.yGraph2,NFFT=10240,Fs=10,noverlap=900)
+            self.ax1.show()
+            
+
+         
+
+
+
+
             self.Draw()   
         def paintEvent(self):
             qp=QPainter(self)
@@ -138,13 +166,13 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         #     self.timer.stop()
         # else:
         #     self.increment+=1
-                
         while self.drawbool==1:
             QtCore.QCoreApplication.processEvents()
             self.btn.setText("Plotting..")
             x_range,y_range=self.graph.viewRange()
             x_range2=(x_range[1]-x_range[0])/500  #3shan ymshy 7eta 7eta
             self.graph.setXRange(x_range[0]+x_range2, x_range[1]+x_range2,0)
+
              
                 
                 
