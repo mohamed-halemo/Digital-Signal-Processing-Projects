@@ -3,6 +3,7 @@ from GuiT5 import Ui_MainWindow
 import ntpath
 import os
 import sys
+from GuiT4 import TabPage
 from PyQt5 import QtGui, QtWidgets ,QtCore , QtSerialPort
 from PyQt5.QtCore import Qt,QTimer
 from scipy.fftpack import fft
@@ -12,6 +13,7 @@ from PIL import Image
 import matplotlib
 import matplotlib.pyplot as plt
 import pyqtgraph as pg
+from PyQt5.QtWidgets import QApplication, QMainWindow
 
 matplotlib.use('Qt5Agg')
 from PyQt5 import QtCore, QtWidgets
@@ -32,7 +34,7 @@ from matplotlib.backends.backend_qt5agg import NavigationToolbar2QT as Navigatio
 from matplotlib.backends.backend_qt4agg import FigureCanvasQTAgg as FigureCanvas
 import time
     
-    
+
 class ApplicationWindow(QtWidgets.QMainWindow):
 
     def __init__(self):
@@ -273,13 +275,13 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         self.graph.setXRange(x_range[0]+x_range2, x_range[1]+x_range2,0)
                 
     def NewTabCreation(self):
-        self.tab.addTab(QWidget(), "New Tab")
-        self.QtWidgets.QWidget(self.tab)
-
+        text = 'Tab %d' % (self.tab.count() + 1)
+        self.tab.addTab(TabPage(self.tab), text)
+   
     def RemovingTab(self):
         self.tab.removeTab(1)
 
-
+    
 
 def main():
     app = QtWidgets.QApplication(sys.argv)
