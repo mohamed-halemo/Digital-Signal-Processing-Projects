@@ -33,6 +33,7 @@ class Ui_MainWindow(QtWidgets.QWidget):
         self.tabWidget.setGeometry(QtCore.QRect(10, 40, 1291, 971))
         self.tabWidget.setObjectName("tabWidget")
         self.tab = QtWidgets.QWidget()
+
         self.tab.setObjectName("tab")
         self.layoutWidget = QtWidgets.QWidget(self.tab)
         self.layoutWidget.setGeometry(QtCore.QRect(2, 29, 1251, 798))
@@ -182,6 +183,8 @@ class Ui_MainWindow(QtWidgets.QWidget):
         self.menubar.setGeometry(QtCore.QRect(0, 0, 1294, 26))
         self.menubar.setObjectName("menubar")
         MainWindow.setMenuBar(self.menubar)
+        
+        self.tabs = QtWidgets.QTabWidget()
 
         self.retranslateUi(MainWindow)
         self.tabWidget.setCurrentIndex(0)

@@ -3,7 +3,6 @@ from GuiT5 import Ui_MainWindow
 import ntpath
 import os
 import sys
-from GuiT4 import TabPage
 from PyQt5 import QtGui, QtWidgets ,QtCore , QtSerialPort
 from PyQt5.QtCore import Qt,QTimer
 from scipy.fftpack import fft
@@ -51,7 +50,16 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         self.fig,self.ax1 = plt.subplots()
         self.plotWidget=FigureCanvas(self.fig)
         ####
-        self.tabs = QtWidgets.QTabWidget()
+
+        #self.tabs = QtWidgets.QTabWidget()
+        self.eft7=self.ui.tab
+       
+
+        self.tab=self.ui.tabWidget
+        self.layy=self.ui.gridLayout
+        
+        self.layy.addWidget(self.ui)
+        
 
 
 
@@ -60,7 +68,6 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         self.timer.setInterval(1000)
         self.timer.timeout.connect(self.Draw)
         #self.setFixedSize(1300,1040)
-        self.tab=self.ui.tabWidget
         self.newtab=self.ui.Newtabbtn
         self.newtab.clicked.connect(self.NewTabCreation)
         self.removetab=self.ui.Removetabbtn
@@ -104,6 +111,8 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         self.drawbool=1
         self.c=0.025
         self.lastidx=0
+
+        
     def Browse_Handler2(self):
         self.graph.clear()      
         self.xGraph2=[]
@@ -279,10 +288,10 @@ class ApplicationWindow(QtWidgets.QMainWindow):
                 
     def NewTabCreation(self):
         text = 'Tab %d' % (self.tab.count() + 1)
-        self.tab.addTab(TabPage(self.tab), text)
+        self.tab.addTab(self.eft7, text)
    
     def RemovingTab(self):
-        self.tab.removeTab(1)
+        self.tab.removeTab(0)
 
     
 

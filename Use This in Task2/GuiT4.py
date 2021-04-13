@@ -12,4 +12,14 @@ class TabPage(QtWidgets.QTabWidget):
         layout = QtWidgets.QVBoxLayout(self)
         layout.addWidget(group)
         grid = QtWidgets.QGridLayout(group)
+        self.layoutWidget = QtWidgets.QWidget(self.tab)
+        self.layoutWidget.setGeometry(QtCore.QRect(2, 29, 1251, 798))
+        self.layoutWidget.setObjectName("layoutWidget")
+        self.gridLayout_2 = QtWidgets.QGridLayout(self.layoutWidget)
+        self.gridLayout_2.setContentsMargins(0, 0, 0, 0)
+        self.gridLayout_2.setObjectName("gridLayout_2")
+        self.Graph1 = PlotWidget(self.layoutWidget)
+        self.Graph1.setObjectName("Graph1")
+        self.tabs = QtWidgets.QTabWidget()
+
         
