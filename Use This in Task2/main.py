@@ -208,7 +208,7 @@ class ApplicationWindow(QtWidgets.QMainWindow):
             self.ax1.specgram(self.yGraph2,NFFT=1024,Fs=1000,noverlap=900)
             self.Draw()
 
-            self.ax1.show()
+            self.show()
 
          
 
