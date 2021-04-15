@@ -179,8 +179,9 @@ class ApplicationWindow(QtWidgets.QMainWindow):
                 Y.append(values[1])
             ts = X[1]-X[0]
             sig_f= fft(Y)
-            sig_f= np.abs(sig_f[0:np.size(sig_f)//2])
-            
+            sig_f= np.abs(sig_f[0:np.size(sig_f)])*5
+            inVerse=np.abs(np.fft.ifft(sig_f))
+            print(inVerse)
          
             fs= 1/ts
             freq_axis= np.linspace(0, np.max(fs), np.size(X)//2,dtype=np.float32)
@@ -193,7 +194,7 @@ class ApplicationWindow(QtWidgets.QMainWindow):
             print(x_range[0])
             print(x_range[1])
             
-            self.graph2.plot(freq_axis,sig_f)
+            self.graph2.plot(X,inVerse)
            
 
           
