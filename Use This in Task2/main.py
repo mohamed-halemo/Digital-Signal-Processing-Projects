@@ -1,9 +1,8 @@
-    
 from GuiT5 import Ui_MainWindow
 import ntpath
 import os
 import sys
-from GuiT4 import TabPage
+from GuiT4 import * #functions el repeated 
 from PyQt5 import QtGui, QtWidgets ,QtCore , QtSerialPort
 from PyQt5.QtCore import Qt,QTimer
 from scipy.fftpack import fft
@@ -14,7 +13,8 @@ import matplotlib
 import matplotlib.pyplot as plt
 import pyqtgraph as pg
 from PyQt5.QtWidgets import QApplication, QMainWindow
-
+from PyQt5.QtCore import *
+from PyQt5.QtGui import *
 matplotlib.use('Qt5Agg')
 from PyQt5 import QtCore, QtWidgets
 from PyQt5.QtWidgets import QFileDialog,QScrollArea
@@ -37,7 +37,7 @@ import time
 
 class ApplicationWindow(QtWidgets.QMainWindow):
 
-    def __init__(self):
+    def __init__(self,parent=None):
         super(ApplicationWindow, self).__init__()
         
         self.ui = Ui_MainWindow()
@@ -51,9 +51,13 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         self.fig,self.ax1 = plt.subplots()
         self.plotWidget=FigureCanvas(self.fig)
         ####
-        self.tabs = QtWidgets.QTabWidget()
 
-
+        self.label = QLabel("1", self)
+        
+        
+        
+        
+        
 
         self.increment=0
         self.timer=QTimer(self)
@@ -76,6 +80,55 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         self.zoombtn.clicked.connect(self.zooming)
         self.zoomoutbtn=self.ui.pushButton_5
         self.zoomoutbtn.clicked.connect(self.zoomingout)
+        self.slider1=self.ui.verticalSlider_11
+        self.slider1.valueChanged.connect(self.updateLabel)
+        adjust(self.slider1)
+        self.slider2=self.ui.verticalSlider
+        self.slider2.valueChanged.connect(self.updateLabel)
+        adjust(self.slider2)
+        self.slider3=self.ui.verticalSlider_2
+        self.slider3.valueChanged.connect(self.updateLabel)
+        adjust(self.slider3)
+        self.slider4=self.ui.verticalSlider_3
+        self.slider4.valueChanged.connect(self.updateLabel)
+        adjust(self.slider4)
+        self.slider5=self.ui.verticalSlider_4
+        self.slider5.valueChanged.connect(self.updateLabel)
+        adjust(self.slider5)
+        self.slider6=self.ui.verticalSlider_5
+        self.slider6.valueChanged.connect(self.updateLabel)
+        adjust(self.slider6)
+        self.slider7=self.ui.verticalSlider_6
+        self.slider7.valueChanged.connect(self.updateLabel)
+        adjust(self.slider7)
+        self.slider8=self.ui.verticalSlider_7
+        self.slider8.valueChanged.connect(self.updateLabel)
+        adjust(self.slider8)
+        self.slider9=self.ui.verticalSlider_8
+        self.slider9.valueChanged.connect(self.updateLabel)
+        adjust(self.slider9)
+        self.slider10=self.ui.verticalSlider_9
+        self.slider10.valueChanged.connect(self.updateLabel)
+        adjust(self.slider10)
+        self.slider11=self.ui.verticalSlider_10
+        self.slider11.valueChanged.connect(self.updateLabel)
+        adjust(self.slider11)
+        self.slider12=self.ui.verticalSlider_12
+        self.slider12.valueChanged.connect(self.updateLabel)
+        adjust(self.slider12)
+        self.slider13=self.ui.verticalSlider_13
+        self.slider13.valueChanged.connect(self.updateLabel)
+        adjust(self.slider13)
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         self.scrollbtn=self.ui.pushButton_8
         self.scrollbtn.clicked.connect(self.scrollit)
         self.AddToPdf=self.ui.pushButton_7
@@ -127,6 +180,7 @@ class ApplicationWindow(QtWidgets.QMainWindow):
             ts = X[1]-X[0]
             sig_f= fft(Y)
             sig_f= np.abs(sig_f[0:np.size(sig_f)//2])
+            
          
             fs= 1/ts
             freq_axis= np.linspace(0, np.max(fs), np.size(X)//2,dtype=np.float32)
@@ -138,7 +192,9 @@ class ApplicationWindow(QtWidgets.QMainWindow):
             self.graph.setXRange(0,x_range[0]+x_range[1]/20)
             print(x_range[0])
             print(x_range[1])
+            
             self.graph2.plot(freq_axis,sig_f)
+           
 
           
             #self.graph3.plot(self.yGraph2,Fs=1000)
@@ -154,11 +210,25 @@ class ApplicationWindow(QtWidgets.QMainWindow):
 
             self.ax1.show()
 
+         
+
         def paintEvent(self):
             qp=QPainter(self)
             qp.setPen(QPen(Qcolor(Qt.black),5))
             qp.drawRect(500,500,1000,1000)
+
+        
+
+        
+    def updateLabel(self, value ):
+        
+
+            self.label.setText(str(value))
             
+            
+           
+            
+       
                                         
         
     def Draw(self):
@@ -177,7 +247,7 @@ class ApplicationWindow(QtWidgets.QMainWindow):
                 
                 
                 
-                
+      
             
         
                 
@@ -254,7 +324,7 @@ class ApplicationWindow(QtWidgets.QMainWindow):
        w.close()
        self.signalLIST.append(image1)
        self.spectrogramarray.append(image3)
-
+ 
 
     def PrintPDF(self):
        
@@ -279,7 +349,7 @@ class ApplicationWindow(QtWidgets.QMainWindow):
                 
     def NewTabCreation(self):
         text = 'Tab %d' % (self.tab.count() + 1)
-        self.tab.addTab(TabPage(self.tab), text)
+        self.tab.addTab(ApplicationWindow(self.tab), text)
    
     def RemovingTab(self):
         self.tab.removeTab(1)

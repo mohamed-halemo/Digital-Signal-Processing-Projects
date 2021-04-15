@@ -172,6 +172,8 @@ class Ui_MainWindow(QtWidgets.QWidget):
         self.verticalSlider_13.setObjectName("verticalSlider_13")
         self.horizontalLayout.addWidget(self.verticalSlider_13)
         self.tabWidget.addTab(self.tab, "")
+        self.tabWidget.addTab(self.tab, "222")
+
         self.CompareButton = QtWidgets.QPushButton(self.centralwidget)
         self.CompareButton.setGeometry(QtCore.QRect(190, 10, 93, 28))
         self.CompareButton.setObjectName("CompareButton")
@@ -189,6 +191,9 @@ class Ui_MainWindow(QtWidgets.QWidget):
         self.retranslateUi(MainWindow)
         self.tabWidget.setCurrentIndex(0)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+
+
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
