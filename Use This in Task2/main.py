@@ -39,7 +39,10 @@ class ApplicationWindow(QtWidgets.QMainWindow):
 
     def __init__(self,parent=None):
         super(ApplicationWindow, self).__init__()
-        
+        self.valuee=1
+        self.X=[]
+        self.Y=[]
+        self.sig_f=[]
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
         self.signalLIST=[]
@@ -83,52 +86,6 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         self.slider1=self.ui.verticalSlider_11
         self.slider1.valueChanged.connect(self.updateLabel)
         adjust(self.slider1)
-        self.slider2=self.ui.verticalSlider
-        self.slider2.valueChanged.connect(self.updateLabel)
-        adjust(self.slider2)
-        self.slider3=self.ui.verticalSlider_2
-        self.slider3.valueChanged.connect(self.updateLabel)
-        adjust(self.slider3)
-        self.slider4=self.ui.verticalSlider_3
-        self.slider4.valueChanged.connect(self.updateLabel)
-        adjust(self.slider4)
-        self.slider5=self.ui.verticalSlider_4
-        self.slider5.valueChanged.connect(self.updateLabel)
-        adjust(self.slider5)
-        self.slider6=self.ui.verticalSlider_5
-        self.slider6.valueChanged.connect(self.updateLabel)
-        adjust(self.slider6)
-        self.slider7=self.ui.verticalSlider_6
-        self.slider7.valueChanged.connect(self.updateLabel)
-        adjust(self.slider7)
-        self.slider8=self.ui.verticalSlider_7
-        self.slider8.valueChanged.connect(self.updateLabel)
-        adjust(self.slider8)
-        self.slider9=self.ui.verticalSlider_8
-        self.slider9.valueChanged.connect(self.updateLabel)
-        adjust(self.slider9)
-        self.slider10=self.ui.verticalSlider_9
-        self.slider10.valueChanged.connect(self.updateLabel)
-        adjust(self.slider10)
-        self.slider11=self.ui.verticalSlider_10
-        self.slider11.valueChanged.connect(self.updateLabel)
-        adjust(self.slider11)
-        self.slider12=self.ui.verticalSlider_12
-        self.slider12.valueChanged.connect(self.updateLabel)
-        adjust(self.slider12)
-        self.slider13=self.ui.verticalSlider_13
-        self.slider13.valueChanged.connect(self.updateLabel)
-        adjust(self.slider13)
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
         self.scrollbtn=self.ui.pushButton_8
         self.scrollbtn.clicked.connect(self.scrollit)
         self.AddToPdf=self.ui.pushButton_7
@@ -162,7 +119,7 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         self.xGraph2=[]
         self.yGraph2=[]
         self.plotvalue=2
-        X, Y = [], []
+        
 
                     
 
@@ -176,16 +133,21 @@ class ApplicationWindow(QtWidgets.QMainWindow):
                 values = [float(s) for s in line.split()]
                 self.xGraph2.append(values[0])
                 self.yGraph2.append(values[1])
-                X.append(values[0])
-                Y.append(values[1])
-            ts = X[1]-X[0]
-            print(Y[0])
-            sig_f= fft(Y)
+                self.X.append(values[0])
+                self.Y.append(values[1])
+            ts = self.X[1]-self.X[0]
+            #print(Y[0])
             
+            
+            #self.sig_f= fft(self.Y)
+            
+            self.updateLabel(self.valuee)
+            #print(self.valuee)
+            self.sig_f= fft(self.Y)
             #sig_f= np.abs(sig_f[0:np.size(sig_f)//2+1])
-            print(sig_f[0])
+            #return(self.X)
             #inVerse=np.abs(np.fft.irfft(sig_f))
-            inVerse=np.fft.irfft(sig_f)
+            inVerse=np.fft.irfft(self.sig_f)
             Xf=np.arange(len(inVerse))
 
             
@@ -234,10 +196,16 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         
 
         
-    def updateLabel(self, value ):
+    def updateLabel(self,value ):
+        self.label.setText(str(value))
+        self.valuee=value
+        #print(self.sig_f)
+        self.sig_f=self.sig_f*self.valuee
+        return self.sig_f,self.valuee
         
 
-            self.label.setText(str(value))
+            
+            
             
             
            
