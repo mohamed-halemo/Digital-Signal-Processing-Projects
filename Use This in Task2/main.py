@@ -33,7 +33,7 @@ from matplotlib.backends.backend_qt5agg import NavigationToolbar2QT as Navigatio
 #imports
 from matplotlib.backends.backend_qt4agg import FigureCanvasQTAgg as FigureCanvas
 import time
-    
+from scipy.fft import fft, fftfreq,irfft
 
 class ApplicationWindow(QtWidgets.QMainWindow):
 
@@ -162,13 +162,14 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         self.xGraph2=[]
         self.yGraph2=[]
         self.plotvalue=2
+        X, Y = [], []
+
                     
 
         
         # random data
         filename=QFileDialog.getOpenFileName()
         path=filename[0]
-        X, Y = [], []
 
         with open(path,"r") as f:
             for line in f:
@@ -178,10 +179,19 @@ class ApplicationWindow(QtWidgets.QMainWindow):
                 X.append(values[0])
                 Y.append(values[1])
             ts = X[1]-X[0]
+            print(Y[0])
             sig_f= fft(Y)
-            sig_f= np.abs(sig_f[0:np.size(sig_f)])*5
-            inVerse=np.abs(np.fft.ifft(sig_f))
-            print(inVerse)
+            
+            #sig_f= np.abs(sig_f[0:np.size(sig_f)//2+1])
+            print(sig_f[0])
+            #inVerse=np.abs(np.fft.irfft(sig_f))
+            inVerse=np.fft.irfft(sig_f)
+            Xf=np.arange(len(inVerse))
+
+            
+           
+            
+            print(inVerse[0])
          
             fs= 1/ts
             freq_axis= np.linspace(0, np.max(fs), np.size(X)//2,dtype=np.float32)
@@ -191,11 +201,14 @@ class ApplicationWindow(QtWidgets.QMainWindow):
             #print(self.xGraph2[:20])                
 
             self.graph.setXRange(0,x_range[0]+x_range[1]/20)
-            print(x_range[0])
-            print(x_range[1])
-            
-            self.graph2.plot(X,inVerse)
-           
+            # print(x_range[0])
+            # print(x_range[1])
+            self.graph2.plot(Xf,inVerse,pen=(75))
+            xx_range,yy_range=self.graph2.viewRange()
+            self.graph2.setXRange(0,xx_range[0]+xx_range[1]/20)
+            self.graph2.setYRange(-100,300)
+
+
 
           
             #self.graph3.plot(self.yGraph2,Fs=1000)
@@ -243,6 +256,10 @@ class ApplicationWindow(QtWidgets.QMainWindow):
             x_range,y_range=self.graph.viewRange()
             x_range2=(x_range[1]-x_range[0])/500  #3shan ymshy 7eta 7eta
             self.graph.setXRange(x_range[0]+x_range2, x_range[1]+x_range2,0)
+            xx_range,yy_range=self.graph2.viewRange()
+            xx_range2=(xx_range[1]-xx_range[0])/500
+            self.graph2.setXRange(xx_range[0]+xx_range2,xx_range[1]+xx_range2,0)
+
 
              
                 
