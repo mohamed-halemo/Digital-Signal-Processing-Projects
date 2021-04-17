@@ -108,6 +108,10 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         self.drawbool=1
         self.c=0.025
         self.lastidx=0
+        self.inVerse=[]
+        self.Xf=[]
+        self.ts=0
+        
     def Browse_Handler2(self):
         self.graph.clear()      
         self.xGraph2=[]
@@ -130,28 +134,28 @@ class ApplicationWindow(QtWidgets.QMainWindow):
                 self.yGraph2.append(values[1])
                 self.X.append(values[0])
                 self.Y.append(values[1])
-            ts = self.X[1]-self.X[0]
+            self.ts = self.X[1]-self.X[0]
             #print(Y[0])
             
-            
+            self.bgraab7aga()
             #self.sig_f= fft(self.Y)
             
             
             #print(self.valuee)
-            self.sig_f= fft(self.Y)
+            #self.sig_f= fft(self.Y)
 
-            self.sig_f= np.abs(self.sig_f[0:np.size(self.sig_f)//2])
+            #self.sig_f= np.abs(self.sig_f[0:np.size(self.sig_f)//2])
             #return(self.X)
-            inVerse=np.abs(np.fft.ifft(self.sig_f))
+            #self.inVerse=np.abs(np.fft.ifft(self.sig_f))
             #inVerse=np.fft.ifft(self.sig_f)
-            Xf=np.arange(len(inVerse))
+            #self.Xf=np.arange(len(inVerse))
 
             
            
             
-            print(inVerse[0])
+            #print(inVerse[0])
          
-            fs= 1/ts
+            fs= 1/self.ts
             freq_axis= np.linspace(0, np.max(fs), np.size(X)//2,dtype=np.float32)
             self.graph.clear()
             
@@ -162,7 +166,7 @@ class ApplicationWindow(QtWidgets.QMainWindow):
             self.graph.setXRange(0,x_range[0]+x_range[1]/20)
             # print(x_range[0])
             # print(x_range[1])
-            self.graph2.plot(Xf,inVerse,pen=(75))
+            #self.graph2.plot(self.Xf,self.inVerse,pen=(75))
             xx_range,yy_range=self.graph2.viewRange()
             self.graph2.setXRange(0,xx_range[0]+xx_range[1]/20)
             self.graph2.setYRange(-100,300)
@@ -215,12 +219,14 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         #     self.timer.stop()
         # else:
         #     self.increment+=1
+        
         while self.drawbool==1:
             QtCore.QCoreApplication.processEvents()
             self.btn.setText("Plotting..")
             x_range,y_range=self.graph.viewRange()
             x_range2=(x_range[1]-x_range[0])/500  #3shan ymshy 7eta 7eta
             self.graph.setXRange(x_range[0]+x_range2, x_range[1]+x_range2,0)
+            self.bgraab7aga()
             xx_range,yy_range=self.graph2.viewRange()
             xx_range2=(xx_range[1]-xx_range[0])/500
             self.graph2.setXRange(xx_range[0]+xx_range2,xx_range[1]+xx_range2,0)
@@ -229,7 +235,14 @@ class ApplicationWindow(QtWidgets.QMainWindow):
              
                 
                 
-                
+    def bgraab7aga(self):
+        self.graph2.clear()
+        self.sig_f= fft(self.Y)*self.valuee
+        self.inVerse=np.abs(np.fft.ifft(self.sig_f))
+        self.Xf=np.arange(len(self.inVerse))
+        self.graph2.plot(self.Xf,self.inVerse,pen=(75))
+            
+           
       
             
         
@@ -247,7 +260,9 @@ class ApplicationWindow(QtWidgets.QMainWindow):
             return 1
 
     def stopit(self):
+
         self.drawbool=0
+        
     #    input("Downloading....")
 
     def zooming(self):
