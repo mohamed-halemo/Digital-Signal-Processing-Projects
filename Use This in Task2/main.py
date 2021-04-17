@@ -56,12 +56,6 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         ####
 
         self.label = QLabel("1", self)
-        
-        
-        
-        
-        
-
         self.increment=0
         self.timer=QTimer(self)
         self.timer.setInterval(1000)
@@ -119,6 +113,7 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         self.xGraph2=[]
         self.yGraph2=[]
         self.plotvalue=2
+        self.graph2.clear()
         
 
                     
@@ -141,13 +136,14 @@ class ApplicationWindow(QtWidgets.QMainWindow):
             
             #self.sig_f= fft(self.Y)
             
-            self.updateLabel(self.valuee)
+            
             #print(self.valuee)
             self.sig_f= fft(self.Y)
-            #sig_f= np.abs(sig_f[0:np.size(sig_f)//2+1])
+
+            self.sig_f= np.abs(self.sig_f[0:np.size(self.sig_f)//2])
             #return(self.X)
-            #inVerse=np.abs(np.fft.irfft(sig_f))
-            inVerse=np.fft.irfft(self.sig_f)
+            inVerse=np.abs(np.fft.ifft(self.sig_f))
+            #inVerse=np.fft.ifft(self.sig_f)
             Xf=np.arange(len(inVerse))
 
             
@@ -158,6 +154,7 @@ class ApplicationWindow(QtWidgets.QMainWindow):
             fs= 1/ts
             freq_axis= np.linspace(0, np.max(fs), np.size(X)//2,dtype=np.float32)
             self.graph.clear()
+            
             self.graph.plot(self.xGraph2,self.yGraph2,pen=(75))
             x_range,y_range=self.graph.viewRange()
             #print(self.xGraph2[:20])                
@@ -200,8 +197,8 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         self.label.setText(str(value))
         self.valuee=value
         #print(self.sig_f)
-        self.sig_f=self.sig_f*self.valuee
-        return self.sig_f,self.valuee
+        
+        return self.valuee
         
 
             
