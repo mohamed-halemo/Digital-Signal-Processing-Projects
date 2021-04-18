@@ -170,7 +170,7 @@ class ApplicationWindow(QtWidgets.QMainWindow):
             #print(Y[0])
             
             self.sig_f= fft(self.Y)
-            self.inVerse=np.abs(np.fft.ifft(self.sig_f))
+            self.inVerse=np.real(np.fft.ifft(self.sig_f))
             self.Xf=np.arange(len(self.inVerse))
             self.graph2.plot(self.Xf,self.inVerse,pen=(75))
         
@@ -281,10 +281,10 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         
 
         #self.sig_f= np.abs(self.sig_f[0:np.size(self.sig_f)//2])
-        inVerse=np.abs(np.fft.ifft(sig_f))#0->5900
+        inVerse=np.real(np.fft.ifft(sig_f))#0->5900
         Xf=np.arange(len(inVerse))
-        self.graph2.plot(Xf,inVerse)
-      
+        self.graph2.plot(Xf,inVerse,pen=(75))
+            
            
       
             
