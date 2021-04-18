@@ -261,10 +261,8 @@ class ApplicationWindow(QtWidgets.QMainWindow):
             x_range,y_range=self.graph.viewRange()
             x_range2=(x_range[1]-x_range[0])/500  #3shan ymshy 7eta 7eta
             self.graph.setXRange(x_range[0]+x_range2, x_range[1]+x_range2,0)
-            if self.Y[0:5900]:
-                self.bgraab7aga()
-            else:
-                self.bgraab7aga2()
+            self.bgraab7aga()
+            
             xx_range,yy_range=self.graph2.viewRange()
             xx_range2=(xx_range[1]-xx_range[0])/500
             self.graph2.setXRange(xx_range[0]+xx_range2,xx_range[1]+xx_range2,0)
@@ -275,20 +273,12 @@ class ApplicationWindow(QtWidgets.QMainWindow):
                 
     def bgraab7aga(self): #yeghyaaar awel 10% fe el graph
         self.graph2.clear()
-        sig_f= fft(self.Y[0:5900])*self.valuee
+        sig_f= fft(self.Y)*self.valuee
         #self.sig_f= np.abs(self.sig_f[0:np.size(self.sig_f)//2])
         inVerse=np.abs(np.fft.ifft(sig_f))#0->5900
         Xf=np.arange(len(inVerse))
         self.graph2.plot(Xf,inVerse)
             
-    def bgraab7aga2(self): #yeghyaaar tany 10% fe el graph
-        self.graph2.clear()
-        
-        sig_f2= fft(self.Y[0:11800])*self.ndvaluee
-        #self.sig_f= np.abs(self.sig_f[0:np.size(self.sig_f)//2])
-        inVerse=np.abs(np.fft.ifft(sig_f2))#5900->11800
-        Xf_2=np.arange(len(inVerse))
-        self.graph2.plot(Xf_2,inVerse)
            
       
             
@@ -310,6 +300,8 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         
 
         self.drawbool=0
+        
+        #self.bgraab7aga()
         
     #    input("Downloading....")
 
