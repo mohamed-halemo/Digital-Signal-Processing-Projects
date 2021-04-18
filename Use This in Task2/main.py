@@ -55,6 +55,7 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         self.fig,self.ax1 = plt.subplots()
         self.plotWidget=FigureCanvas(self.fig)
         ####
+        self.newvalue=0
 
         self.label = QLabel("1", self)
         self.increment=0
@@ -142,6 +143,7 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         self.Xf=[]
         self.ts=0
         self.freq_axis=[]
+        self.Hrange=[]
         
     def Browse_Handler2(self):
         self.graph.clear()      
@@ -154,7 +156,6 @@ class ApplicationWindow(QtWidgets.QMainWindow):
                     
 
         
-        # random data
         filename=QFileDialog.getOpenFileName()
         path=filename[0]
 
@@ -205,19 +206,20 @@ class ApplicationWindow(QtWidgets.QMainWindow):
             xx_range,yy_range=self.graph2.viewRange()
             self.graph2.setXRange(0,xx_range[0]+xx_range[1]/20)
             self.graph2.setYRange(-100,1200)
+            
+            for i in range (len(self.sig_f)):
+                if self.sig_f[i]>60:
+                    self.Hrange.append(self.Y[i])
 
 
 
-          
-            #self.graph3.plot(self.yGraph2,Fs=1000)
-            #plt.specgram(self.yGraph2,1024,100,900)
-           # plt.show()
             #spectrogram
             self.lay = QtWidgets.QVBoxLayout(self.graph3)  
             self.lay.setContentsMargins(0, 0, 0, 0)      
             self.lay.addWidget(self.plotWidget)
             
-            self.ax1.specgram(self.yGraph2,NFFT=1024,Fs=1000,noverlap=900)
+
+            self.ax1.specgram(self.Hrange,NFFT=1024,Fs=1000,noverlap=900)
             self.Draw()
 
             self.show()
@@ -235,7 +237,8 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         
 
     def updateLabel(self,value ):
-        self.label.setText(str(value))
+
+        self.newvalue=str(self.ui.verticalSlider_2.value())
         self.valuee=value
         self.ndvaluee=value
         
@@ -272,13 +275,16 @@ class ApplicationWindow(QtWidgets.QMainWindow):
                 
                 
     def bgraab7aga(self): #yeghyaaar awel 10% fe el graph
+        
         self.graph2.clear()
         sig_f= fft(self.Y)*self.valuee
+        
+
         #self.sig_f= np.abs(self.sig_f[0:np.size(self.sig_f)//2])
         inVerse=np.abs(np.fft.ifft(sig_f))#0->5900
         Xf=np.arange(len(inVerse))
         self.graph2.plot(Xf,inVerse)
-            
+      
            
       
             
