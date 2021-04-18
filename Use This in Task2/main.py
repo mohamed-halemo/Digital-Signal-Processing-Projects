@@ -40,6 +40,7 @@ class ApplicationWindow(QtWidgets.QMainWindow):
     def __init__(self,parent=None):
         super(ApplicationWindow, self).__init__()
         self.valuee=1
+        self.ndvaluee=1
         self.X=[]
         self.Y=[]
         self.sig_f=[]
@@ -80,6 +81,35 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         self.slider1=self.ui.verticalSlider_11
         self.slider1.valueChanged.connect(self.updateLabel)
         adjust(self.slider1)
+        self.slider2=self.ui.verticalSlider
+        self.slider2.valueChanged.connect(self.updateLabel)
+        adjust(self.slider2)
+        self.slider3=self.ui.verticalSlider_2
+        self.slider3.valueChanged.connect(self.updateLabel)
+        adjust(self.slider3)
+        self.slider4=self.ui.verticalSlider_3
+        self.slider4.valueChanged.connect(self.updateLabel)
+        adjust(self.slider4)
+        self.slider5=self.ui.verticalSlider_4
+        self.slider5.valueChanged.connect(self.updateLabel)
+        adjust(self.slider5)
+        self.slider6=self.ui.verticalSlider_5
+        self.slider6.valueChanged.connect(self.updateLabel)
+        adjust(self.slider6)
+        self.slider7=self.ui.verticalSlider_6
+        self.slider7.valueChanged.connect(self.updateLabel)
+        adjust(self.slider7)
+        self.slider8=self.ui.verticalSlider_7
+        self.slider8.valueChanged.connect(self.updateLabel)
+        adjust(self.slider8)
+        self.slider9=self.ui.verticalSlider_8
+        self.slider9.valueChanged.connect(self.updateLabel)
+        adjust(self.slider9)
+        self.slider10=self.ui.verticalSlider_9
+        self.slider10.valueChanged.connect(self.updateLabel)
+        adjust(self.slider10)
+        
+        
         self.scrollbtn=self.ui.pushButton_8
         self.scrollbtn.clicked.connect(self.scrollit)
         self.AddToPdf=self.ui.pushButton_7
@@ -111,6 +141,7 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         self.inVerse=[]
         self.Xf=[]
         self.ts=0
+        self.freq_axis=[]
         
     def Browse_Handler2(self):
         self.graph.clear()      
@@ -137,7 +168,11 @@ class ApplicationWindow(QtWidgets.QMainWindow):
             self.ts = self.X[1]-self.X[0]
             #print(Y[0])
             
-            self.bgraab7aga()
+            self.sig_f= fft(self.Y)
+            self.inVerse=np.abs(np.fft.ifft(self.sig_f))
+            self.Xf=np.arange(len(self.inVerse))
+            self.graph2.plot(self.Xf,self.inVerse,pen=(75))
+        
             #self.sig_f= fft(self.Y)
             
             
@@ -156,7 +191,7 @@ class ApplicationWindow(QtWidgets.QMainWindow):
             #print(inVerse[0])
          
             fs= 1/self.ts
-            freq_axis= np.linspace(0, np.max(fs), np.size(X)//2,dtype=np.float32)
+            self.freq_axis= np.linspace(0, np.max(fs), np.size(X)//2,dtype=np.float32)
             self.graph.clear()
             
             self.graph.plot(self.xGraph2,self.yGraph2,pen=(75))
@@ -169,7 +204,7 @@ class ApplicationWindow(QtWidgets.QMainWindow):
             #self.graph2.plot(self.Xf,self.inVerse,pen=(75))
             xx_range,yy_range=self.graph2.viewRange()
             self.graph2.setXRange(0,xx_range[0]+xx_range[1]/20)
-            self.graph2.setYRange(-100,300)
+            self.graph2.setYRange(-100,1200)
 
 
 
@@ -197,14 +232,14 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         
 
         
+        
+
     def updateLabel(self,value ):
         self.label.setText(str(value))
         self.valuee=value
-        #print(self.sig_f)
+        self.ndvaluee=value
         
-        return self.valuee
-        
-
+        return self.valuee,self.ndvaluee
             
             
             
@@ -226,7 +261,10 @@ class ApplicationWindow(QtWidgets.QMainWindow):
             x_range,y_range=self.graph.viewRange()
             x_range2=(x_range[1]-x_range[0])/500  #3shan ymshy 7eta 7eta
             self.graph.setXRange(x_range[0]+x_range2, x_range[1]+x_range2,0)
-            self.bgraab7aga()
+            if self.Y[0:5900]:
+                self.bgraab7aga()
+            else:
+                self.bgraab7aga2()
             xx_range,yy_range=self.graph2.viewRange()
             xx_range2=(xx_range[1]-xx_range[0])/500
             self.graph2.setXRange(xx_range[0]+xx_range2,xx_range[1]+xx_range2,0)
@@ -235,13 +273,22 @@ class ApplicationWindow(QtWidgets.QMainWindow):
              
                 
                 
-    def bgraab7aga(self):
+    def bgraab7aga(self): #yeghyaaar awel 10% fe el graph
         self.graph2.clear()
-        self.sig_f= fft(self.Y)*self.valuee
-        self.inVerse=np.abs(np.fft.ifft(self.sig_f))
-        self.Xf=np.arange(len(self.inVerse))
-        self.graph2.plot(self.Xf,self.inVerse,pen=(75))
+        sig_f= fft(self.Y[0:5900])*self.valuee
+        #self.sig_f= np.abs(self.sig_f[0:np.size(self.sig_f)//2])
+        inVerse=np.abs(np.fft.ifft(sig_f))#0->5900
+        Xf=np.arange(len(inVerse))
+        self.graph2.plot(Xf,inVerse)
             
+    def bgraab7aga2(self): #yeghyaaar tany 10% fe el graph
+        self.graph2.clear()
+        
+        sig_f2= fft(self.Y[0:11800])*self.ndvaluee
+        #self.sig_f= np.abs(self.sig_f[0:np.size(self.sig_f)//2])
+        inVerse=np.abs(np.fft.ifft(sig_f2))#5900->11800
+        Xf_2=np.arange(len(inVerse))
+        self.graph2.plot(Xf_2,inVerse)
            
       
             
@@ -260,27 +307,35 @@ class ApplicationWindow(QtWidgets.QMainWindow):
             return 1
 
     def stopit(self):
+        
 
         self.drawbool=0
         
     #    input("Downloading....")
 
-    def zooming(self):
+    def zoomingout(self):
 
         x_range,y_range=self.graph.viewRange()
         self.graph.setXRange(x_range[0],x_range[0]+x_range[1]/2)
         self.graph.setYRange(y_range[0]/2,y_range[1]/2)
+        xx_range,yy_range=self.graph2.viewRange()
+        self.graph2.setXRange(xx_range[0],xx_range[0]+xx_range[1]/2)
+        self.graph2.setYRange(yy_range[0]/2,yy_range[1]/2)
+        
+
         #self.graph.setRange((x_range[0]/2,x_range[1]/2),(y_range[0]/2,y_range[1]/2))
         
         
   
 
-    def zoomingout(self):
+    def zooming(self):
         x_range,y_range=self.graph.viewRange()
         self.graph.setXRange(x_range[0],x_range[0]+x_range[1]*2)
         self.graph.setYRange(y_range[0]*2,y_range[1]*2)
-    #    self.graph.setXRange(0,50)
-    #    self.graph.setYRange(-1,1)
+        xx_range,yy_range=self.graph2.viewRange()
+        self.graph2.setXRange(xx_range[0],xx_range[0]+xx_range[1]*2)
+        self.graph2.setYRange(yy_range[0]*2,yy_range[1]*2)
+        
         
 
                         
@@ -344,6 +399,11 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         x_range,y_range=self.graph.viewRange()
         x_range2=(x_range[1]-x_range[0])/500
         self.graph.setXRange(x_range[0]+x_range2, x_range[1]+x_range2,0)
+        xx_range,yy_range=self.graph2.viewRange()
+        
+        xx_range2=(xx_range[1]-xx_range[0])/500
+        self.graph2.setXRange(xx_range[0]+xx_range2, xx_range[1]+xx_range2,0)
+        
                 
     def NewTabCreation(self):
         text = 'Tab %d' % (self.tab.count() + 1)
