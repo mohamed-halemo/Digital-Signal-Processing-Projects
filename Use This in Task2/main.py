@@ -36,11 +36,21 @@ import time
 from scipy.fft import fft, fftfreq,irfft
 
 class ApplicationWindow(QtWidgets.QMainWindow):
+            
 
     def __init__(self,parent=None):
         super(ApplicationWindow, self).__init__()
-        self.valuee=1
-        self.ndvaluee=1
+        self.xx_range=[]
+        self.value_1=1
+        self.value_2=1
+        self.value_3=1
+        self.value_4=1
+        self.value_5=1
+        self.value_6=1
+        self.value_7=1
+        self.value_8=1
+        self.value_9=1
+        self.value_10=1
         self.X=[]
         self.Y=[]
         self.sig_f=[]
@@ -57,7 +67,7 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         ####
         self.newvalue=0
 
-        self.label = QLabel("1", self)
+        
         self.increment=0
         self.timer=QTimer(self)
         self.timer.setInterval(1000)
@@ -80,34 +90,34 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         self.zoomoutbtn=self.ui.pushButton_5
         self.zoomoutbtn.clicked.connect(self.zoomingout)
         self.slider1=self.ui.verticalSlider_11
-        self.slider1.valueChanged.connect(self.updateLabel)
+        self.slider1.valueChanged.connect(self.updateSlider)
         adjust(self.slider1)
         self.slider2=self.ui.verticalSlider
-        self.slider2.valueChanged.connect(self.updateLabel)
+        self.slider2.valueChanged.connect(self.updateSlider)
         adjust(self.slider2)
         self.slider3=self.ui.verticalSlider_2
-        self.slider3.valueChanged.connect(self.updateLabel)
+        self.slider3.valueChanged.connect(self.updateSlider)
         adjust(self.slider3)
         self.slider4=self.ui.verticalSlider_3
-        self.slider4.valueChanged.connect(self.updateLabel)
+        self.slider4.valueChanged.connect(self.updateSlider)
         adjust(self.slider4)
         self.slider5=self.ui.verticalSlider_4
-        self.slider5.valueChanged.connect(self.updateLabel)
+        self.slider5.valueChanged.connect(self.updateSlider)
         adjust(self.slider5)
         self.slider6=self.ui.verticalSlider_5
-        self.slider6.valueChanged.connect(self.updateLabel)
+        self.slider6.valueChanged.connect(self.updateSlider)
         adjust(self.slider6)
         self.slider7=self.ui.verticalSlider_6
-        self.slider7.valueChanged.connect(self.updateLabel)
+        self.slider7.valueChanged.connect(self.updateSlider)
         adjust(self.slider7)
         self.slider8=self.ui.verticalSlider_7
-        self.slider8.valueChanged.connect(self.updateLabel)
+        self.slider8.valueChanged.connect(self.updateSlider)
         adjust(self.slider8)
         self.slider9=self.ui.verticalSlider_8
-        self.slider9.valueChanged.connect(self.updateLabel)
+        self.slider9.valueChanged.connect(self.updateSlider)
         adjust(self.slider9)
         self.slider10=self.ui.verticalSlider_9
-        self.slider10.valueChanged.connect(self.updateLabel)
+        self.slider10.valueChanged.connect(self.updateSlider)
         adjust(self.slider10)
         
         
@@ -203,8 +213,8 @@ class ApplicationWindow(QtWidgets.QMainWindow):
             # print(x_range[0])
             # print(x_range[1])
             #self.graph2.plot(self.Xf,self.inVerse,pen=(75))
-            xx_range,yy_range=self.graph2.viewRange()
-            self.graph2.setXRange(0,xx_range[0]+xx_range[1]/20)
+            self.xx_range,yy_range=self.graph2.viewRange()
+            self.graph2.setXRange(0,self.xx_range[0]+self.xx_range[1]/20)
             self.graph2.setYRange(-100,1200)
             
             for i in range (len(self.sig_f)):
@@ -236,13 +246,22 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         
         
 
-    def updateLabel(self,value ):
+    def updateSlider(self):
 
-        self.newvalue=str(self.ui.verticalSlider_2.value())
-        self.valuee=value
-        self.ndvaluee=value
+        self.value_1=self.slider1.value()
         
-        return self.valuee,self.ndvaluee
+        self.value_2=self.slider2.value()
+        self.value_3=self.slider3.value()
+        self.value_4=self.slider4.value()
+        self.value_5=self.slider5.value()
+        self.value_6=self.slider6.value()
+        self.value_7=self.slider7.value()
+        self.value_8=self.slider8.value()
+        self.value_9=self.slider9.value()
+        self.value_10=self.slider10.value()
+        
+        
+        return self.value_1,self.value_2,self.value_3,self.value_5,self.value_6,self.value_7,self.value_8,self.value_9,self.value_10
             
             
             
@@ -264,21 +283,49 @@ class ApplicationWindow(QtWidgets.QMainWindow):
             x_range,y_range=self.graph.viewRange()
             x_range2=(x_range[1]-x_range[0])/500  #3shan ymshy 7eta 7eta
             self.graph.setXRange(x_range[0]+x_range2, x_range[1]+x_range2,0)
-            self.bgraab7aga()
+            self.Equalizer()
             
-            xx_range,yy_range=self.graph2.viewRange()
-            xx_range2=(xx_range[1]-xx_range[0])/500
-            self.graph2.setXRange(xx_range[0]+xx_range2,xx_range[1]+xx_range2,0)
+            self.xx_range,yy_range=self.graph2.viewRange()
+            xx_range2=(self.xx_range[1]-self.xx_range[0])/500
+            self.graph2.setXRange(self.xx_range[0]+xx_range2,self.xx_range[1]+xx_range2,0)
 
 
              
                 
                 
-    def bgraab7aga(self): #yeghyaaar awel 10% fe el graph
+    def Equalizer(self): #yeghyaaar awel 10% fe el graph
         
         self.graph2.clear()
-        sig_f= fft(self.Y)*self.valuee
+        for i in range(len(self.xx_range)):
         
+            if self.xx_range[i] < 5900 : #4500
+                
+                sig_f= fft(self.Y)*self.value_1
+            elif 5901<self.xx_range[i]<11800 : #10500
+                sig_f= fft(self.Y)*self.value_2
+            elif 11801<self.xx_range[i]<17700 :
+                sig_f=fft(self.Y)*self.value_3
+            elif 17701<self.xx_range[i]<23600 :
+                sig_f=fft(self.Y)*self.value_4
+            elif 23601<self.xx_range[i]<29500 :
+                sig_f=fft(self.Y)*self.value_5
+            elif 29501<self.xx_range[i]<35400 :
+                sig_f=fft(self.Y)*self.value_6
+            elif 35401<self.xx_range[i]<41300 :
+                sig_f=fft(self.Y)*self.value_7
+            elif 41300<self.xx_range[i]<47200 :
+                sig_f=fft(self.Y)*self.value_8
+            elif 47201<self.xx_range[i]<53100 :
+                sig_f=fft(self.Y)*self.value_9
+            else:
+                sig_f=fft(self.Y)*self.value_10
+
+
+
+
+
+
+        #print(self.graph2.viewRange())
 
         #self.sig_f= np.abs(self.sig_f[0:np.size(self.sig_f)//2])
         inVerse=np.real(np.fft.ifft(sig_f))#0->5900
