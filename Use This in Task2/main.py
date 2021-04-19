@@ -231,7 +231,7 @@ class ApplicationWindow(QtWidgets.QMainWindow):
             #self.graph2.plot(self.Xf,self.inVerse,pen=(75))
             self.xx_range,yy_range=self.graph2.viewRange()
             self.graph2.setXRange(0,self.xx_range[0]+self.xx_range[1]/20)
-            self.graph2.setYRange(-100,1200)
+            self.graph2.setYRange(-100,300)
             
             for i in range (len(self.Y)):
                 if self.Y[i] < -50 : #4500
