@@ -58,6 +58,7 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         self.plotWidget=FigureCanvas(self.fig)
         ####
         self.newvalue=0
+        self.Hrange=[]
 
         self.label = QLabel("1", self)
         self.increment=0
@@ -83,7 +84,7 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         self.zoomoutbtn.clicked.connect(self.zoomingout)
         self.slider1=self.ui.verticalSlider_11
         self.slider1.valueChanged.connect(self.updateLabel)
-        
+        adjust(self.slider1)
         self.slider2=self.ui.verticalSlider
         self.slider2.valueChanged.connect(self.updateLabel)
         adjust(self.slider2)
@@ -145,7 +146,7 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         self.Xf=[]
         self.ts=0
         self.freq_axis=[]
-        self.Hrange=[]
+        
         
 
     
