@@ -171,6 +171,7 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         self.H10range=[]
         self.H11range=[]
         self.H12range=[]
+        self.increase=25
     def Browse_Handler2(self):
         self.graph.clear()      
         self.xGraph2=[]
@@ -270,7 +271,7 @@ class ApplicationWindow(QtWidgets.QMainWindow):
             
 
             # self.ax1.specgram(self.Hrange,NFFT=1024,Fs=1000,noverlap=900)
-            # self.Draw()
+            self.Draw()
 
             # self.show()
 
@@ -323,19 +324,20 @@ class ApplicationWindow(QtWidgets.QMainWindow):
             self.DrawSpec11()
         self.value_11=self.slider11.value()
 
-        if self.value_11>1:
+        if self.value_11>=0:
             self.DrawSpec2()
 
 
         
         self.value_12=self.slider12.value()
-        if self.value_12>1:
+        if self.value_12>=0:
             self.DrawSpec3()
         
     #    or self.value_2>1 or self.value_3>1 or self.value_4>1 or self.value_5>1 or self.value_6>1:
 
          
-        
+        self.Equalizer()
+       
         
         return self.value_1,self.value_2,self.value_3,self.value_5,self.value_6,self.value_7,self.value_8,self.value_9,self.value_10
             
@@ -435,7 +437,23 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         
 
         self.fig.canvas.flush_events()
+
         self.ax1.specgram(self.H5range,NFFT=1024,Fs=500,noverlap=900,cmap='jet_r')
+       
+        if self.value_12==0:
+            self.ax1.set_ylim(0,250)
+        elif self.value_12==1:
+            self.ax1.set_ylim(25*1,250-self.value_11*25)
+        elif self.value_12==2:
+            self.ax1.set_ylim(25*2,250-self.value_11*25)
+        elif self.value_12==3:
+            self.ax1.set_ylim(25*3,250-self.value_11*25)
+        elif self.value_12==4:
+            self.ax1.set_ylim(25*4,250-self.value_11*25)
+        elif self.value_12==5:
+            self.ax1.set_ylim(25*5,250-self.value_11*25)
+        
+        
 
         
 
@@ -451,9 +469,21 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         self.fig.canvas.flush_events()
         self.ax1.specgram(self.H4range,NFFT=1024,Fs=500,noverlap=900,cmap='jet_r')
 
+        # self.ax.set_ylim([0,200])
+        if self.value_11==0:
+            self.ax1.set_ylim(0,250)
+        elif self.value_11==1:
+            self.ax1.set_ylim(0+self.value_12*25,225)
+        elif self.value_11==2:
+            self.ax1.set_ylim(0+self.value_12*25,200)
+        elif self.value_11==3:
+            self.ax1.set_ylim(0+self.value_12*25,175)
+        elif self.value_11==4:
+            self.ax1.set_ylim(0+self.value_12*25,150)
+        elif self.value_11==5:
+            self.ax1.set_ylim(0+self.value_12*25,125)
+
         
-
-
         self.show()
               
             
@@ -571,6 +601,8 @@ class ApplicationWindow(QtWidgets.QMainWindow):
                 
 
     def Pause(self):
+        
+
         self.drawbool=1
 
         if self.timer.isActive():
