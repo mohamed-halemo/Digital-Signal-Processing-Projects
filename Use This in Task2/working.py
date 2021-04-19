@@ -226,10 +226,10 @@ class ApplicationWindow(QtWidgets.QMainWindow):
             self.lay = QtWidgets.QVBoxLayout(self.graph3)  
             self.lay.setContentsMargins(0, 0, 0, 0)   
             self.lay.addWidget(self.plotWidget)
-   
-            self.DrawSpec()
             self.Draw()
-            self.updateplot()
+            # self.DrawSpec()
+            
+            # self.updateplot()
             #spectrogram
             # self.lay = QtWidgets.QVBoxLayout(self.graph3)  
             # self.lay.setContentsMargins(0, 0, 0, 0)      
@@ -261,19 +261,25 @@ class ApplicationWindow(QtWidgets.QMainWindow):
 
 
 
-    def DrawSpec(self):
-        self.fig.canvas.draw()
-        self.fig.canvas.flush_events()
 
-        self.ax1.specgram(self.Hrange,NFFT=1024,Fs=1000,noverlap=900)
+
+    def DrawSpec(self):
+        self.ax1.clear()
+
+        self.fig.canvas.draw()
+        
+
+        self.fig.canvas.flush_events()
+        self.ax1.specgram(self.Hrange,NFFT=1024,Fs=500,noverlap=900,cmap='jet_r')
 
         self.show()
             
     def updateplot(self):
         self.fig.canvas.draw()
-        self.fig.canvas.flush_events()
+        
 
-        self.ax1.specgram(self.yGraph2,NFFT=1024,Fs=1000,noverlap=900)
+        self.fig.canvas.flush_events()
+        self.ax1.specgram(self.yGraph2,NFFT=1024,Fs=500,noverlap=900,cmap='jet_r')
         print("asas")
         self.show()
 
