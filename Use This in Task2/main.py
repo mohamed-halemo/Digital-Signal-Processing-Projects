@@ -121,10 +121,10 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         adjust(self.slider10)
         self.slider11=self.ui.verticalSlider_10
         self.slider11.valueChanged.connect(self.updateSlider)
-        adjust(self.slider11)
+        adjustSpectroGram(self.slider11)
         self.slider12=self.ui.verticalSlider_12
         self.slider12.valueChanged.connect(self.updateSlider)
-        adjust(self.slider12)
+        adjustSpectroGram(self.slider12)
         
         
         self.scrollbtn=self.ui.pushButton_8
@@ -333,9 +333,6 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         if self.value_12>=0:
             self.DrawSpec3()
         
-    #    or self.value_2>1 or self.value_3>1 or self.value_4>1 or self.value_5>1 or self.value_6>1:
-
-         
         self.Equalizer()
        
         
@@ -377,12 +374,7 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         for i in range(len(self.xx_range)):
         
             if self.xx_range[i] < 5900 : #4500
-                
-
-                
                 sig_f= fft(self.Y)*self.value_1
-               
-             
             elif 5901<self.xx_range[i]<11800 : #10500
                 sig_f= fft(self.Y)*self.value_2
             elif 11801<self.xx_range[i]<17700 :

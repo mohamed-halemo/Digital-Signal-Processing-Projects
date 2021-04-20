@@ -8,4 +8,7 @@ def adjust(x):
     x.setRange(0,5)
     x.setValue(1)
        
-        
+def adjustSpectroGram(x):
+
+    x.setRange(0,5)
+    x.setValue(0)
