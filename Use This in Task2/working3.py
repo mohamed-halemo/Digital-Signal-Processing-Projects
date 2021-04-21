@@ -171,6 +171,7 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         self.H10range=[]
         self.H11range=[]
         self.H12range=[]
+
         self.inV=[]
         self.inV2=[]
         self.inV3=[]
@@ -213,29 +214,13 @@ class ApplicationWindow(QtWidgets.QMainWindow):
                 self.X.append(values[0])
                 self.Y.append(values[1])
             self.ts = self.X[1]-self.X[0]
-            #print(Y[0])
             
             self.sig_f= fft(self.Y)
             self.inVerse=np.real(np.fft.ifft(self.sig_f))
             self.Xf=np.arange(len(self.inVerse))
             self.graph2.plot(self.Xf,self.inVerse,pen=(75))
         
-            #self.sig_f= fft(self.Y)
             
-            
-            #print(self.valuee)
-            #self.sig_f= fft(self.Y)
-
-            #self.sig_f= np.abs(self.sig_f[0:np.size(self.sig_f)//2])
-            #return(self.X)
-            #self.inVerse=np.abs(np.fft.ifft(self.sig_f))
-            #inVerse=np.fft.ifft(self.sig_f)
-            #self.Xf=np.arange(len(inVerse))
-
-            
-           
-            
-            #print(inVerse[0])
          
             fs= 1/self.ts
             self.freq_axis= np.linspace(0, np.max(fs), np.size(X)//2,dtype=np.float32)
@@ -243,56 +228,20 @@ class ApplicationWindow(QtWidgets.QMainWindow):
             
             self.graph.plot(self.xGraph2,self.yGraph2,pen=(75))
             x_range,y_range=self.graph.viewRange()
-            #print(self.xGraph2[:20])                
 
             self.graph.setXRange(0,x_range[0]+x_range[1]/20)
-            # print(x_range[0])
-            # print(x_range[1])
-            #self.graph2.plot(self.Xf,self.inVerse,pen=(75))
+          
             self.xx_range,yy_range=self.graph2.viewRange()
             self.graph2.setXRange(0,self.xx_range[0]+self.xx_range[1]/20)
             self.graph2.setYRange(-100,300)
             
-            # for i in range (len(self.Y)):
-            #     if self.Y[i] < -50 : #4500
-            #         self.Hrange.append(self.Y[i]*self.value_1)
-
-            #     elif -50<self.Y[i]<-20 :
-            #         self.H2range.append(self.Y[i]*self.value_2)
-            #     elif -20<self.Y[i]<0 :
-            #         self.H3range.append(self.Y[i]*self.value_3)
-            #     elif 0<self.Y[i]<10 :
-            #         self.H6range.append(self.Y[i]*self.value_4)    
-            #     elif 10<self.Y[i]<15 :
-            #         self.H7range.append(self.Y[i]*self.value_5)    
-            #     elif 15<self.Y[i]<20 :
-            #         self.H8range.append(self.Y[i]*self.value_6)    
-            #     elif 20<self.Y[i]<25 :
-            #         self.H9range.append(self.Y[i]*self.value_7)    
-            #     elif 25<self.Y[i]<30 :
-            #         self.H10range.append(self.Y[i]*self.value_8)    
-            #     elif 30<self.Y[i]<35 :
-            #         self.H11range.append(self.Y[i]*self.value_9)    
-            #     elif 35<self.Y[i]<45 :
-            #         self.H12range.append(self.Y[i]*self.value_10)    
-
-
-            # for i in range (len(self.Y)):
-            #     if self.Y[i] > 90 : #4500
-            #         self.H4range.append(self.Y[i])
-
-            #     elif self.Y[i]<50 :
-            #         self.H5range.append(self.Y[i])
-            #spectrogram
             self.lay = QtWidgets.QVBoxLayout(self.graph3)  
             self.lay.setContentsMargins(0, 0, 0, 0)      
             self.lay.addWidget(self.plotWidget)
             
 
-            # self.ax1.specgram(self.Hrange,NFFT=1024,Fs=1000,noverlap=900)
             self.Draw()
 
-            # self.show()
 
          
 
@@ -307,7 +256,7 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         
 
     def updateSlider(self):
-
+        
         self.value_1=self.slider1.value()
        
     
@@ -333,16 +282,10 @@ class ApplicationWindow(QtWidgets.QMainWindow):
        
         self.value_11=self.slider11.value()
         
-        # if self.value_11>1:
-
-        #     self.DrawSpecmin()
-
 
         
         self.value_12=self.slider12.value()
-        # if self.value_12>1:
-
-        #     self.DrawSpecmax()
+       
 
         if self.value_1>1 or self.value_2>1 or self.value_3>1 or self.value_4>1 or self.value_5>1 or self.value_6>1 or self.value_7>1 or self.value_8>1 or self.value_9>1 or self.value_10>1 or  self.value_12>=0 or self.value_11>=0 :
 
@@ -351,8 +294,10 @@ class ApplicationWindow(QtWidgets.QMainWindow):
 
         if self.value_12==0 and self.value_11==0:
             self.ax1.set_ylim(0,250)
+
+        self.specEqualizer()
+    
         self.Equalizer()
-       
         
         return self.value_1,self.value_2,self.value_3,self.value_5,self.value_6,self.value_7,self.value_8,self.value_9,self.value_10
             
@@ -365,10 +310,7 @@ class ApplicationWindow(QtWidgets.QMainWindow):
                                         
         
     def Draw(self):
-        # if self.increment>=1000:
-        #     self.timer.stop()
-        # else:
-        #     self.increment+=1
+        
         
         while self.drawbool==1:
             QtCore.QCoreApplication.processEvents()
@@ -382,9 +324,8 @@ class ApplicationWindow(QtWidgets.QMainWindow):
             xx_range2=(self.xx_range[1]-self.xx_range[0])/500
             self.graph2.setXRange(self.xx_range[0]+xx_range2,self.xx_range[1]+xx_range2,0)
 
+            self.specEqualizer()
 
-             
-                
                 
     def Equalizer(self): #yeghyaaar awel 10% fe el graph
        
@@ -439,9 +380,11 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         
         inVerse=np.real(np.fft.ifft(sig_f))#0->5900
         
-
+    
         Xf=np.arange(len(inVerse))
         self.graph2.plot(Xf,inVerse,pen=(75))
+
+    def specEqualizer(self):
 
         xm_range=np.size(self.sig_f)//2
         step= xm_range//10
@@ -484,16 +427,16 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         self.sig_f8[step7:step8]*=self.value_8
         self.sig_f9[step8:step9]*=self.value_9
         self.sig_f9[step9:step10]*=self.value_9
-        inV1=np.real(np.fft.ifft(sig_f))#0->5900
-        inV2=np.real(np.fft.ifft(sig_f2))#0->5900
-        inV3=np.real(np.fft.ifft(sig_f3))#0->5900
-        inV4=np.real(np.fft.ifft(sig_f4))#0->5900
-        inV5=np.real(np.fft.ifft(sig_f5))#0->5900
-        inV6=np.real(np.fft.ifft(sig_f6))#0->5900
-        inV7=np.real(np.fft.ifft(sig_f7))#0->5900
-        inV8=np.real(np.fft.ifft(sig_f8))#0->5900
-        inV9=np.real(np.fft.ifft(sig_f9))#0->5900
-        inV10=np.real(np.fft.ifft(sig_f10))#0->5900
+        inV1=np.real(np.fft.ifft(sig_f))#
+        inV2=np.real(np.fft.ifft(sig_f2))
+        inV3=np.real(np.fft.ifft(sig_f3))#
+        inV4=np.real(np.fft.ifft(sig_f4))#
+        inV5=np.real(np.fft.ifft(sig_f5))#
+        inV6=np.real(np.fft.ifft(sig_f6))#
+        inV7=np.real(np.fft.ifft(sig_f7))#
+        inV8=np.real(np.fft.ifft(sig_f8))#
+        inV9=np.real(np.fft.ifft(sig_f9))#
+        inV10=np.real(np.fft.ifft(sig_f10))#
         for i in range(len(inV1)):
                 
             self.Hrange.append(inV1[i])
@@ -525,6 +468,10 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         for i in range(len(inV10)):
                 
             self.H10range.append(inV10[i])
+
+
+
+
 
 
 
@@ -600,171 +547,13 @@ class ApplicationWindow(QtWidgets.QMainWindow):
 
         self.show()    
             
-    def DrawSpecmax(self):
-
-        self.fig.canvas.draw()
-        
-
-        self.fig.canvas.flush_events()
-
-        self.ax1.specgram(self.yGraph2,NFFT=1024,Fs=500,noverlap=900,cmap='jet_r')
-       
-        if self.value_12 and self.value_11==0:
-            self.ax1.set_ylim(0,250)
-        elif self.value_12==1:
-            self.ax1.set_ylim(25,250-self.value_11*25)
-        elif self.value_12==2:
-            self.ax1.set_ylim(50,250-self.value_11*25)
-        elif self.value_12==3:
-            self.ax1.set_ylim(75,250-self.value_11*25)
-        elif self.value_12==4:
-            self.ax1.set_ylim(100,250-self.value_11*25)
-        elif self.value_12==5:
-            self.ax1.set_ylim(125,250-self.value_11*25)
-        
-        
-
-        
-
-
-        self.show()
-              
-                       
-    def DrawSpecmin(self):
-
-        self.fig.canvas.draw()
-        
-
-        self.fig.canvas.flush_events()
-        self.ax1.specgram(self.yGraph2,NFFT=1024,Fs=500,noverlap=900,cmap='jet_r')
-
-        # self.ax.set_ylim([0,200])
-       
-        if self.value_11==1:
-            self.ax1.set_ylim(0+self.value_12*25,225)
-        elif self.value_11==2:
-            self.ax1.set_ylim(0+self.value_12*25,200)
-        elif self.value_11==3:
-            self.ax1.set_ylim(0+self.value_12*25,175)
-        elif self.value_11==4:
-            self.ax1.set_ylim(0+self.value_12*25,150)
-        elif self.value_11==5:
-            self.ax1.set_ylim(0+self.value_12*25,125)
-
-        
-        self.show()
-              
+         
             
 
-    def DrawSpec(self):
-        # self.ax1.clear()
-
-        self.fig.canvas.draw()
-        
-
-        self.fig.canvas.flush_events()
-        self.ax1.specgram(self.H2range,NFFT=1024,Fs=500,noverlap=900,cmap='jet_r')
-
-        self.show()
+        if self.value_1==0 and self.value_2==0 and self.value_3==0 and self.value_4==0 and self.value_5==0 and self.value_6==0 and self.value_7==0 and self.value_8==0 and self.value_9==0 and self.value_10==0  :
+            self.ax1.clear()
 
 
-    def DrawSpec5(self):
-        # self.ax1.clear()
-
-        self.fig.canvas.draw()
-        
-
-        self.fig.canvas.flush_events()
-        self.ax1.specgram(self.H6range,NFFT=1024,Fs=500,noverlap=900,cmap='jet_r')
-
-        self.show()
-
-
-    def DrawSpec6(self):
-        # self.ax1.clear()
-
-        self.fig.canvas.draw()
-        
-
-        self.fig.canvas.flush_events()
-        self.ax1.specgram(self.H7range,NFFT=1024,Fs=500,noverlap=900,cmap='jet_r')
-
-        self.show()
-            
-    def DrawSpec7(self):
-        # self.ax1.clear()
-
-        self.fig.canvas.draw()
-        
-
-        self.fig.canvas.flush_events()
-        self.ax1.specgram(self.H8range,NFFT=1024,Fs=500,noverlap=900,cmap='jet_r')
-
-        self.show()
-            
-    def DrawSpec8(self):
-        # self.ax1.clear()
-
-        self.fig.canvas.draw()
-        
-
-        self.fig.canvas.flush_events()
-        self.ax1.specgram(self.H9range,NFFT=1024,Fs=500,noverlap=900,cmap='jet_r')
-
-        self.show()
-    def DrawSpec9(self):
-        # self.ax1.clear()
-
-        self.fig.canvas.draw()
-        
-
-        self.fig.canvas.flush_events()
-        self.ax1.specgram(self.H10range,NFFT=1024,Fs=500,noverlap=900,cmap='jet_r')
-
-        self.show()
-    def DrawSpec10(self):
-        # self.ax1.clear()
-
-        self.fig.canvas.draw()
-        
-
-        self.fig.canvas.flush_events()
-        self.ax1.specgram(self.H11range,NFFT=1024,Fs=500,noverlap=900,cmap='jet_r')
-
-        self.show()
-
-    def DrawSpec11(self):
-        # self.ax1.clear()
-
-        self.fig.canvas.draw()
-        
-
-        self.fig.canvas.flush_events()
-        self.ax1.specgram(self.H12range,NFFT=1024,Fs=500,noverlap=900,cmap='jet_r')
-
-        self.show()
-    def DrawSpec12(self):
-        # self.ax1.clear()
-
-        self.fig.canvas.draw()
-        
-
-        self.fig.canvas.flush_events()
-        self.ax1.specgram(self.H11range,NFFT=1024,Fs=500,noverlap=900,cmap='jet_r')
-
-        self.show()
-            
-
-
-
-    def updateplot(self):
-        self.fig.canvas.draw()
-        
-
-        self.fig.canvas.flush_events()
-        self.ax1.specgram(self.yGraph2,NFFT=1024,Fs=500,noverlap=900,cmap='jet_r')
-        print("asas")
-        self.show()
         
                 
 
