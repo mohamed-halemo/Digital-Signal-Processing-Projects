@@ -181,6 +181,15 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         self.inV8=[]
         self.inV9=[]
         self.inV10=[]
+        self.sig_f2=[]
+        self.sig_f3=[]
+        self.sig_f4=[]
+        self.sig_f5=[]
+        self.sig_f6=[]
+        self.sig_f7=[]
+        self.sig_f8=[]
+        self.sig_f9=[]
+        self.sig_f10=[]
         self.increase=25
     def Browse_Handler2(self):
         self.graph.clear()      
@@ -438,12 +447,13 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         step= xm_range//10
         step2= xm_range//8
         sig_f= fft(self.Y)
+        sig_f2=fft(self.Y)
         self.sig_f= self.sig_f[0:xm_range]
-        self.sig_f= self.sig_f[0:xm_range]
+        self.sig_f2= self.sig_f[0:xm_range]
         self.sig_f[0:step]*=self.value_1
-        self.sig_f[step:step2]*=self.value_2
+        self.sig_f2[step:step2]*=self.value_2
         inV1=np.real(np.fft.ifft(sig_f))#0->5900
-        inV2=np.real(np.fft.ifft(sig_f))#0->5900
+        inV2=np.real(np.fft.ifft(sig_f2))#0->5900
         for i in range(len(inV1)):
                 
             self.Hrange.append(inV1[i])
@@ -468,7 +478,7 @@ class ApplicationWindow(QtWidgets.QMainWindow):
 
 
             self.ax1.specgram(self.Hrange,NFFT=1024,Fs=500,noverlap=900,cmap='jet_r')
-        elif self.value_2>1:
+        if self.value_2>1:
             self.ax1.specgram(self.H2range,NFFT=1024,Fs=500,noverlap=900,cmap='jet_r')
 
         if self.value_11>=0:
