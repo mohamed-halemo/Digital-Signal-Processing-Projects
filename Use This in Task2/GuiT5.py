@@ -173,7 +173,7 @@ class Ui_MainWindow(QtWidgets.QWidget):
         #self.horizontalLayout.addWidget(self.verticalSlider_13)
         self.tabWidget.addTab(self.tab, "")
         self.tabWidget.addTab(self.tab, "222")
-
+        
         # self.CompareButton = QtWidgets.QPushButton(self.centralwidget)
         # self.CompareButton.setGeometry(QtCore.QRect(190, 10, 93, 28))
         # self.CompareButton.setObjectName("CompareButton")

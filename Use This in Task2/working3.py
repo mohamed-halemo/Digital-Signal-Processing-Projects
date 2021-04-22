@@ -40,6 +40,7 @@ class ApplicationWindow(QtWidgets.QMainWindow):
 
     def __init__(self,parent=None):
         super(ApplicationWindow, self).__init__()
+        self.RangeVal=59000
         self.xx_range=[]
         self.value_1=1
         self.value_2=1
@@ -238,7 +239,7 @@ class ApplicationWindow(QtWidgets.QMainWindow):
             self.lay = QtWidgets.QVBoxLayout(self.graph3)  
             self.lay.setContentsMargins(0, 0, 0, 0)      
             self.lay.addWidget(self.plotWidget)
-            
+            print(self.xx_range)
 
             self.Draw()
 
@@ -312,7 +313,7 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         
     def Draw(self):
         
-        
+        RangesVal=xx_Range
         while self.drawbool==1:
             QtCore.QCoreApplication.processEvents()
             self.btn.setText("Plotting..")
@@ -334,32 +335,32 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         for i in range(len(self.xx_range)):
             
             
-            if self.xx_range[i] < 5900 : #4500
+            if self.xx_range[i] < self.RangeVal*0.1 : #4500
                 sig_f= fft(self.Y)*self.value_1
                 
-            elif 5901<self.xx_range[i]<11800 : #10500
+            elif self.RangeVal*0.1<self.xx_range[i]<self.RangeVal*0.2 : #10500
                 sig_f= fft(self.Y)*self.value_2
                
-            elif 11801<self.xx_range[i]<17700 :
+            elif self.RangeVal*0.2<self.xx_range[i]<self.RangeVal*0.3 :
                 sig_f=fft(self.Y)*self.value_3
               
-            elif 17701<self.xx_range[i]<23600 :
+            elif self.RangeVal*0.3<self.xx_range[i]<self.RangeVal*0.4 :
                 sig_f=fft(self.Y)*self.value_4
              
-            elif 23601<self.xx_range[i]<29500 :
+            elif self.RangeVal*0.4<self.xx_range[i]<self.RangeVal*0.5 :
                 sig_f=fft(self.Y)*self.value_5
                
-            elif 29501<self.xx_range[i]<35400 :
+            elif self.RangeVal*0.5<self.xx_range[i]<self.RangeVal*0.6 :
                 sig_f=fft(self.Y)*self.value_6
              
 
-            elif 35401<self.xx_range[i]<41300 :
+            elif self.RangeVal*0.6<self.xx_range[i]<self.RangeVal*0.7 :
                 sig_f=fft(self.Y)*self.value_7
                
-            elif 41300<self.xx_range[i]<47200 :
+            elif self.RangeVal*0.7<self.xx_range[i]<self.RangeVal*0.8 :
                 sig_f=fft(self.Y)*self.value_8
                 
-            elif 47201<self.xx_range[i]<53100 :
+            elif self.RangeVal*0.8<self.xx_range[i]<self.RangeVal*0.9 :
                 sig_f=fft(self.Y)*self.value_9
                
             else:
