@@ -286,6 +286,7 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         
         self.value_12=self.slider12.value()
        
+        self.Equalizer()
 
         if self.value_1>1 or self.value_2>1 or self.value_3>1 or self.value_4>1 or self.value_5>1 or self.value_6>1 or self.value_7>1 or self.value_8>1 or self.value_9>1 or self.value_10>1 or  self.value_12>=0 or self.value_11>=0 :
 
@@ -297,9 +298,9 @@ class ApplicationWindow(QtWidgets.QMainWindow):
 
         self.specEqualizer()
     
-        self.Equalizer()
         
-        return self.value_1,self.value_2,self.value_3,self.value_5,self.value_6,self.value_7,self.value_8,self.value_9,self.value_10
+        
+        #return self.value_1,self.value_2,self.value_3,self.value_5,self.value_6,self.value_7,self.value_8,self.value_9,self.value_10
             
             
             
@@ -318,27 +319,24 @@ class ApplicationWindow(QtWidgets.QMainWindow):
             x_range,y_range=self.graph.viewRange()
             x_range2=(x_range[1]-x_range[0])/500  #3shan ymshy 7eta 7eta
             self.graph.setXRange(x_range[0]+x_range2, x_range[1]+x_range2,0)
-            self.Equalizer()
+            #self.Equalizer()
             
             self.xx_range,yy_range=self.graph2.viewRange()
             xx_range2=(self.xx_range[1]-self.xx_range[0])/500
             self.graph2.setXRange(self.xx_range[0]+xx_range2,self.xx_range[1]+xx_range2,0)
 
-            self.specEqualizer()
+            
 
                 
     def Equalizer(self): #yeghyaaar awel 10% fe el graph
-       
+        
         self.graph2.clear()
         for i in range(len(self.xx_range)):
-        
+            
+            
             if self.xx_range[i] < 5900 : #4500
                 sig_f= fft(self.Y)*self.value_1
-                # inV=np.real(np.fft.ifft(sig_f))#0->5900
-                # for i in range(len(inV)):
-
-                #     self.Hrange.append(inV[i])
-
+                
             elif 5901<self.xx_range[i]<11800 : #10500
                 sig_f= fft(self.Y)*self.value_2
                
