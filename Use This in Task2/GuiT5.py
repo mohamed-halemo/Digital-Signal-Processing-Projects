@@ -167,6 +167,7 @@ class Ui_MainWindow(QtWidgets.QWidget):
         self.verticalSlider_12.setOrientation(QtCore.Qt.Vertical)
         self.verticalSlider_12.setObjectName("verticalSlider_12")
         self.horizontalLayout.addWidget(self.verticalSlider_12)
+        self.sliders=[self.verticalSlider_11,self.verticalSlider,self.verticalSlider_2,self.verticalSlider_3,self.verticalSlider_4,self.verticalSlider_5,self.verticalSlider_6,self.verticalSlider_7,self.verticalSlider_8,self.verticalSlider_9]
         #self.verticalSlider_13 = QtWidgets.QSlider(self.widget)
         #self.verticalSlider_13.setOrientation(QtCore.Qt.Vertical)
         #self.verticalSlider_13.setObjectName("verticalSlider_13")

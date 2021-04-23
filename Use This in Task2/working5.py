@@ -60,8 +60,17 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         self.ui.setupUi(self)
         self.signalLIST=[]
         self.spectrogramarray=[]
-        self.sliderz=[]
-        self.slideres=[]
+        # self.slide1=0
+        # self.slide2=0
+        # self.slide3=0
+        # self.slide4=0
+        # self.slide5=0
+        # self.slide6=0
+        # self.slide7=0
+        # self.slide8=0
+        # self.slide9=0
+        # self.slide10=0
+        # self.slideres=[self.slide1,self.slide2,self.slide3,self.slide4,self.slide5,self.slide6,self.slide7,self.slide8,self.slide9,self.slide10]
         #fig = Figure(figsize=(8, 8), dpi=100)
         #self.Spec =fig.add_subplot(212)
         #########added for spectrogram
@@ -94,36 +103,48 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         self.zoombtn.clicked.connect(self.zooming)
         self.zoomoutbtn=self.ui.pushButton_5
         self.zoomoutbtn.clicked.connect(self.zoomingout)
-        self.slider1=self.ui.verticalSlider_11
-        self.slider1.valueChanged.connect(self.updateSlider)
-        adjust(self.slider1)
-        self.slider2=self.ui.verticalSlider
-        self.slider2.valueChanged.connect(self.updateSlider)
-        adjust(self.slider2)
-        self.slider3=self.ui.verticalSlider_2
-        self.slider3.valueChanged.connect(self.updateSlider)
-        adjust(self.slider3)
-        self.slider4=self.ui.verticalSlider_3
-        self.slider4.valueChanged.connect(self.updateSlider)
-        adjust(self.slider4)
-        self.slider5=self.ui.verticalSlider_4
-        self.slider5.valueChanged.connect(self.updateSlider)
-        adjust(self.slider5)
-        self.slider6=self.ui.verticalSlider_5
-        self.slider6.valueChanged.connect(self.updateSlider)
-        adjust(self.slider6)
-        self.slider7=self.ui.verticalSlider_6
-        self.slider7.valueChanged.connect(self.updateSlider)
-        adjust(self.slider7)
-        self.slider8=self.ui.verticalSlider_7
-        self.slider8.valueChanged.connect(self.updateSlider)
-        adjust(self.slider8)
-        self.slider9=self.ui.verticalSlider_8
-        self.slider9.valueChanged.connect(self.updateSlider)
-        adjust(self.slider9)
-        self.slider10=self.ui.verticalSlider_9
-        self.slider10.valueChanged.connect(self.updateSlider)
-        adjust(self.slider10)
+        # for i in range(10):
+        #         self.slideres[i]=self.sliderz[i]
+        #         self.sliderz[i].valueChanged.connect(self.updateSlider)
+        #         adjust(self.sliderz[i])
+        #         print(self.sliderz[i].value())
+        boolean=0
+        while boolean==0:
+            for i in range(10):
+                self.sliderz[i].valueChanged.connect(self.updateSlider)
+                adjust(self.sliderz[i])
+                print(self.sliderz[i].value())
+                boolean=1
+        # self.slider1=self.ui.verticalSlider_11
+        # self.slider1.valueChanged.connect(self.updateSlider)
+        # adjust(self.slider1)
+        # self.slider2=self.ui.verticalSlider
+        # self.slider2.valueChanged.connect(self.updateSlider)
+        # adjust(self.slider2)
+        # self.slider3=self.ui.verticalSlider_2
+        # self.slider3.valueChanged.connect(self.updateSlider)
+        # adjust(self.slider3)
+        # self.slider4=self.ui.verticalSlider_3
+        # self.slider4.valueChanged.connect(self.updateSlider)
+        # adjust(self.slider4)
+        # self.slider5=self.ui.verticalSlider_4
+        # self.slider5.valueChanged.connect(self.updateSlider)
+        # adjust(self.slider5)
+        # self.slider6=self.ui.verticalSlider_5
+        # self.slider6.valueChanged.connect(self.updateSlider)
+        # adjust(self.slider6)
+        # self.slider7=self.ui.verticalSlider_6
+        # self.slider7.valueChanged.connect(self.updateSlider)
+        # adjust(self.slider7)
+        # self.slider8=self.ui.verticalSlider_7
+        # self.slider8.valueChanged.connect(self.updateSlider)
+        # adjust(self.slider8)
+        # self.slider9=self.ui.verticalSlider_8
+        # self.slider9.valueChanged.connect(self.updateSlider)
+        # adjust(self.slider9)
+        # self.slider10=self.ui.verticalSlider_9
+        # self.slider10.valueChanged.connect(self.updateSlider)
+        # adjust(self.slider10)
         self.slider11=self.ui.verticalSlider_10
         self.slider11.valueChanged.connect(self.updateSlider)
         adjustSpectroGram(self.slider11)
@@ -140,7 +161,6 @@ class ApplicationWindow(QtWidgets.QMainWindow):
     
         # setting canvas color to white
         self.image.fill(Qt.white)
-        
         self.stop=self.ui.pushButton_2
         self.stop.clicked.connect(self.stopit)
         self.browse=self.ui.pushButton
@@ -175,7 +195,7 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         self.H10range=[]
         self.H11range=[]
         self.H12range=[]
-
+        self.Ranges=[self.Hrange,self.H2range,self.H3range,self.H4range,self.H5range,self.H6range,self.H7range,self.H8range,self.H9range,self.H10range]
         self.inV=[]
         self.inV2=[]
         self.inV3=[]
@@ -186,6 +206,8 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         self.inV8=[]
         self.inV9=[]
         self.inV10=[]
+        self.inVs=[self.inV,self.inV2,self.inV3,self.inV4,self.inV5,self.inV6,self.inV7,self.inV8,self.inV9,self.inV10]
+        self.sig_f1=[]
         self.sig_f2=[]
         self.sig_f3=[]
         self.sig_f4=[]
@@ -260,41 +282,32 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         
 
     def updateSlider(self):
-        
-        self.value_1=self.slider1.value()
-       
-    
-        self.value_2=self.slider2.value()
-       
-        self.value_3=self.slider3.value()
-      
 
+        for i in range(10):
 
-        self.value_4=self.slider4.value()
-       
-        self.value_5=self.slider5.value()
-       
-        self.value_6=self.slider6.value()
-        
-        self.value_7=self.slider7.value()
-        
-        self.value_8=self.slider8.value()
-       
-        self.value_9=self.slider9.value()
-        
-        self.value_10=self.slider10.value()
-       
+            self.values[i]=self.sliderz[i].value()
+            print(self.values[i])
+            self.Equalizer()
+
+                
+            
+        for i in range(10):
+            if self.values[i]>1:
+                print("wrwwwwwwwwwwwwwwwwwwwwwwwwww")
+
+                self.DrawSpecOnly()
         self.value_11=self.slider11.value()
         
 
         
         self.value_12=self.slider12.value()
-       
-        self.Equalizer()
-
-        if self.value_1>1 or self.value_2>1 or self.value_3>1 or self.value_4>1 or self.value_5>1 or self.value_6>1 or self.value_7>1 or self.value_8>1 or self.value_9>1 or self.value_10>1 or  self.value_12>=0 or self.value_11>=0 :
-
+        if self.value_11>0 or self.value_12>0:
             self.DrawSpecOnly()
+        
+
+        # if self.value_1>1 or self.value_2>1 or self.value_3>1 or self.value_4>1 or self.value_5>1 or self.value_6>1 or self.value_7>1 or self.value_8>1 or self.value_9>1 or self.value_10>1 or  self.value_12>=0 or self.value_11>=0 :
+
+        #     self.DrawSpecOnly()
 
 
         if self.value_12==0 and self.value_11==0:
@@ -339,35 +352,35 @@ class ApplicationWindow(QtWidgets.QMainWindow):
             
             
             if self.xx_range[i] < self.RangeVal*0.1 : #4500
-                sig_f= fft(self.Y)*self.value_1
+                sig_f= fft(self.Y)*self.values[0]
                 
             elif self.RangeVal*0.1<self.xx_range[i]<self.RangeVal*0.2 : #10500
-                sig_f= fft(self.Y)*self.value_2
+                sig_f= fft(self.Y)*self.values[1]
                
             elif self.RangeVal*0.2<self.xx_range[i]<self.RangeVal*0.3 :
-                sig_f=fft(self.Y)*self.value_3
+                sig_f=fft(self.Y)*self.value[2]
               
             elif self.RangeVal*0.3<self.xx_range[i]<self.RangeVal*0.4 :
-                sig_f=fft(self.Y)*self.value_4
+                sig_f=fft(self.Y)*self.value[3]
              
             elif self.RangeVal*0.4<self.xx_range[i]<self.RangeVal*0.5 :
-                sig_f=fft(self.Y)*self.value_5
+                sig_f=fft(self.Y)*self.value[4]
                
             elif self.RangeVal*0.5<self.xx_range[i]<self.RangeVal*0.6 :
-                sig_f=fft(self.Y)*self.value_6
+                sig_f=fft(self.Y)*self.value[5]
              
 
             elif self.RangeVal*0.6<self.xx_range[i]<self.RangeVal*0.7 :
-                sig_f=fft(self.Y)*self.value_7
+                sig_f=fft(self.Y)*self.value[6]
                
             elif self.RangeVal*0.7<self.xx_range[i]<self.RangeVal*0.8 :
-                sig_f=fft(self.Y)*self.value_8
+                sig_f=fft(self.Y)*self.value[7]
                 
             elif self.RangeVal*0.8<self.xx_range[i]<self.RangeVal*0.9 :
-                sig_f=fft(self.Y)*self.value_9
+                sig_f=fft(self.Y)*self.value[8]
                
             else:
-                sig_f=fft(self.Y)*self.value_10
+                sig_f=fft(self.Y)*self.value[9]
                 
 
         
@@ -387,89 +400,96 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         self.graph2.plot(Xf,inVerse,pen=(75))
 
     def specEqualizer(self):
-
         xm_range=np.size(self.sig_f)//2
-        step= xm_range//10
-        step2= xm_range//5
-        step3= 3*xm_range//10
-        step4= 4*xm_range//10
-        step5= xm_range//2
-        step6= 3*xm_range//5
-        step7= 7*xm_range//10
-        step8= 4*xm_range//5
-        step9= 9*xm_range//10
-        step10= 10*xm_range//10
-        sig_f= fft(self.Y)
-        sig_f2=fft(self.Y)
-        sig_f3=fft(self.Y)
-        sig_f4=fft(self.Y)
-        sig_f5=fft(self.Y)
-        sig_f6=fft(self.Y)
-        sig_f7=fft(self.Y)
-        sig_f8=fft(self.Y)
-        sig_f9=fft(self.Y)
-        sig_f10=fft(self.Y)
-        self.sig_f= self.sig_f[0:xm_range]
-        self.sig_f2= self.sig_f[0:xm_range]
-        self.sig_f3= self.sig_f[0:xm_range]
-        self.sig_f4= self.sig_f[0:xm_range]
-        self.sig_f5= self.sig_f[0:xm_range]
-        self.sig_f6= self.sig_f[0:xm_range]
-        self.sig_f7= self.sig_f[0:xm_range]
-        self.sig_f8= self.sig_f[0:xm_range]
-        self.sig_f9= self.sig_f[0:xm_range]
-        self.sig_f10= self.sig_f[0:xm_range]
-        self.sig_f[0:step]*=self.value_1
-        self.sig_f2[step:step2]*=self.value_2
-        self.sig_f3[step2:step3]*=self.value_3
-        self.sig_f4[step3:step4]*=self.value_4
-        self.sig_f5[step4:step5]*=self.value_5
-        self.sig_f6[step5:step6]*=self.value_6
-        self.sig_f7[step6:step7]*=self.value_7
-        self.sig_f8[step7:step8]*=self.value_8
-        self.sig_f9[step8:step9]*=self.value_9
-        self.sig_f9[step9:step10]*=self.value_9
-        inV1=np.real(np.fft.ifft(sig_f))#
-        inV2=np.real(np.fft.ifft(sig_f2))
-        inV3=np.real(np.fft.ifft(sig_f3))#
-        inV4=np.real(np.fft.ifft(sig_f4))#
-        inV5=np.real(np.fft.ifft(sig_f5))#
-        inV6=np.real(np.fft.ifft(sig_f6))#
-        inV7=np.real(np.fft.ifft(sig_f7))#
-        inV8=np.real(np.fft.ifft(sig_f8))#
-        inV9=np.real(np.fft.ifft(sig_f9))#
-        inV10=np.real(np.fft.ifft(sig_f10))#
-        for i in range(len(inV1)):
-                
-            self.Hrange.append(inV1[i])
-        for i in range(len(inV2)):
-                
-            self.H2range.append(inV2[i])
-        for i in range(len(inV3)):
-                
-            self.H3range.append(inV3[i])
-        for i in range(len(inV4)):
-                
-            self.H4range.append(inV4[i])
-        for i in range(len(inV5)):
-                
-            self.H5range.append(inV5[i])
-        for i in range(len(inV6)):
-                
-            self.H6range.append(inV6[i])
-        for i in range(len(inV7)):
-                
-            self.H7range.append(inV7[i])
+        steps=[0,xm_range//10,xm_range//5,3*xm_range//10,4*xm_range//10,xm_range//2,3*xm_range//5,7*xm_range//10,4*xm_range//5,9*xm_range//10,xm_range]
 
-        for i in range(len(inV8)):
+        # step= xm_range//10
+        # step2= xm_range//5
+        # step3= 3*xm_range//10
+        # step4= 4*xm_range//10
+        # step5= xm_range//2
+        # step6= 3*xm_range//5
+        # step7= 7*xm_range//10
+        # step8= 4*xm_range//5
+        # step9= 9*xm_range//10
+        # step10= 10*xm_range//10
+        sig_f= fft(self.Y)
+        # sig_f2=fft(self.Y)
+        # sig_f3=fft(self.Y)
+        # sig_f4=fft(self.Y)
+        # sig_f5=fft(self.Y)
+        # sig_f6=fft(self.Y)
+        # sig_f7=fft(self.Y)
+        # sig_f8=fft(self.Y)
+        # sig_f9=fft(self.Y)
+        # sig_f10=fft(self.Y)
+        self.sig_f= self.sig_f[0:xm_range]
+        # self.sig_f2= self.sig_f[0:xm_range]
+        # self.sig_f3= self.sig_f[0:xm_range]
+        # self.sig_f4= self.sig_f[0:xm_range]
+        # self.sig_f5= self.sig_f[0:xm_range]
+        # self.sig_f6= self.sig_f[0:xm_range]
+        # self.sig_f7= self.sig_f[0:xm_range]
+        # self.sig_f8= self.sig_f[0:xm_range]
+        # self.sig_f9= self.sig_f[0:xm_range]
+        # self.sig_f10= self.sig_f[0:xm_range]
+        self.freq=[self.sig_f1,self.sig_f2,self.sig_f3,self.sig_f4,self.sig_f5,self.sig_f6,self.sig_f7,self.sig_f8,self.sig_f9,self.sig_f10]
+        for i in range(10):
+            if self.values[i]>1: 
+                freq[i]=self.sig_f[steps[i]:steps[i+1]]*self.values[i]
+                print("hey")
+                self.inVs[i]=np.real(np.fft.ifft(freq[i]))#
+                        
+        # self.sig_f2[step:step2]*=self.values[1]
+        # self.sig_f3[step2:step3]*=self.values[2]
+        # self.sig_f4[step3:step4]*=self.values[3]
+        # self.sig_f5[step4:step5]*=self.values[4]
+        # self.sig_f6[step5:step6]*=self.values[5]
+        # self.sig_f7[step6:step7]*=self.values[6]
+        # self.sig_f8[step7:step8]*=self.values[7]
+        # self.sig_f9[step8:step9]*=self.values[8]
+        # self.sig_f9[step9:step10]*=self.values[9]
+        # inV1=np.real(np.fft.ifft(sig_f))#
+        # inV2=np.real(np.fft.ifft(sig_f2))
+        # inV3=np.real(np.fft.ifft(sig_f3))#
+        # inV4=np.real(np.fft.ifft(sig_f4))#
+        # inV5=np.real(np.fft.ifft(sig_f5))#
+        # inV6=np.real(np.fft.ifft(sig_f6))#
+        # inV7=np.real(np.fft.ifft(sig_f7))#
+        # inV8=np.real(np.fft.ifft(sig_f8))#
+        # inV9=np.real(np.fft.ifft(sig_f9))#
+        # inV10=np.real(np.fft.ifft(sig_f10))#
+        for i in range(len(self.inV)):
                 
-            self.H8range.append(inV8[i])
-        for i in range(len(inV9)):
+            self.Hrange.append(inV[i])
+        # for i in range(len(inV2)):
                 
-            self.H9range.append(inV9[i])
-        for i in range(len(inV10)):
+        #     self.H2range.append(inV2[i])
+        # for i in range(len(inV3)):
                 
-            self.H10range.append(inV10[i])
+        #     self.H3range.append(inV3[i])
+        # for i in range(len(inV4)):
+                
+        #     self.H4range.append(inV4[i])
+        # for i in range(len(inV5)):
+                
+        #     self.H5range.append(inV5[i])
+        # for i in range(len(inV6)):
+                
+        #     self.H6range.append(inV6[i])
+        # for i in range(len(inV7)):
+                
+        #     self.H7range.append(inV7[i])
+
+        # for i in range(len(inV8)):
+                
+        #     self.H8range.append(inV8[i])
+        # for i in range(len(inV9)):
+                
+        #     self.H9range.append(inV9[i])
+        # for i in range(len(inV10)):
+                
+        #     self.H10range.append(inV10[i])
 
 
 
@@ -486,30 +506,36 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         
 
         self.fig.canvas.flush_events()
-        if self.value_1==0 and not self.value_2==0:
-            self.ax1.clear()
-        if self.value_1>1 :
+        # self.ax1.specgram(self.yGraph2,NFFT=1024,Fs=500,noverlap=900,cmap='jet_r')
+        self.specEqualizer()
+        
+       
+        for i in range(10):
+            if self.values[i]>1:
+                self.ax1.specgram(self.inVs[i],NFFT=1024,Fs=500,noverlap=900,cmap='jet_r')
+
+        # if self.value_1>1 :
 
 
-            self.ax1.specgram(self.Hrange,NFFT=1024,Fs=500,noverlap=900,cmap='jet_r')
-        if self.value_2>1:
-            self.ax1.specgram(self.H2range,NFFT=1024,Fs=500,noverlap=900,cmap='jet_r')
-        if self.value_3>1:
-            self.ax1.specgram(self.H3range,NFFT=1024,Fs=500,noverlap=900,cmap='jet_r')
-        if self.value_4>1:
-            self.ax1.specgram(self.H4range,NFFT=1024,Fs=500,noverlap=900,cmap='jet_r')
-        if self.value_5>1:
-            self.ax1.specgram(self.H5range,NFFT=1024,Fs=500,noverlap=900,cmap='jet_r')
-        if self.value_6>1:
-            self.ax1.specgram(self.H6range,NFFT=1024,Fs=500,noverlap=900,cmap='jet_r')
-        if self.value_7>1:
-            self.ax1.specgram(self.H7range,NFFT=1024,Fs=500,noverlap=900,cmap='jet_r')
-        if self.value_8>1:
-            self.ax1.specgram(self.H8range,NFFT=1024,Fs=500,noverlap=900,cmap='jet_r')
-        if self.value_9>1:
-            self.ax1.specgram(self.H9range,NFFT=1024,Fs=500,noverlap=900,cmap='jet_r')
-        if self.value_10>1:
-            self.ax1.specgram(self.H10range,NFFT=1024,Fs=500,noverlap=900,cmap='jet_r')
+        #     self.ax1.specgram(self.Hrange,NFFT=1024,Fs=500,noverlap=900,cmap='jet_r')
+        # if self.value_2>1:
+        #     self.ax1.specgram(self.H2range,NFFT=1024,Fs=500,noverlap=900,cmap='jet_r')
+        # if self.value_3>1:
+        #     self.ax1.specgram(self.H3range,NFFT=1024,Fs=500,noverlap=900,cmap='jet_r')
+        # if self.value_4>1:
+        #     self.ax1.specgram(self.H4range,NFFT=1024,Fs=500,noverlap=900,cmap='jet_r')
+        # if self.value_5>1:
+        #     self.ax1.specgram(self.H5range,NFFT=1024,Fs=500,noverlap=900,cmap='jet_r')
+        # if self.value_6>1:
+        #     self.ax1.specgram(self.H6range,NFFT=1024,Fs=500,noverlap=900,cmap='jet_r')
+        # if self.value_7>1:
+        #     self.ax1.specgram(self.H7range,NFFT=1024,Fs=500,noverlap=900,cmap='jet_r')
+        # if self.value_8>1:
+        #     self.ax1.specgram(self.H8range,NFFT=1024,Fs=500,noverlap=900,cmap='jet_r')
+        # if self.value_9>1:
+        #     self.ax1.specgram(self.H9range,NFFT=1024,Fs=500,noverlap=900,cmap='jet_r')
+        # if self.value_10>1:
+        #     self.ax1.specgram(self.H10range,NFFT=1024,Fs=500,noverlap=900,cmap='jet_r')
 
 
 
@@ -551,8 +577,7 @@ class ApplicationWindow(QtWidgets.QMainWindow):
             
          
             
-
-        if self.value_1==0 and self.value_2==0 and self.value_3==0 and self.value_4==0 and self.value_5==0 and self.value_6==0 and self.value_7==0 and self.value_8==0 and self.value_9==0 and self.value_10==0  :
+        if not any(self.values):
             self.ax1.clear()
 
 
@@ -577,9 +602,7 @@ class ApplicationWindow(QtWidgets.QMainWindow):
 
         self.drawbool=0
         
-        #self.bgraab7aga()
-        
-    #    input("Downloading....")
+     
 
     def zoomingout(self):
 
