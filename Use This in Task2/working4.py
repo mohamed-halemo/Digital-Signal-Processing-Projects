@@ -284,13 +284,16 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         for i in range(10):
 
             self.values[i]=self.sliderz[i].value()
-            print(self.values[i])
-                
+            #print(self.values[i])
+            
+      
+      
+        self.Equalizer()
             
         for i in range(10):
             if self.values[i]>1:
                 print("wrwwwwwwwwwwwwwwwwwwwwwwwwww")
-                self.Equalizer()
+                #self.Equalizer()
 
                 self.DrawSpecOnly()
         self.value_11=self.slider11.value()
@@ -298,14 +301,11 @@ class ApplicationWindow(QtWidgets.QMainWindow):
 
         
         self.value_12=self.slider12.value()
-        if self.value_11>0 or self.value_12>0:
+        if self.value_11>=0 or self.value_12>=0:
             self.DrawSpecOnly()
         
 
-        # if self.value_1>1 or self.value_2>1 or self.value_3>1 or self.value_4>1 or self.value_5>1 or self.value_6>1 or self.value_7>1 or self.value_8>1 or self.value_9>1 or self.value_10>1 or  self.value_12>=0 or self.value_11>=0 :
-
-        #     self.DrawSpecOnly()
-
+       
 
         if self.value_12==0 and self.value_11==0:
             self.ax1.set_ylim(0,250)
@@ -342,7 +342,7 @@ class ApplicationWindow(QtWidgets.QMainWindow):
             
 
                 
-    def Equalizer(self): #yeghyaaar awel 10% fe el graph
+    def Equalizer(self): 
         
         self.graph2.clear()
         for i in range(len(self.xx_range)):
@@ -497,36 +497,14 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         
 
         self.fig.canvas.flush_events()
-        # self.ax1.specgram(self.yGraph2,NFFT=1024,Fs=500,noverlap=900,cmap='jet_r')
-        self.specEqualizer()
+        
+        #self.specEqualizer()
         
        
         for i in range(10):
             if self.values[i]>1:
                 self.ax1.specgram(self.Ranges[i],NFFT=1024,Fs=500,noverlap=900,cmap='jet_r')
 
-        # if self.value_1>1 :
-
-
-        #     self.ax1.specgram(self.Hrange,NFFT=1024,Fs=500,noverlap=900,cmap='jet_r')
-        # if self.value_2>1:
-        #     self.ax1.specgram(self.H2range,NFFT=1024,Fs=500,noverlap=900,cmap='jet_r')
-        # if self.value_3>1:
-        #     self.ax1.specgram(self.H3range,NFFT=1024,Fs=500,noverlap=900,cmap='jet_r')
-        # if self.value_4>1:
-        #     self.ax1.specgram(self.H4range,NFFT=1024,Fs=500,noverlap=900,cmap='jet_r')
-        # if self.value_5>1:
-        #     self.ax1.specgram(self.H5range,NFFT=1024,Fs=500,noverlap=900,cmap='jet_r')
-        # if self.value_6>1:
-        #     self.ax1.specgram(self.H6range,NFFT=1024,Fs=500,noverlap=900,cmap='jet_r')
-        # if self.value_7>1:
-        #     self.ax1.specgram(self.H7range,NFFT=1024,Fs=500,noverlap=900,cmap='jet_r')
-        # if self.value_8>1:
-        #     self.ax1.specgram(self.H8range,NFFT=1024,Fs=500,noverlap=900,cmap='jet_r')
-        # if self.value_9>1:
-        #     self.ax1.specgram(self.H9range,NFFT=1024,Fs=500,noverlap=900,cmap='jet_r')
-        # if self.value_10>1:
-        #     self.ax1.specgram(self.H10range,NFFT=1024,Fs=500,noverlap=900,cmap='jet_r')
 
 
 
@@ -635,44 +613,15 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         self.image.save(filePath)
         
     def click_handler(self):
-       w = QtWidgets.QWidget()
-       screen = QtWidgets.QApplication.primaryScreen()
-       screenshot=screen.grabWindow(self.graph.winId())
-       screenshot2=screen.grabWindow(self.graph3.winId())
-       screenshot.save('shot.jpg', 'jpg')
-       screenshot2.save('shot2.jpg', 'jpg')
-       image=('shot.jpg')
-       image2=('shot2.jpg')
-       image=Image.open('shot.jpg')
-       image2=Image.open('shot2.jpg')
-       width , height = image.size
-       width , height = image2.size
-       leftOfImage = 20
-       topOfImage = height / 3.5
-       rightOfImage = 600
-       bottomOfImage = 3.75 * height / 4
-       image1=image.crop((leftOfImage,topOfImage,rightOfImage,bottomOfImage))
-       image3=image2.crop((leftOfImage,topOfImage,rightOfImage,bottomOfImage))
-       NewSize=(250,250)
-       image1 = image1 . resize(NewSize)
-       image3 = image3 . resize(NewSize)
-       w.close()
-       self.signalLIST.append(image1)
-       self.spectrogramarray.append(image3)
- 
+       
+        ConvertToPdf(self.graph.winId(),self.graph3.winId(),self.signalLIST,self.spectrogramarray)
+       
 
     def PrintPDF(self):
        
-       pdf=canvas.Canvas("Report.pdf")
        
-       pdf.drawInlineImage(self.signalLIST[0],10, 600)
-       pdf.drawInlineImage(self.spectrogramarray[0],300, 600)
-       pdf.drawInlineImage(self.signalLIST[1],10, 300)
-       pdf.drawInlineImage(self.spectrogramarray[1],300, 300)
-       pdf.drawInlineImage(self.signalLIST[2],10, 0)
-       pdf.drawInlineImage(self.spectrogramarray[2],300, 0)
-       
-       pdf.save()   
+       PDF(self.signalLIST,self.spectrogramarray)
+          
         
     def scrollit(self):
 
