@@ -60,6 +60,7 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         self.ui.setupUi(self)
         self.signalLIST=[]
         self.spectrogramarray=[]
+        self.graph=self.ui.Graph1
         # self.slide1=0
         # self.slide2=0
         # self.slide3=0
@@ -100,9 +101,9 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         #self.scroll_bar.setStyleSheet("background : lightgreen;")
         self.sliderz=self.ui.sliders
         self.zoombtn=self.ui.pushButton_6
-        self.zoombtn.clicked.connect(self.zooming)
+        self.zoombtn.clicked.connect(lambda:self.zooming(2))
         self.zoomoutbtn=self.ui.pushButton_5
-        self.zoomoutbtn.clicked.connect(self.zoomingout)
+        self.zoomoutbtn.clicked.connect(lambda:self.zooming(1/2))
         # for i in range(10):
         #         self.slideres[i]=self.sliderz[i]
         #         self.sliderz[i].valueChanged.connect(self.updateSlider)
@@ -336,7 +337,7 @@ class ApplicationWindow(QtWidgets.QMainWindow):
             x_range,y_range=self.graph.viewRange()
             x_range2=(x_range[1]-x_range[0])/500  #3shan ymshy 7eta 7eta
             self.graph.setXRange(x_range[0]+x_range2, x_range[1]+x_range2,0)
-            #self.Equalizer()
+            #self.Equalizer
             
             self.xx_range,yy_range=self.graph2.viewRange()
             xx_range2=(self.xx_range[1]-self.xx_range[0])/500
@@ -604,14 +605,14 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         
      
 
-    def zoomingout(self):
+    # def zoomingout(self):
 
-        x_range,y_range=self.graph.viewRange()
-        self.graph.setXRange(x_range[0],x_range[0]+x_range[1]/2)
-        self.graph.setYRange(y_range[0]/2,y_range[1]/2)
-        xx_range,yy_range=self.graph2.viewRange()
-        self.graph2.setXRange(xx_range[0],xx_range[0]+xx_range[1]/2)
-        self.graph2.setYRange(yy_range[0]/2,yy_range[1]/2)
+    #     x_range,y_range=self.graph.viewRange()
+    #     self.graph.setXRange(x_range[0],x_range[0]+x_range[1]/2)
+    #     self.graph.setYRange(y_range[0]/2,y_range[1]/2)
+    #     xx_range,yy_range=self.graph2.viewRange()
+    #     self.graph2.setXRange(xx_range[0],xx_range[0]+xx_range[1]/2)
+    #     self.graph2.setYRange(yy_range[0]/2,yy_range[1]/2)
         
 
         #self.graph.setRange((x_range[0]/2,x_range[1]/2),(y_range[0]/2,y_range[1]/2))
@@ -619,13 +620,14 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         
   
 
-    def zooming(self):
+    def zooming(self, zoomfactorr ):
+
         x_range,y_range=self.graph.viewRange()
-        self.graph.setXRange(x_range[0],x_range[0]+x_range[1]*2)
-        self.graph.setYRange(y_range[0]*2,y_range[1]*2)
+        self.graph.setXRange(x_range[0],x_range[0]+x_range[1]*zoomfactorr)
+        self.graph.setYRange(y_range[0]*zoomfactorr,y_range[1]*zoomfactorr)
         xx_range,yy_range=self.graph2.viewRange()
-        self.graph2.setXRange(xx_range[0],xx_range[0]+xx_range[1]*2)
-        self.graph2.setYRange(yy_range[0]*2,yy_range[1]*2)
+        self.graph2.setXRange(xx_range[0],xx_range[0]+xx_range[1]*zoomfactorr)
+        self.graph2.setYRange(yy_range[0]*zoomfactorr,yy_range[1]*zoomfactorr)
         
         
 
