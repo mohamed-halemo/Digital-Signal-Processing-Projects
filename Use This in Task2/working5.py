@@ -2,6 +2,7 @@ from GuiT5 import Ui_MainWindow
 import ntpath
 import os
 import sys
+from app import lists
 from GuiT4 import * #functions el repeated 
 from PyQt5 import QtGui, QtWidgets ,QtCore , QtSerialPort
 from PyQt5.QtCore import Qt,QTimer
@@ -42,21 +43,11 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         super(ApplicationWindow, self).__init__()
         self.RangeVal=59000
         self.xx_range=[]
-        self.value_1=1
-        self.value_2=1
-        self.value_3=1
-        self.value_4=1
-        self.value_5=1
-        self.value_6=1
-        self.value_7=1
-        self.value_8=1
-        self.value_9=1
-        self.value_10=1
-        self.values=[self.value_1,self.value_2,self.value_3,self.value_4,self.value_5,self.value_6,self.value_7,self.value_8,self.value_9,self.value_10]
         self.X=[]
         self.Y=[]
         self.sig_f=[]
         self.ui = Ui_MainWindow()
+        self.l = lists()
         self.ui.setupUi(self)
         self.signalLIST=[]
         self.spectrogramarray=[]
@@ -100,6 +91,7 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         #shift alt up or down 
         #self.scroll_bar.setStyleSheet("background : lightgreen;")
         self.sliderz=self.ui.sliders
+        #self.values= self.l.values
         self.zoombtn=self.ui.pushButton_6
         self.zoombtn.clicked.connect(lambda:self.zooming(2))
         self.zoomoutbtn=self.ui.pushButton_5
@@ -197,17 +189,20 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         self.H11range=[]
         self.H12range=[]
         self.Ranges=[self.Hrange,self.H2range,self.H3range,self.H4range,self.H5range,self.H6range,self.H7range,self.H8range,self.H9range,self.H10range]
-        self.inV=[]
-        self.inV2=[]
-        self.inV3=[]
-        self.inV4=[]
-        self.inV5=[]
-        self.inV6=[]
-        self.inV7=[]
-        self.inV8=[]
-        self.inV9=[]
-        self.inV10=[]
-        self.inVs=[self.inV,self.inV2,self.inV3,self.inV4,self.inV5,self.inV6,self.inV7,self.inV8,self.inV9,self.inV10]
+        self.inV=[0]*10
+        self.inVs=[]
+        # self.inV2=[]
+        # self.inV3=[]
+        # self.inV4=[]
+        # self.inV5=[]
+        # self.inV6=[
+        # self.inV7=[]
+        # self.inV8=[]
+        # self.inV9=[]
+        # self.inV10=[]
+        for i in range (10):
+            self.inVs.append(self.inV[i])
+        #self.inVs=[self.inV,self.inV2,self.inV3,self.inV4,self.inV5,self.inV6,self.inV7,self.inV8,self.inV9,self.inV10]
         self.sig_f1=[]
         self.sig_f2=[]
         self.sig_f3=[]
@@ -219,6 +214,13 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         self.sig_f9=[]
         self.sig_f10=[]
         self.increase=25
+        self.value=[1]*10
+        self.values=[]
+        
+        for i in range (10):
+            self.values.append(self.value[i])
+        #self.values=[self.value_1,self.value_2,self.value_3,self.value_4,self.value_5,self.value_6,self.value_7,self.value_8,self.value_9,self.value_10]
+
     def Browse_Handler2(self):
         self.graph.clear()      
         self.xGraph2=[]
