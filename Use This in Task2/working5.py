@@ -352,38 +352,47 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         
         self.graph2.clear()
         for i in range(len(self.xx_range)):
+            for j in range(10):
             
-            
-            if self.xx_range[i] < self.RangeVal*0.1 : #4500
-                sig_f= fft(self.Y)*self.values[0]
+                if self.RangeVal*0.1*j<self.xx_range[i]<self.RangeVal*0.1*(j+1) :
+                     #10500
+                    sig_f= fft(self.Y)*self.values[j]
+                    break
                 
-            elif self.RangeVal*0.1<self.xx_range[i]<self.RangeVal*0.2 : #10500
-                sig_f= fft(self.Y)*self.values[1]
+            # elif self.RangeVal*0.1<self.xx_range[i]<self.RangeVal*0.2 : #10500
+            #     sig_f= fft(self.Y)*self.values[1]
                
-            elif self.RangeVal*0.2<self.xx_range[i]<self.RangeVal*0.3 :
-                sig_f=fft(self.Y)*self.value[2]
+            # elif self.RangeVal*0.2<self.xx_range[i]<self.RangeVal*0.3 :
+            #     sig_f=fft(self.Y)*self.value[2]
               
-            elif self.RangeVal*0.3<self.xx_range[i]<self.RangeVal*0.4 :
-                sig_f=fft(self.Y)*self.value[3]
+            # elif self.RangeVal*0.3<self.xx_range[i]<self.RangeVal*0.4 :
+            #     sig_f=fft(self.Y)*self.value[3]
              
-            elif self.RangeVal*0.4<self.xx_range[i]<self.RangeVal*0.5 :
-                sig_f=fft(self.Y)*self.value[4]
+            # elif self.RangeVal*0.4<self.xx_range[i]<self.RangeVal*0.5 :
+            #     sig_f=fft(self.Y)*self.value[4]
                
-            elif self.RangeVal*0.5<self.xx_range[i]<self.RangeVal*0.6 :
-                sig_f=fft(self.Y)*self.value[5]
+            # elif self.RangeVal*0.5<self.xx_range[i]<self.RangeVal*0.6 :
+            #     sig_f=fft(self.Y)*self.value[5]
              
 
-            elif self.RangeVal*0.6<self.xx_range[i]<self.RangeVal*0.7 :
-                sig_f=fft(self.Y)*self.value[6]
+            # elif self.RangeVal*0.6<self.xx_range[i]<self.RangeVal*0.7 :
+            #     sig_f=fft(self.Y)*self.value[6]
                
-            elif self.RangeVal*0.7<self.xx_range[i]<self.RangeVal*0.8 :
-                sig_f=fft(self.Y)*self.value[7]
+            # elif self.RangeVal*0.7<self.xx_range[i]<self.RangeVal*0.8 :
+            #     sig_f=fft(self.Y)*self.value[7]
                 
-            elif self.RangeVal*0.8<self.xx_range[i]<self.RangeVal*0.9 :
-                sig_f=fft(self.Y)*self.value[8]
+            # elif self.RangeVal*0.8<self.xx_range[i]<self.RangeVal*0.9 :
+            #     sig_f=fft(self.Y)*self.value[8]
                
-            else:
-                sig_f=fft(self.Y)*self.value[9]
+            # else:
+            #     sig_f=fft(self.Y)*self.value[9]
+
+
+            #     for (j=0; j<10;j++){
+            #  if self.RangeVal*0.1*j<self.xx_range[i]<self.RangeVal*0.1(j+1) : #10500
+            #     sig_f= fft(self.Y)*self.values[j]
+            #     break;
+            #     }
                 
 
         
