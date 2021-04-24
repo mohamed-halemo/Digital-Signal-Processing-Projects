@@ -2,7 +2,8 @@ from GuiT5 import Ui_MainWindow
 import ntpath
 import os
 import sys
-from GuiT4 import * #functions el repeated 
+from app import lists
+from GuiT4 import *  
 from PyQt5 import QtGui, QtWidgets ,QtCore , QtSerialPort
 from PyQt5.QtCore import Qt,QTimer
 from scipy.fftpack import fft
@@ -42,17 +43,21 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         super(ApplicationWindow, self).__init__()
         self.RangeVal=59000
         self.xx_range=[]
-        self.value_1=1
-        self.value_2=1
-        self.value_3=1
-        self.value_4=1
-        self.value_5=1
-        self.value_6=1
-        self.value_7=1
-        self.value_8=1
-        self.value_9=1
-        self.value_10=1
-        self.values=[self.value_1,self.value_2,self.value_3,self.value_4,self.value_5,self.value_6,self.value_7,self.value_8,self.value_9,self.value_10]
+        # self.value_1=1
+        # self.value_2=1
+        # self.value_3=1
+        # self.value_4=1
+        # self.value_5=1
+        # self.value_6=1
+        # self.value_7=1
+        # self.value_8=1
+        # self.value_9=1
+        # self.value_10=1
+        self.l = lists()
+
+        self.value_11=0
+        self.value_12=0
+        # self.values=[self.value_1,self.value_2,self.value_3,self.value_4,self.value_5,self.value_6,self.value_7,self.value_8,self.value_9,self.value_10]
         self.X=[]
         self.Y=[]
         self.sig_f=[]
@@ -99,10 +104,14 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         #shift alt up or down 
         #self.scroll_bar.setStyleSheet("background : lightgreen;")
         self.sliderz=self.ui.sliders
+        # self.zoombtn=self.ui.pushButton_6
+        # self.zoombtn.clicked.connect(self.zooming)
+        # self.zoomoutbtn=self.ui.pushButton_5
+        # self.zoomoutbtn.clicked.connect(self.zoomingout)
         self.zoombtn=self.ui.pushButton_6
-        self.zoombtn.clicked.connect(self.zooming)
+        self.zoombtn.clicked.connect(lambda:self.zooming(2))
         self.zoomoutbtn=self.ui.pushButton_5
-        self.zoomoutbtn.clicked.connect(self.zoomingout)
+        self.zoomoutbtn.clicked.connect(lambda:self.zooming(1/2))
         # for i in range(10):
         #         self.slideres[i]=self.sliderz[i]
         #         self.sliderz[i].valueChanged.connect(self.updateSlider)
@@ -196,16 +205,26 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         self.H11range=[]
         self.H12range=[]
         self.Ranges=[self.Hrange,self.H2range,self.H3range,self.H4range,self.H5range,self.H6range,self.H7range,self.H8range,self.H9range,self.H10range]
-        self.inV=[]
-        self.inV2=[]
-        self.inV3=[]
-        self.inV4=[]
-        self.inV5=[]
-        self.inV6=[]
-        self.inV7=[]
-        self.inV8=[]
-        self.inV9=[]
-        self.inV10=[]
+        self.inV=[0]*10
+
+        self.inVs=[]   
+        # self.inV2=[]    
+        # self.inV3=[]
+        # self.inV4=[]
+        # self.inV5=[]
+        # self.inV6=[]
+        # self.inV7=[]
+        # self.inV8=[]
+        # self.inV9=[]
+        # self.inV10=[]
+        for i in range (10):
+            self.inVs.append(self.inV[i])
+
+        self.value=[1]*10
+        self.values=[]
+        
+        for i in range (10):
+            self.values.append(self.value[i])    
         self.sig_f2=[]
         self.sig_f3=[]
         self.sig_f4=[]
@@ -284,16 +303,13 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         for i in range(10):
 
             self.values[i]=self.sliderz[i].value()
-            #print(self.values[i])
             
       
       
         self.Equalizer()
-            
         for i in range(10):
             if self.values[i]>1:
                 print("wrwwwwwwwwwwwwwwwwwwwwwwwwww")
-                #self.Equalizer()
 
                 self.DrawSpecOnly()
         self.value_11=self.slider11.value()
@@ -301,7 +317,7 @@ class ApplicationWindow(QtWidgets.QMainWindow):
 
         
         self.value_12=self.slider12.value()
-        if self.value_11>=0 or self.value_12>=0:
+        if self.value_11>0 or self.value_12>0:
             self.DrawSpecOnly()
         
 
@@ -346,39 +362,12 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         
         self.graph2.clear()
         for i in range(len(self.xx_range)):
+            for j in range(10):
             
-            
-            if self.xx_range[i] < self.RangeVal*0.1 : #4500
-                sig_f= fft(self.Y)*self.values[0]
-                
-            elif self.RangeVal*0.1<self.xx_range[i]<self.RangeVal*0.2 : #10500
-                sig_f= fft(self.Y)*self.values[1]
-               
-            elif self.RangeVal*0.2<self.xx_range[i]<self.RangeVal*0.3 :
-                sig_f=fft(self.Y)*self.value[2]
-              
-            elif self.RangeVal*0.3<self.xx_range[i]<self.RangeVal*0.4 :
-                sig_f=fft(self.Y)*self.value[3]
-             
-            elif self.RangeVal*0.4<self.xx_range[i]<self.RangeVal*0.5 :
-                sig_f=fft(self.Y)*self.value[4]
-               
-            elif self.RangeVal*0.5<self.xx_range[i]<self.RangeVal*0.6 :
-                sig_f=fft(self.Y)*self.value[5]
-             
-
-            elif self.RangeVal*0.6<self.xx_range[i]<self.RangeVal*0.7 :
-                sig_f=fft(self.Y)*self.value[6]
-               
-            elif self.RangeVal*0.7<self.xx_range[i]<self.RangeVal*0.8 :
-                sig_f=fft(self.Y)*self.value[7]
-                
-            elif self.RangeVal*0.8<self.xx_range[i]<self.RangeVal*0.9 :
-                sig_f=fft(self.Y)*self.value[8]
-               
-            else:
-                sig_f=fft(self.Y)*self.value[9]
-                
+                if self.RangeVal*0.1*j<self.xx_range[i]<self.RangeVal*0.1*(j+1) :
+                     #10500
+                    sig_f= fft(self.Y)*self.values[j]
+                    break
 
         
 
@@ -498,12 +487,12 @@ class ApplicationWindow(QtWidgets.QMainWindow):
 
         self.fig.canvas.flush_events()
         
-        #self.specEqualizer()
+        self.specEqualizer()
         
        
         for i in range(10):
             if self.values[i]>1:
-                self.ax1.specgram(self.Ranges[i],NFFT=1024,Fs=500,noverlap=900,cmap='jet_r')
+                self.ax1.specgram(self.Ranges[i],NFFT=1024,Fs=500,noverlap=10,cmap='jet_r')
 
 
 
@@ -511,7 +500,7 @@ class ApplicationWindow(QtWidgets.QMainWindow):
 
         if self.value_11>=0:
 
-            self.ax1.specgram(self.yGraph2,NFFT=1024,Fs=500,noverlap=900,cmap='jet_r')
+            self.ax1.specgram(self.yGraph2,NFFT=1024,Fs=500,noverlap=10,cmap='jet_r')
         
             if self.value_12 and self.value_11==0:
                 self.ax1.set_ylim(0,250)
@@ -527,7 +516,7 @@ class ApplicationWindow(QtWidgets.QMainWindow):
                 self.ax1.set_ylim(125,250-self.value_11*25)
         
         if self.value_12>=0:
-            self.ax1.specgram(self.yGraph2,NFFT=1024,Fs=500,noverlap=900,cmap='jet_r')
+            self.ax1.specgram(self.yGraph2,NFFT=1024,Fs=500,noverlap=10,cmap='jet_r')
 
         # self.ax.set_ylim([0,200])
        
@@ -573,14 +562,14 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         
      
 
-    def zoomingout(self):
+    # def zoomingout(self):
 
-        x_range,y_range=self.graph.viewRange()
-        self.graph.setXRange(x_range[0],x_range[0]+x_range[1]/2)
-        self.graph.setYRange(y_range[0]/2,y_range[1]/2)
-        xx_range,yy_range=self.graph2.viewRange()
-        self.graph2.setXRange(xx_range[0],xx_range[0]+xx_range[1]/2)
-        self.graph2.setYRange(yy_range[0]/2,yy_range[1]/2)
+    #     x_range,y_range=self.graph.viewRange()
+    #     self.graph.setXRange(x_range[0],x_range[0]+x_range[1]/2)
+    #     self.graph.setYRange(y_range[0]/2,y_range[1]/2)
+    #     xx_range,yy_range=self.graph2.viewRange()
+    #     self.graph2.setXRange(xx_range[0],xx_range[0]+xx_range[1]/2)
+    #     self.graph2.setYRange(yy_range[0]/2,yy_range[1]/2)
         
 
         #self.graph.setRange((x_range[0]/2,x_range[1]/2),(y_range[0]/2,y_range[1]/2))
@@ -588,13 +577,13 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         
   
 
-    def zooming(self):
+    def zooming(self, zoomfactorr ):
         x_range,y_range=self.graph.viewRange()
-        self.graph.setXRange(x_range[0],x_range[0]+x_range[1]*2)
-        self.graph.setYRange(y_range[0]*2,y_range[1]*2)
+        self.graph.setXRange(x_range[0],x_range[0]+x_range[1]*zoomfactorr)
+        self.graph.setYRange(y_range[0]*zoomfactorr,y_range[1]*zoomfactorr)
         xx_range,yy_range=self.graph2.viewRange()
-        self.graph2.setXRange(xx_range[0],xx_range[0]+xx_range[1]*2)
-        self.graph2.setYRange(yy_range[0]*2,yy_range[1]*2)
+        self.graph2.setXRange(xx_range[0],xx_range[0]+xx_range[1]*zoomfactorr)
+        self.graph2.setYRange(yy_range[0]*zoomfactorr,yy_range[1]*zoomfactorr)
         
         
 
