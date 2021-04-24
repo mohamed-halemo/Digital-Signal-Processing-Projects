@@ -75,7 +75,7 @@ class ApplicationWindow(QtWidgets.QMainWindow):
       
         self.sliderz=self.ui.sliders
         self.scrollbackbtn=self.ui.CompareButton
-        self.scrollbackbtn.clicked.connect(self.scrollback)
+        self.scrollbackbtn.clicked.connect(lambda:self.scrollback(1,-1))
         self.zoombtn=self.ui.pushButton_6
         self.zoombtn.clicked.connect(lambda:self.zooming(2))
         self.zoomoutbtn=self.ui.pushButton_5
@@ -97,7 +97,7 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         adjustSpectroGram(self.slider12)
         
         self.scrollbtn=self.ui.pushButton_8
-        self.scrollbtn.clicked.connect(self.scrollit)
+        self.scrollbtn.clicked.connect(lambda:self.scrollback(-1,1))
         self.AddToPdf=self.ui.pushButton_7
         self.AddToPdf.clicked.connect(self.PrintPDF)
 
@@ -432,25 +432,30 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         QtCore.QCoreApplication.processEvents()
         self.btn.setText("Plotting..")
         x_range,y_range=self.graph.viewRange()
-        x_range2=(x_range[1]-x_range[0])/1
-        if x_range2<=59:
-            self.graph.setXRange(x_range[0]+x_range2, x_range[1]+x_range2,0)
+        x_range2=(x_range[1]-x_range[0])/5
+        self.graph.setXRange(x_range[0]+x_range2, x_range[1]+x_range2,0)
         xx_range,yy_range=self.graph2.viewRange()
         
         xx_range2=(xx_range[1]-xx_range[0])/5
         self.graph2.setXRange(xx_range[0]+xx_range2, xx_range[1]+xx_range2,0)
-    def scrollback(self):
+    def scrollback(self, A , B):
 
         QtCore.QCoreApplication.processEvents()
         x_range,y_range=self.graph.viewRange()
-        if x_range[0]>=0:
-            x_range2=(x_range[0]-x_range[1])/50
+        x_range2=(A*x_range[0]+B*x_range[1])/5
+        if A==1 and B==-1 and x_range[0]>=0.2:
+
             self.graph.setXRange(x_range[0]+x_range2, x_range[1]+x_range2,0)
+        elif A==-1 and B==1 :
+            self.graph.setXRange(x_range[0]+x_range2, x_range[1]+x_range2,0)
+
         xx_range,yy_range=self.graph2.viewRange()
-        if xx_range[0]>=0:
-            xx_range2=(xx_range[0]-xx_range[1])/50
+        xx_range2=(A*xx_range[0]+B*xx_range[1])/5
+        if A==1 and B==-1 and x_range[0]>=0.2:
             self.graph2.setXRange(xx_range[0]+xx_range2, xx_range[1]+xx_range2,0)
-        
+        elif A==-1 and B==1 :    
+            self.graph2.setXRange(xx_range[0]+xx_range2, xx_range[1]+xx_range2,0)
+
                 
     def NewTabCreation(self):
         text = 'Tab %d' % (self.tab.count() + 1)
