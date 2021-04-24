@@ -74,7 +74,8 @@ class ApplicationWindow(QtWidgets.QMainWindow):
 
       
         self.sliderz=self.ui.sliders
-        
+        self.scrollbackbtn=self.ui.CompareButton
+        self.scrollbackbtn.clicked.connect(self.scrollback)
         self.zoombtn=self.ui.pushButton_6
         self.zoombtn.clicked.connect(lambda:self.zooming(2))
         self.zoomoutbtn=self.ui.pushButton_5
@@ -431,12 +432,24 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         QtCore.QCoreApplication.processEvents()
         self.btn.setText("Plotting..")
         x_range,y_range=self.graph.viewRange()
-        x_range2=(x_range[1]-x_range[0])/500
-        self.graph.setXRange(x_range[0]+x_range2, x_range[1]+x_range2,0)
+        x_range2=(x_range[1]-x_range[0])/1
+        if x_range2<=59:
+            self.graph.setXRange(x_range[0]+x_range2, x_range[1]+x_range2,0)
         xx_range,yy_range=self.graph2.viewRange()
         
-        xx_range2=(xx_range[1]-xx_range[0])/500
+        xx_range2=(xx_range[1]-xx_range[0])/5
         self.graph2.setXRange(xx_range[0]+xx_range2, xx_range[1]+xx_range2,0)
+    def scrollback(self):
+
+        QtCore.QCoreApplication.processEvents()
+        x_range,y_range=self.graph.viewRange()
+        if x_range[0]>=0:
+            x_range2=(x_range[0]-x_range[1])/50
+            self.graph.setXRange(x_range[0]+x_range2, x_range[1]+x_range2,0)
+        xx_range,yy_range=self.graph2.viewRange()
+        if xx_range[0]>=0:
+            xx_range2=(xx_range[0]-xx_range[1])/50
+            self.graph2.setXRange(xx_range[0]+xx_range2, xx_range[1]+xx_range2,0)
         
                 
     def NewTabCreation(self):

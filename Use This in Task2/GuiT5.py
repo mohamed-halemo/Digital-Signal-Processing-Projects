@@ -175,9 +175,9 @@ class Ui_MainWindow(QtWidgets.QWidget):
         self.tabWidget.addTab(self.tab, "")
         self.tabWidget.addTab(self.tab, "222")
         
-        # self.CompareButton = QtWidgets.QPushButton(self.centralwidget)
-        # self.CompareButton.setGeometry(QtCore.QRect(190, 10, 93, 28))
-        # self.CompareButton.setObjectName("CompareButton")
+        self.CompareButton = QtWidgets.QPushButton(self.centralwidget)
+        self.CompareButton.setGeometry(QtCore.QRect(190, 10, 93, 28))
+        self.CompareButton.setObjectName("ScrollBack")
         MainWindow.setCentralWidget(self.centralwidget)
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
         self.statusbar.setObjectName("statusbar")
@@ -220,7 +220,7 @@ class Ui_MainWindow(QtWidgets.QWidget):
         self.label_10.setText(_translate("MainWindow", "Spectrogram"))
         self.label_9.setText(_translate("MainWindow", "SpectroGram Sliders"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab), _translate("MainWindow", "Tab 1"))
-        # self.CompareButton.setText(_translate("MainWindow", "Compare"))
+        self.CompareButton.setText(_translate("MainWindow", "ScrollBack"))
 from pyqtgraph import PlotWidget
 
 
