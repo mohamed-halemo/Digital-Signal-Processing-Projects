@@ -102,7 +102,6 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         self.AddToPdf.clicked.connect(self.PrintPDF)
 
         self.image = QImage(self.size(), QImage.Format_RGB32)
-    
         # setting canvas color to white
         self.image.fill(Qt.white)
         self.stop=self.ui.pushButton_2
@@ -148,9 +147,6 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         self.plotvalue=2
         self.graph2.clear()
         
-
-                    
-
         
         filename=QFileDialog.getOpenFileName()
         path=filename[0]
@@ -192,16 +188,11 @@ class ApplicationWindow(QtWidgets.QMainWindow):
             self.Draw()
 
 
-         
-
         def paintEvent(self):
             qp=QPainter(self)
             qp.setPen(QPen(Qcolor(Qt.black),5))
             qp.drawRect(500,500,1000,1000)
-
-        
-
-        
+     
         
 
     def updateSlider(self):
@@ -214,8 +205,7 @@ class ApplicationWindow(QtWidgets.QMainWindow):
                 print("wrwwwwwwwwwwwwwwwwwwwwwwwwww")
 
                 self.DrawSpecOnly()
-      
-      
+         
         self.Equalizer()
        
         self.value_11=self.slider11.value()
@@ -225,9 +215,6 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         self.value_12=self.slider12.value()
         
         
-
-       
-
         if self.value_12==0 and self.value_11==0:
             self.ax1.set_ylim(0,250)
 
@@ -235,15 +222,8 @@ class ApplicationWindow(QtWidgets.QMainWindow):
     
         
         
-            
-            
-            
-            
-           
-            
-       
-                                        
-        
+                
+                                          
     def Draw(self):
         
         # RangesVal=xx_Range
@@ -274,8 +254,6 @@ class ApplicationWindow(QtWidgets.QMainWindow):
                     break
 
         
-
-
         
         inVerse=np.real(np.fft.ifft(sig_f))#0->5900
         
@@ -364,8 +342,7 @@ class ApplicationWindow(QtWidgets.QMainWindow):
             self.ax1.clear()
 
 
-        
-                
+                 
 
     def Pause(self):
         
@@ -384,12 +361,7 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         
 
         self.drawbool=0
-        
-     
-
-   
-        
-        
+              
   
 
     def zooming(self, zoomfactorr ):
@@ -427,17 +399,7 @@ class ApplicationWindow(QtWidgets.QMainWindow):
        PDF(self.signalLIST,self.spectrogramarray)
           
         
-    def scrollit(self):
-
-        QtCore.QCoreApplication.processEvents()
-        self.btn.setText("Plotting..")
-        x_range,y_range=self.graph.viewRange()
-        x_range2=(x_range[1]-x_range[0])/5
-        self.graph.setXRange(x_range[0]+x_range2, x_range[1]+x_range2,0)
-        xx_range,yy_range=self.graph2.viewRange()
-        
-        xx_range2=(xx_range[1]-xx_range[0])/5
-        self.graph2.setXRange(xx_range[0]+xx_range2, xx_range[1]+xx_range2,0)
+    # 
     def scrollback(self, A , B):
 
         QtCore.QCoreApplication.processEvents()
