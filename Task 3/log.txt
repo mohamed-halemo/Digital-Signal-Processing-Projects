@@ -1,0 +1,2635 @@
+2021-05-01 00:05:36,889:WARNING:In E:\college\python\lib\site-packages\matplotlib\mpl-data\stylelib\_classic_test.mplstyle: 
+The text.latex.preview rcparam was deprecated in Matplotlib 3.3 and will be removed two minor releases later.
+2021-05-01 00:05:36,889:WARNING:In E:\college\python\lib\site-packages\matplotlib\mpl-data\stylelib\_classic_test.mplstyle: 
+The mathtext.fallback_to_cm rcparam was deprecated in Matplotlib 3.3 and will be removed two minor releases later.
+2021-05-01 00:05:36,889:WARNING:In E:\college\python\lib\site-packages\matplotlib\mpl-data\stylelib\_classic_test.mplstyle: Support for setting the 'mathtext.fallback_to_cm' rcParam is deprecated since 3.3 and will be removed two minor releases later; use 'mathtext.fallback : 'cm' instead.
+2021-05-01 00:05:36,889:WARNING:In E:\college\python\lib\site-packages\matplotlib\mpl-data\stylelib\_classic_test.mplstyle: 
+The validate_bool_maybe_none function was deprecated in Matplotlib 3.3 and will be removed two minor releases later.
+2021-05-01 00:05:36,889:WARNING:In E:\college\python\lib\site-packages\matplotlib\mpl-data\stylelib\_classic_test.mplstyle: 
+The savefig.jpeg_quality rcparam was deprecated in Matplotlib 3.3 and will be removed two minor releases later.
+2021-05-01 00:05:36,890:WARNING:In E:\college\python\lib\site-packages\matplotlib\mpl-data\stylelib\_classic_test.mplstyle: 
+The keymap.all_axes rcparam was deprecated in Matplotlib 3.3 and will be removed two minor releases later.
+2021-05-01 00:05:36,890:WARNING:In E:\college\python\lib\site-packages\matplotlib\mpl-data\stylelib\_classic_test.mplstyle: 
+The animation.avconv_path rcparam was deprecated in Matplotlib 3.3 and will be removed two minor releases later.
+2021-05-01 00:05:36,890:WARNING:In E:\college\python\lib\site-packages\matplotlib\mpl-data\stylelib\_classic_test.mplstyle: 
+The animation.avconv_args rcparam was deprecated in Matplotlib 3.3 and will be removed two minor releases later.
+2021-05-01 00:05:57,891:INFO:CREATED IMAGE 1 WITH SIZE: (500, 500) 
+2021-05-01 00:05:57,891:INFO:IMAGE 1 DATA HAS BEEN SET 
+2021-05-01 00:05:57,891:INFO:IMAGE 1 HAS BEEN IMPORTED 
+2021-05-01 00:05:57,891:INFO:ORIGINAL IMAGE 1 HAS BEEN DRAWN 
+2021-05-01 00:05:59,899:INFO:MAGNITUDE IMAGE 1 HAS BEEN DRAWN 
+2021-05-01 00:06:01,154:INFO:PHASE IMAGE 1 HAS BEEN DRAWN 
+2021-05-01 00:06:03,394:INFO:REAL IMAGE 1 HAS BEEN DRAWN 
+2021-05-01 00:06:24,220:INFO:CREATED IMAGE 2 WITH SIZE: (500, 500) 
+2021-05-01 00:06:24,220:INFO:IMAGE 2 DATA HAS BEEN SET 
+2021-05-01 00:06:24,221:INFO:IMAGE 2 HAS BEEN IMPORTED 
+2021-05-01 00:06:24,221:INFO:ORIGINAL IMAGE 2 HAS BEEN DRAWN 
+2021-05-01 00:06:26,106:INFO:PHASE IMAGE 2 HAS BEEN DRAWN 
+2021-05-01 00:06:30,973:INFO:OUTPUT 1 has been chosen by user
+2021-05-01 00:06:30,974:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:06:30,974:INFO:MIX FUNCTION STARTED 
+2021-05-01 00:06:30,974:INFO:Component 1 is Set 
+2021-05-01 00:06:30,975:INFO:Component 2 is Set 
+2021-05-01 00:06:30,989:INFO:OUTPUT 1 has been chosen by user
+2021-05-01 00:06:30,989:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:06:30,989:INFO:MIX FUNCTION STARTED 
+2021-05-01 00:06:30,989:INFO:Component 1 is Set 
+2021-05-01 00:06:30,989:INFO:Component 2 is Set 
+2021-05-01 00:06:31,005:INFO:OUTPUT 1 has been chosen by user
+2021-05-01 00:06:31,006:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:06:31,006:INFO:MIX FUNCTION STARTED 
+2021-05-01 00:06:31,006:INFO:Component 1 is Set 
+2021-05-01 00:06:31,006:INFO:Component 2 is Set 
+2021-05-01 00:06:31,021:INFO:OUTPUT 1 has been chosen by user
+2021-05-01 00:06:31,021:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:06:31,022:INFO:MIX FUNCTION STARTED 
+2021-05-01 00:06:31,022:INFO:Component 1 is Set 
+2021-05-01 00:06:31,022:INFO:Component 2 is Set 
+2021-05-01 00:06:31,150:INFO:OUTPUT 1 has been chosen by user
+2021-05-01 00:06:31,150:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:06:31,150:INFO:MIX FUNCTION STARTED 
+2021-05-01 00:06:31,150:INFO:Component 1 is Set 
+2021-05-01 00:06:31,151:INFO:Component 2 is Set 
+2021-05-01 00:06:31,173:INFO:OUTPUT 1 has been chosen by user
+2021-05-01 00:06:31,173:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:06:31,174:INFO:MIX FUNCTION STARTED 
+2021-05-01 00:06:31,174:INFO:Component 1 is Set 
+2021-05-01 00:06:31,174:INFO:Component 2 is Set 
+2021-05-01 00:06:31,253:INFO:OUTPUT 1 has been chosen by user
+2021-05-01 00:06:31,254:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:06:31,254:INFO:MIX FUNCTION STARTED 
+2021-05-01 00:06:31,254:INFO:Component 1 is Set 
+2021-05-01 00:06:31,254:INFO:Component 2 is Set 
+2021-05-01 00:06:31,301:INFO:OUTPUT 1 has been chosen by user
+2021-05-01 00:06:31,302:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:06:31,302:INFO:MIX FUNCTION STARTED 
+2021-05-01 00:06:31,302:INFO:Component 1 is Set 
+2021-05-01 00:06:31,302:INFO:Component 2 is Set 
+2021-05-01 00:06:31,341:INFO:OUTPUT 1 has been chosen by user
+2021-05-01 00:06:31,341:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:06:31,342:INFO:MIX FUNCTION STARTED 
+2021-05-01 00:06:31,342:INFO:Component 1 is Set 
+2021-05-01 00:06:31,342:INFO:Component 2 is Set 
+2021-05-01 00:06:31,357:INFO:OUTPUT 1 has been chosen by user
+2021-05-01 00:06:31,357:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:06:31,358:INFO:MIX FUNCTION STARTED 
+2021-05-01 00:06:31,358:INFO:Component 1 is Set 
+2021-05-01 00:06:31,358:INFO:Component 2 is Set 
+2021-05-01 00:06:33,687:INFO:Options Restricted for user
+2021-05-01 00:06:36,062:INFO:OUTPUT 1 has been chosen by user
+2021-05-01 00:06:36,062:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:06:36,062:INFO:MIX FUNCTION STARTED 
+2021-05-01 00:06:36,063:INFO:Component 1 is Set 
+2021-05-01 00:06:36,063:INFO:Component 2 is Set 
+2021-05-01 00:06:36,083:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-01 00:06:36,101:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-01 00:06:36,400:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-01 00:06:36,400:INFO:  MIXING HAS ENDED  
+2021-05-01 00:06:36,437:INFO:OUTPUT 1 has been chosen by user
+2021-05-01 00:06:36,437:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:06:36,438:INFO:MIX FUNCTION STARTED 
+2021-05-01 00:06:36,438:INFO:Component 1 is Set 
+2021-05-01 00:06:36,438:INFO:Component 2 is Set 
+2021-05-01 00:06:36,462:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-01 00:06:36,481:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-01 00:06:36,782:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-01 00:06:36,782:INFO:  MIXING HAS ENDED  
+2021-05-01 00:06:36,808:INFO:OUTPUT 1 has been chosen by user
+2021-05-01 00:06:36,808:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:06:36,808:INFO:MIX FUNCTION STARTED 
+2021-05-01 00:06:36,808:INFO:Component 1 is Set 
+2021-05-01 00:06:36,809:INFO:Component 2 is Set 
+2021-05-01 00:06:36,828:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-01 00:06:36,846:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-01 00:06:37,143:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-01 00:06:37,143:INFO:  MIXING HAS ENDED  
+2021-05-01 00:06:37,167:INFO:OUTPUT 1 has been chosen by user
+2021-05-01 00:06:37,167:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:06:37,167:INFO:MIX FUNCTION STARTED 
+2021-05-01 00:06:37,167:INFO:Component 1 is Set 
+2021-05-01 00:06:37,167:INFO:Component 2 is Set 
+2021-05-01 00:06:37,186:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-01 00:06:37,205:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-01 00:06:37,503:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-01 00:06:37,503:INFO:  MIXING HAS ENDED  
+2021-05-01 00:06:41,114:INFO:OUTPUT 1 has been chosen by user
+2021-05-01 00:06:41,115:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:06:41,115:INFO:MIX FUNCTION STARTED 
+2021-05-01 00:06:41,115:INFO:Component 1 is Set 
+2021-05-01 00:06:41,116:INFO:Component 2 is Set 
+2021-05-01 00:06:41,137:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-01 00:06:41,154:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-01 00:06:41,453:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-01 00:06:41,453:INFO:  MIXING HAS ENDED  
+2021-05-01 00:06:41,476:INFO:OUTPUT 1 has been chosen by user
+2021-05-01 00:06:41,476:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:06:41,476:INFO:MIX FUNCTION STARTED 
+2021-05-01 00:06:41,477:INFO:Component 1 is Set 
+2021-05-01 00:06:41,477:INFO:Component 2 is Set 
+2021-05-01 00:06:41,496:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-01 00:06:41,514:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-01 00:06:41,812:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-01 00:06:41,812:INFO:  MIXING HAS ENDED  
+2021-05-01 00:06:42,611:INFO:OUTPUT 1 has been chosen by user
+2021-05-01 00:06:42,611:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:06:42,611:INFO:MIX FUNCTION STARTED 
+2021-05-01 00:06:42,612:INFO:Component 1 is Set 
+2021-05-01 00:06:42,612:INFO:Component 2 is Set 
+2021-05-01 00:06:42,630:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-01 00:06:42,648:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-01 00:06:42,947:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-01 00:06:42,947:INFO:  MIXING HAS ENDED  
+2021-05-01 00:06:42,971:INFO:OUTPUT 1 has been chosen by user
+2021-05-01 00:06:42,972:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:06:42,972:INFO:MIX FUNCTION STARTED 
+2021-05-01 00:06:42,972:INFO:Component 1 is Set 
+2021-05-01 00:06:42,972:INFO:Component 2 is Set 
+2021-05-01 00:06:42,991:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-01 00:06:43,009:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-01 00:06:43,308:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-01 00:06:43,308:INFO:  MIXING HAS ENDED  
+2021-05-01 00:06:46,379:INFO:OUTPUT 1 has been chosen by user
+2021-05-01 00:06:46,380:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:06:46,380:INFO:MIX FUNCTION STARTED 
+2021-05-01 00:06:46,380:INFO:Component 1 is Set 
+2021-05-01 00:06:46,380:INFO:Component 2 is Set 
+2021-05-01 00:06:46,398:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-01 00:06:46,416:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-01 00:06:46,717:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-01 00:06:46,718:INFO:  MIXING HAS ENDED  
+2021-05-01 00:06:46,740:INFO:OUTPUT 1 has been chosen by user
+2021-05-01 00:06:46,740:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:06:46,740:INFO:MIX FUNCTION STARTED 
+2021-05-01 00:06:46,740:INFO:Component 1 is Set 
+2021-05-01 00:06:46,741:INFO:Component 2 is Set 
+2021-05-01 00:06:46,760:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-01 00:06:46,778:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-01 00:06:47,078:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-01 00:06:47,079:INFO:  MIXING HAS ENDED  
+2021-05-01 00:06:47,522:INFO:OUTPUT 1 has been chosen by user
+2021-05-01 00:06:47,522:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:06:47,523:INFO:MIX FUNCTION STARTED 
+2021-05-01 00:06:47,523:INFO:Component 1 is Set 
+2021-05-01 00:06:47,523:INFO:Component 2 is Set 
+2021-05-01 00:06:47,541:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-01 00:06:47,559:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-01 00:06:47,857:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-01 00:06:47,857:INFO:  MIXING HAS ENDED  
+2021-05-01 00:06:47,880:INFO:OUTPUT 1 has been chosen by user
+2021-05-01 00:06:47,880:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:06:47,881:INFO:MIX FUNCTION STARTED 
+2021-05-01 00:06:47,881:INFO:Component 1 is Set 
+2021-05-01 00:06:47,881:INFO:Component 2 is Set 
+2021-05-01 00:06:47,899:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-01 00:06:47,918:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-01 00:06:48,217:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-01 00:06:48,217:INFO:  MIXING HAS ENDED  
+2021-05-01 00:06:48,264:INFO:OUTPUT 1 has been chosen by user
+2021-05-01 00:06:48,264:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:06:48,265:INFO:MIX FUNCTION STARTED 
+2021-05-01 00:06:48,265:INFO:Component 1 is Set 
+2021-05-01 00:06:48,265:INFO:Component 2 is Set 
+2021-05-01 00:06:48,283:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-01 00:06:48,300:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-01 00:06:48,598:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-01 00:06:48,599:INFO:  MIXING HAS ENDED  
+2021-05-01 00:06:48,622:INFO:OUTPUT 1 has been chosen by user
+2021-05-01 00:06:48,622:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:06:48,623:INFO:MIX FUNCTION STARTED 
+2021-05-01 00:06:48,623:INFO:Component 1 is Set 
+2021-05-01 00:06:48,623:INFO:Component 2 is Set 
+2021-05-01 00:06:48,642:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-01 00:06:48,660:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-01 00:06:48,958:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-01 00:06:48,958:INFO:  MIXING HAS ENDED  
+2021-05-01 00:06:49,290:INFO:OUTPUT 1 has been chosen by user
+2021-05-01 00:06:49,291:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:06:49,291:INFO:MIX FUNCTION STARTED 
+2021-05-01 00:06:49,291:INFO:Component 1 is Set 
+2021-05-01 00:06:49,291:INFO:Component 2 is Set 
+2021-05-01 00:06:49,309:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-01 00:06:49,327:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-01 00:06:49,630:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-01 00:06:49,630:INFO:  MIXING HAS ENDED  
+2021-05-01 00:06:49,653:INFO:OUTPUT 1 has been chosen by user
+2021-05-01 00:06:49,654:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:06:49,654:INFO:MIX FUNCTION STARTED 
+2021-05-01 00:06:49,654:INFO:Component 1 is Set 
+2021-05-01 00:06:49,654:INFO:Component 2 is Set 
+2021-05-01 00:06:49,673:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-01 00:06:49,691:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-01 00:06:49,992:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-01 00:06:49,992:INFO:  MIXING HAS ENDED  
+2021-05-01 00:06:50,056:INFO:OUTPUT 1 has been chosen by user
+2021-05-01 00:06:50,057:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:06:50,057:INFO:MIX FUNCTION STARTED 
+2021-05-01 00:06:50,057:INFO:Component 1 is Set 
+2021-05-01 00:06:50,057:INFO:Component 2 is Set 
+2021-05-01 00:06:50,075:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-01 00:06:50,093:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-01 00:06:50,393:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-01 00:06:50,393:INFO:  MIXING HAS ENDED  
+2021-05-01 00:06:53,575:INFO:Options Restricted for user
+2021-05-01 00:06:54,204:INFO:OUTPUT 1 has been chosen by user
+2021-05-01 00:06:54,204:INFO:Real and Imaginary Mode Assigned
+2021-05-01 00:06:54,205:INFO:MIX FUNCTION STARTED 
+2021-05-01 00:06:54,205:INFO:Component 1 is Set 
+2021-05-01 00:06:54,205:INFO:Component 2 is Set 
+2021-05-01 00:06:54,226:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-01 00:06:54,246:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-01 00:06:54,372:INFO:MIX Has BEEN DRAWN WITH MODE Modes.realAndImaginary  
+2021-05-01 00:06:54,372:INFO:  MIXING HAS ENDED  
+2021-05-01 00:08:32,368:WARNING:In E:\college\python\lib\site-packages\matplotlib\mpl-data\stylelib\_classic_test.mplstyle: 
+The text.latex.preview rcparam was deprecated in Matplotlib 3.3 and will be removed two minor releases later.
+2021-05-01 00:08:32,368:WARNING:In E:\college\python\lib\site-packages\matplotlib\mpl-data\stylelib\_classic_test.mplstyle: 
+The mathtext.fallback_to_cm rcparam was deprecated in Matplotlib 3.3 and will be removed two minor releases later.
+2021-05-01 00:08:32,368:WARNING:In E:\college\python\lib\site-packages\matplotlib\mpl-data\stylelib\_classic_test.mplstyle: Support for setting the 'mathtext.fallback_to_cm' rcParam is deprecated since 3.3 and will be removed two minor releases later; use 'mathtext.fallback : 'cm' instead.
+2021-05-01 00:08:32,368:WARNING:In E:\college\python\lib\site-packages\matplotlib\mpl-data\stylelib\_classic_test.mplstyle: 
+The validate_bool_maybe_none function was deprecated in Matplotlib 3.3 and will be removed two minor releases later.
+2021-05-01 00:08:32,369:WARNING:In E:\college\python\lib\site-packages\matplotlib\mpl-data\stylelib\_classic_test.mplstyle: 
+The savefig.jpeg_quality rcparam was deprecated in Matplotlib 3.3 and will be removed two minor releases later.
+2021-05-01 00:08:32,369:WARNING:In E:\college\python\lib\site-packages\matplotlib\mpl-data\stylelib\_classic_test.mplstyle: 
+The keymap.all_axes rcparam was deprecated in Matplotlib 3.3 and will be removed two minor releases later.
+2021-05-01 00:08:32,369:WARNING:In E:\college\python\lib\site-packages\matplotlib\mpl-data\stylelib\_classic_test.mplstyle: 
+The animation.avconv_path rcparam was deprecated in Matplotlib 3.3 and will be removed two minor releases later.
+2021-05-01 00:08:32,369:WARNING:In E:\college\python\lib\site-packages\matplotlib\mpl-data\stylelib\_classic_test.mplstyle: 
+The animation.avconv_args rcparam was deprecated in Matplotlib 3.3 and will be removed two minor releases later.
+2021-05-01 00:08:53,500:INFO:CREATED IMAGE 1 WITH SIZE: (500, 500) 
+2021-05-01 00:08:53,500:INFO:IMAGE 1 DATA HAS BEEN SET 
+2021-05-01 00:08:53,501:INFO:IMAGE 1 HAS BEEN IMPORTED 
+2021-05-01 00:08:53,501:INFO:ORIGINAL IMAGE 1 HAS BEEN DRAWN 
+2021-05-01 00:08:57,692:INFO:PHASE IMAGE 1 HAS BEEN DRAWN 
+2021-05-01 00:08:59,306:INFO:MAGNITUDE IMAGE 1 HAS BEEN DRAWN 
+2021-05-01 00:09:00,362:INFO:REAL IMAGE 1 HAS BEEN DRAWN 
+2021-05-01 00:09:05,007:INFO:Options Restricted for user
+2021-05-01 00:09:05,622:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:09:05,645:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:09:05,662:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:09:05,669:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:09:05,677:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:09:05,693:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:09:05,717:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:09:05,789:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:09:05,814:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:09:05,853:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:09:08,693:INFO:OUTPUT 1 has been chosen by user
+2021-05-01 00:09:08,693:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:09:08,709:INFO:OUTPUT 1 has been chosen by user
+2021-05-01 00:09:08,709:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:09:08,717:INFO:OUTPUT 1 has been chosen by user
+2021-05-01 00:09:08,717:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:09:08,725:INFO:OUTPUT 1 has been chosen by user
+2021-05-01 00:09:08,726:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:09:08,741:INFO:OUTPUT 1 has been chosen by user
+2021-05-01 00:09:08,742:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:09:08,902:INFO:OUTPUT 1 has been chosen by user
+2021-05-01 00:09:08,902:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:09:09,125:INFO:OUTPUT 1 has been chosen by user
+2021-05-01 00:09:09,125:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:09:09,133:INFO:OUTPUT 1 has been chosen by user
+2021-05-01 00:09:09,133:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:09:09,141:INFO:OUTPUT 1 has been chosen by user
+2021-05-01 00:09:09,141:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:09:09,149:INFO:OUTPUT 1 has been chosen by user
+2021-05-01 00:09:09,149:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:09:09,158:INFO:OUTPUT 1 has been chosen by user
+2021-05-01 00:09:09,158:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:09:09,165:INFO:OUTPUT 1 has been chosen by user
+2021-05-01 00:09:09,166:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:09:09,333:INFO:OUTPUT 1 has been chosen by user
+2021-05-01 00:09:09,333:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:09:09,365:INFO:OUTPUT 1 has been chosen by user
+2021-05-01 00:09:09,365:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:09:09,374:INFO:OUTPUT 1 has been chosen by user
+2021-05-01 00:09:09,374:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:09:09,389:INFO:OUTPUT 1 has been chosen by user
+2021-05-01 00:09:09,390:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:09:09,405:INFO:OUTPUT 1 has been chosen by user
+2021-05-01 00:09:09,405:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:09:09,469:INFO:OUTPUT 1 has been chosen by user
+2021-05-01 00:09:09,469:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:09:09,494:INFO:OUTPUT 1 has been chosen by user
+2021-05-01 00:09:09,494:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:09:09,806:INFO:OUTPUT 1 has been chosen by user
+2021-05-01 00:09:09,806:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:09:09,822:INFO:OUTPUT 1 has been chosen by user
+2021-05-01 00:09:09,822:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:09:09,837:INFO:OUTPUT 1 has been chosen by user
+2021-05-01 00:09:09,838:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:09:10,093:INFO:OUTPUT 1 has been chosen by user
+2021-05-01 00:09:10,094:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:09:10,101:INFO:OUTPUT 1 has been chosen by user
+2021-05-01 00:09:10,101:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:09:10,109:INFO:OUTPUT 1 has been chosen by user
+2021-05-01 00:09:10,109:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:09:10,117:INFO:OUTPUT 1 has been chosen by user
+2021-05-01 00:09:10,118:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:09:10,134:INFO:OUTPUT 1 has been chosen by user
+2021-05-01 00:09:10,134:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:09:10,157:INFO:OUTPUT 1 has been chosen by user
+2021-05-01 00:09:10,157:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:09:10,174:INFO:OUTPUT 1 has been chosen by user
+2021-05-01 00:09:10,174:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:09:10,182:INFO:OUTPUT 1 has been chosen by user
+2021-05-01 00:09:10,182:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:09:10,197:INFO:OUTPUT 1 has been chosen by user
+2021-05-01 00:09:10,197:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:09:10,213:INFO:OUTPUT 1 has been chosen by user
+2021-05-01 00:09:10,213:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:09:10,230:INFO:OUTPUT 1 has been chosen by user
+2021-05-01 00:09:10,230:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:09:10,245:INFO:OUTPUT 1 has been chosen by user
+2021-05-01 00:09:10,246:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:09:10,253:INFO:OUTPUT 1 has been chosen by user
+2021-05-01 00:09:10,254:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:09:10,262:INFO:OUTPUT 1 has been chosen by user
+2021-05-01 00:09:10,263:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:09:10,278:INFO:OUTPUT 1 has been chosen by user
+2021-05-01 00:09:10,278:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:09:10,285:INFO:OUTPUT 1 has been chosen by user
+2021-05-01 00:09:10,286:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:09:10,293:INFO:OUTPUT 1 has been chosen by user
+2021-05-01 00:09:10,294:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:09:10,301:INFO:OUTPUT 1 has been chosen by user
+2021-05-01 00:09:10,302:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:09:10,309:INFO:OUTPUT 1 has been chosen by user
+2021-05-01 00:09:10,310:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:09:10,317:INFO:OUTPUT 1 has been chosen by user
+2021-05-01 00:09:10,318:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:09:10,341:INFO:OUTPUT 1 has been chosen by user
+2021-05-01 00:09:10,342:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:09:10,357:INFO:OUTPUT 1 has been chosen by user
+2021-05-01 00:09:10,358:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:09:10,365:INFO:OUTPUT 1 has been chosen by user
+2021-05-01 00:09:10,366:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:09:10,374:INFO:OUTPUT 1 has been chosen by user
+2021-05-01 00:09:10,375:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:09:10,382:INFO:OUTPUT 1 has been chosen by user
+2021-05-01 00:09:10,382:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:09:10,390:INFO:OUTPUT 1 has been chosen by user
+2021-05-01 00:09:10,390:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:09:10,397:INFO:OUTPUT 1 has been chosen by user
+2021-05-01 00:09:10,398:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:09:10,405:INFO:OUTPUT 1 has been chosen by user
+2021-05-01 00:09:10,406:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:09:10,414:INFO:OUTPUT 1 has been chosen by user
+2021-05-01 00:09:10,414:INFO:Magnitude and Phase Mode Assigned
+2021-05-01 00:11:55,037:WARNING:In E:\college\python\lib\site-packages\matplotlib\mpl-data\stylelib\_classic_test.mplstyle: 
+The text.latex.preview rcparam was deprecated in Matplotlib 3.3 and will be removed two minor releases later.
+2021-05-01 00:11:55,037:WARNING:In E:\college\python\lib\site-packages\matplotlib\mpl-data\stylelib\_classic_test.mplstyle: 
+The mathtext.fallback_to_cm rcparam was deprecated in Matplotlib 3.3 and will be removed two minor releases later.
+2021-05-01 00:11:55,037:WARNING:In E:\college\python\lib\site-packages\matplotlib\mpl-data\stylelib\_classic_test.mplstyle: Support for setting the 'mathtext.fallback_to_cm' rcParam is deprecated since 3.3 and will be removed two minor releases later; use 'mathtext.fallback : 'cm' instead.
+2021-05-01 00:11:55,037:WARNING:In E:\college\python\lib\site-packages\matplotlib\mpl-data\stylelib\_classic_test.mplstyle: 
+The validate_bool_maybe_none function was deprecated in Matplotlib 3.3 and will be removed two minor releases later.
+2021-05-01 00:11:55,037:WARNING:In E:\college\python\lib\site-packages\matplotlib\mpl-data\stylelib\_classic_test.mplstyle: 
+The savefig.jpeg_quality rcparam was deprecated in Matplotlib 3.3 and will be removed two minor releases later.
+2021-05-01 00:11:55,037:WARNING:In E:\college\python\lib\site-packages\matplotlib\mpl-data\stylelib\_classic_test.mplstyle: 
+The keymap.all_axes rcparam was deprecated in Matplotlib 3.3 and will be removed two minor releases later.
+2021-05-01 00:11:55,038:WARNING:In E:\college\python\lib\site-packages\matplotlib\mpl-data\stylelib\_classic_test.mplstyle: 
+The animation.avconv_path rcparam was deprecated in Matplotlib 3.3 and will be removed two minor releases later.
+2021-05-01 00:11:55,038:WARNING:In E:\college\python\lib\site-packages\matplotlib\mpl-data\stylelib\_classic_test.mplstyle: 
+The animation.avconv_args rcparam was deprecated in Matplotlib 3.3 and will be removed two minor releases later.
+2021-05-03 05:03:17,437:INFO:CREATED IMAGE 1 WITH SIZE: (1185, 674) 
+2021-05-03 05:03:17,438:INFO:IMAGE 1 DATA HAS BEEN SET 
+2021-05-03 05:03:17,438:INFO:IMAGE 1 HAS BEEN IMPORTED 
+2021-05-03 05:03:17,438:INFO:ORIGINAL IMAGE 1 HAS BEEN DRAWN 
+2021-05-03 05:03:29,932:INFO:MAGNITUDE IMAGE 1 HAS BEEN DRAWN 
+2021-05-03 05:03:32,595:INFO:PHASE IMAGE 1 HAS BEEN DRAWN 
+2021-05-03 05:03:35,644:INFO:REAL IMAGE 1 HAS BEEN DRAWN 
+2021-05-03 05:03:37,261:INFO:IMAGINARY IMAGE 1 HAS BEEN DRAWN 
+2021-05-03 05:03:45,230:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 05:03:45,230:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 05:03:45,231:INFO:MIX FUNCTION STARTED 
+2021-05-03 05:03:46,162:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 05:03:46,163:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 05:03:46,163:INFO:MIX FUNCTION STARTED 
+2021-05-03 05:03:49,447:INFO:ERROR MESSAGE ACTION: The User Tried To Mix Without Inserting Images 
+2021-05-03 05:03:50,439:INFO:ERROR MESSAGE ACTION: The User Tried To Mix Without Inserting Images 
+2021-05-03 05:04:51,543:INFO:CREATED IMAGE 2 WITH SIZE: (1185, 674) 
+2021-05-03 05:04:51,544:INFO:IMAGE 2 DATA HAS BEEN SET 
+2021-05-03 05:04:51,544:INFO:IMAGE 2 HAS BEEN IMPORTED 
+2021-05-03 05:04:51,544:INFO:ORIGINAL IMAGE 2 HAS BEEN DRAWN 
+2021-05-03 05:05:04,559:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 05:05:04,559:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 05:05:04,560:INFO:MIX FUNCTION STARTED 
+2021-05-03 05:05:04,560:INFO:Component 1 is Set 
+2021-05-03 05:05:04,560:INFO:Component 2 is Set 
+2021-05-03 05:05:04,575:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 05:05:04,575:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 05:05:04,575:INFO:MIX FUNCTION STARTED 
+2021-05-03 05:05:04,575:INFO:Component 1 is Set 
+2021-05-03 05:05:04,575:INFO:Component 2 is Set 
+2021-05-03 05:05:04,591:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 05:05:04,591:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 05:05:04,591:INFO:MIX FUNCTION STARTED 
+2021-05-03 05:05:04,592:INFO:Component 1 is Set 
+2021-05-03 05:05:04,592:INFO:Component 2 is Set 
+2021-05-03 05:05:05,063:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 05:05:05,064:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 05:05:05,064:INFO:MIX FUNCTION STARTED 
+2021-05-03 05:05:05,064:INFO:Component 1 is Set 
+2021-05-03 05:05:05,064:INFO:Component 2 is Set 
+2021-05-03 05:05:05,175:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 05:05:05,175:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 05:05:05,176:INFO:MIX FUNCTION STARTED 
+2021-05-03 05:05:05,176:INFO:Component 1 is Set 
+2021-05-03 05:05:05,176:INFO:Component 2 is Set 
+2021-05-03 05:05:05,207:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 05:05:05,207:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 05:05:05,208:INFO:MIX FUNCTION STARTED 
+2021-05-03 05:05:05,208:INFO:Component 1 is Set 
+2021-05-03 05:05:05,208:INFO:Component 2 is Set 
+2021-05-03 05:05:05,247:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 05:05:05,247:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 05:05:05,247:INFO:MIX FUNCTION STARTED 
+2021-05-03 05:05:05,247:INFO:Component 1 is Set 
+2021-05-03 05:05:05,248:INFO:Component 2 is Set 
+2021-05-03 05:05:05,271:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 05:05:05,272:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 05:05:05,272:INFO:MIX FUNCTION STARTED 
+2021-05-03 05:05:05,272:INFO:Component 1 is Set 
+2021-05-03 05:05:05,272:INFO:Component 2 is Set 
+2021-05-03 05:05:05,282:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 05:05:05,282:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 05:05:05,282:INFO:MIX FUNCTION STARTED 
+2021-05-03 05:05:05,283:INFO:Component 1 is Set 
+2021-05-03 05:05:05,283:INFO:Component 2 is Set 
+2021-05-03 05:05:05,303:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 05:05:05,303:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 05:05:05,303:INFO:MIX FUNCTION STARTED 
+2021-05-03 05:05:05,304:INFO:Component 1 is Set 
+2021-05-03 05:05:05,304:INFO:Component 2 is Set 
+2021-05-03 05:05:05,992:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 05:05:05,993:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 05:05:05,993:INFO:MIX FUNCTION STARTED 
+2021-05-03 05:05:05,993:INFO:Component 1 is Set 
+2021-05-03 05:05:05,994:INFO:Component 2 is Set 
+2021-05-03 05:05:06,006:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 05:05:06,007:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 05:05:06,007:INFO:MIX FUNCTION STARTED 
+2021-05-03 05:05:06,007:INFO:Component 1 is Set 
+2021-05-03 05:05:06,007:INFO:Component 2 is Set 
+2021-05-03 05:05:06,023:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 05:05:06,023:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 05:05:06,023:INFO:MIX FUNCTION STARTED 
+2021-05-03 05:05:06,024:INFO:Component 1 is Set 
+2021-05-03 05:05:06,024:INFO:Component 2 is Set 
+2021-05-03 05:05:06,039:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 05:05:06,039:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 05:05:06,039:INFO:MIX FUNCTION STARTED 
+2021-05-03 05:05:06,040:INFO:Component 1 is Set 
+2021-05-03 05:05:06,040:INFO:Component 2 is Set 
+2021-05-03 05:05:06,055:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 05:05:06,055:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 05:05:06,055:INFO:MIX FUNCTION STARTED 
+2021-05-03 05:05:06,056:INFO:Component 1 is Set 
+2021-05-03 05:05:06,056:INFO:Component 2 is Set 
+2021-05-03 05:05:06,134:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 05:05:06,135:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 05:05:06,135:INFO:MIX FUNCTION STARTED 
+2021-05-03 05:05:06,135:INFO:Component 1 is Set 
+2021-05-03 05:05:06,135:INFO:Component 2 is Set 
+2021-05-03 05:05:06,167:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 05:05:06,167:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 05:05:06,167:INFO:MIX FUNCTION STARTED 
+2021-05-03 05:05:06,167:INFO:Component 1 is Set 
+2021-05-03 05:05:06,168:INFO:Component 2 is Set 
+2021-05-03 05:05:06,215:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 05:05:06,215:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 05:05:06,215:INFO:MIX FUNCTION STARTED 
+2021-05-03 05:05:06,215:INFO:Component 1 is Set 
+2021-05-03 05:05:06,215:INFO:Component 2 is Set 
+2021-05-03 05:05:12,577:INFO:Options Restricted for user
+2021-05-03 05:05:14,871:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 05:05:14,872:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 05:05:14,872:INFO:MIX FUNCTION STARTED 
+2021-05-03 05:05:14,872:INFO:Component 1 is Set 
+2021-05-03 05:05:14,873:INFO:Component 2 is Set 
+2021-05-03 05:05:14,938:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-03 05:05:14,996:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-03 05:05:16,127:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-03 05:05:16,128:INFO:  MIXING HAS ENDED  
+2021-05-03 05:05:16,216:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 05:05:16,216:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 05:05:16,216:INFO:MIX FUNCTION STARTED 
+2021-05-03 05:05:16,216:INFO:Component 1 is Set 
+2021-05-03 05:05:16,216:INFO:Component 2 is Set 
+2021-05-03 05:05:16,275:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-03 05:05:16,331:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-03 05:05:17,461:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-03 05:05:17,461:INFO:  MIXING HAS ENDED  
+2021-05-03 05:05:18,921:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 05:05:18,921:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 05:05:18,922:INFO:MIX FUNCTION STARTED 
+2021-05-03 05:05:18,922:INFO:Component 1 is Set 
+2021-05-03 05:05:18,922:INFO:Component 2 is Set 
+2021-05-03 05:05:18,979:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-03 05:05:19,035:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-03 05:05:20,163:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-03 05:05:20,163:INFO:  MIXING HAS ENDED  
+2021-05-03 05:05:20,231:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 05:05:20,232:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 05:05:20,232:INFO:MIX FUNCTION STARTED 
+2021-05-03 05:05:20,232:INFO:Component 1 is Set 
+2021-05-03 05:05:20,232:INFO:Component 2 is Set 
+2021-05-03 05:05:20,291:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-03 05:05:20,346:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-03 05:05:21,473:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-03 05:05:21,474:INFO:  MIXING HAS ENDED  
+2021-05-03 05:05:21,542:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 05:05:21,543:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 05:05:21,543:INFO:MIX FUNCTION STARTED 
+2021-05-03 05:05:21,543:INFO:Component 1 is Set 
+2021-05-03 05:05:21,543:INFO:Component 2 is Set 
+2021-05-03 05:05:21,602:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-03 05:05:21,659:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-03 05:05:22,786:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-03 05:05:22,787:INFO:  MIXING HAS ENDED  
+2021-05-03 05:05:34,663:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 05:05:34,663:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 05:05:34,663:INFO:MIX FUNCTION STARTED 
+2021-05-03 05:05:34,663:INFO:Component 1 is Set 
+2021-05-03 05:05:34,663:INFO:Component 2 is Set 
+2021-05-03 05:05:34,720:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-03 05:05:34,776:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-03 05:05:35,907:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-03 05:05:35,907:INFO:  MIXING HAS ENDED  
+2021-05-03 05:05:35,974:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 05:05:35,975:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 05:05:35,975:INFO:MIX FUNCTION STARTED 
+2021-05-03 05:05:35,975:INFO:Component 1 is Set 
+2021-05-03 05:05:35,975:INFO:Component 2 is Set 
+2021-05-03 05:05:36,034:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-03 05:05:36,090:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-03 05:05:37,219:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-03 05:05:37,219:INFO:  MIXING HAS ENDED  
+2021-05-03 05:19:34,526:INFO:CREATED IMAGE 1 WITH SIZE: (1185, 674) 
+2021-05-03 05:19:34,527:INFO:IMAGE 1 DATA HAS BEEN SET 
+2021-05-03 05:19:34,527:INFO:IMAGE 1 HAS BEEN IMPORTED 
+2021-05-03 05:19:34,527:INFO:ORIGINAL IMAGE 1 HAS BEEN DRAWN 
+2021-05-03 05:22:38,499:INFO:CREATED IMAGE 1 WITH SIZE: (1185, 674) 
+2021-05-03 05:22:38,499:INFO:IMAGE 1 DATA HAS BEEN SET 
+2021-05-03 05:22:38,499:INFO:IMAGE 1 HAS BEEN IMPORTED 
+2021-05-03 05:22:38,499:INFO:ORIGINAL IMAGE 1 HAS BEEN DRAWN 
+2021-05-03 05:22:45,263:INFO:CREATED IMAGE 2 WITH SIZE: (1185, 674) 
+2021-05-03 05:22:45,263:INFO:IMAGE 2 DATA HAS BEEN SET 
+2021-05-03 05:22:45,263:INFO:IMAGE 2 HAS BEEN IMPORTED 
+2021-05-03 05:22:45,263:INFO:ORIGINAL IMAGE 2 HAS BEEN DRAWN 
+2021-05-03 05:23:04,818:INFO:CREATED IMAGE 2 WITH SIZE: (1185, 674) 
+2021-05-03 05:23:04,819:INFO:IMAGE 2 DATA HAS BEEN SET 
+2021-05-03 05:23:04,819:INFO:IMAGE 2 HAS BEEN IMPORTED 
+2021-05-03 05:23:04,819:INFO:ORIGINAL IMAGE 2 HAS BEEN DRAWN 
+2021-05-03 05:23:14,977:INFO:Options Restricted for user
+2021-05-03 05:23:16,815:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 05:23:16,815:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 05:23:16,816:INFO:MIX FUNCTION STARTED 
+2021-05-03 05:23:16,816:INFO:Component 1 is Set 
+2021-05-03 05:23:16,816:INFO:Component 2 is Set 
+2021-05-03 05:23:16,875:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-03 05:23:16,932:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-03 05:23:18,067:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-03 05:23:18,068:INFO:  MIXING HAS ENDED  
+2021-05-03 05:23:18,156:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 05:23:18,156:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 05:23:18,156:INFO:MIX FUNCTION STARTED 
+2021-05-03 05:23:18,156:INFO:Component 1 is Set 
+2021-05-03 05:23:18,157:INFO:Component 2 is Set 
+2021-05-03 05:23:18,214:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-03 05:23:18,270:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-03 05:23:19,399:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-03 05:23:19,399:INFO:  MIXING HAS ENDED  
+2021-05-03 05:23:21,679:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 05:23:21,680:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 05:23:21,680:INFO:MIX FUNCTION STARTED 
+2021-05-03 05:23:21,680:INFO:Component 1 is Set 
+2021-05-03 05:23:21,680:INFO:Component 2 is Set 
+2021-05-03 05:23:21,738:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-03 05:23:21,794:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-03 05:23:22,926:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-03 05:23:22,926:INFO:  MIXING HAS ENDED  
+2021-05-03 05:23:22,995:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 05:23:22,995:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 05:23:22,996:INFO:MIX FUNCTION STARTED 
+2021-05-03 05:23:22,996:INFO:Component 1 is Set 
+2021-05-03 05:23:22,996:INFO:Component 2 is Set 
+2021-05-03 05:23:23,054:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-03 05:23:23,113:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-03 05:23:24,261:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-03 05:23:24,261:INFO:  MIXING HAS ENDED  
+2021-05-03 05:23:24,329:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 05:23:24,330:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 05:23:24,330:INFO:MIX FUNCTION STARTED 
+2021-05-03 05:23:24,330:INFO:Component 1 is Set 
+2021-05-03 05:23:24,330:INFO:Component 2 is Set 
+2021-05-03 05:23:24,389:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-03 05:23:24,447:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-03 05:23:25,586:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-03 05:23:25,586:INFO:  MIXING HAS ENDED  
+2021-05-03 05:23:25,659:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 05:23:25,660:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 05:23:25,660:INFO:MIX FUNCTION STARTED 
+2021-05-03 05:23:25,660:INFO:Component 1 is Set 
+2021-05-03 05:23:25,660:INFO:Component 2 is Set 
+2021-05-03 05:23:25,719:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-03 05:23:25,776:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-03 05:23:26,914:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-03 05:23:26,915:INFO:  MIXING HAS ENDED  
+2021-05-03 05:23:31,111:INFO:OUTPUT 2 has been chosen by user
+2021-05-03 05:23:31,111:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 05:23:31,112:INFO:MIX FUNCTION STARTED 
+2021-05-03 05:23:31,112:INFO:Component 1 is Set 
+2021-05-03 05:23:31,112:INFO:Component 2 is Set 
+2021-05-03 05:23:31,171:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-03 05:23:31,228:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-03 05:23:32,365:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-03 05:23:32,365:INFO:  MIXING HAS ENDED  
+2021-05-03 05:23:32,434:INFO:OUTPUT 2 has been chosen by user
+2021-05-03 05:23:32,434:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 05:23:32,435:INFO:MIX FUNCTION STARTED 
+2021-05-03 05:23:32,435:INFO:Component 1 is Set 
+2021-05-03 05:23:32,435:INFO:Component 2 is Set 
+2021-05-03 05:23:32,493:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-03 05:23:32,549:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-03 05:23:33,696:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-03 05:23:33,696:INFO:  MIXING HAS ENDED  
+2021-05-03 05:23:33,766:INFO:OUTPUT 2 has been chosen by user
+2021-05-03 05:23:33,766:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 05:23:33,766:INFO:MIX FUNCTION STARTED 
+2021-05-03 05:23:33,766:INFO:Component 1 is Set 
+2021-05-03 05:23:33,766:INFO:Component 2 is Set 
+2021-05-03 05:23:33,824:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-03 05:23:33,880:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-03 05:23:35,015:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-03 05:23:35,016:INFO:  MIXING HAS ENDED  
+2021-05-03 05:23:35,550:INFO:OUTPUT 2 has been chosen by user
+2021-05-03 05:23:35,551:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 05:23:35,551:INFO:MIX FUNCTION STARTED 
+2021-05-03 05:23:35,551:INFO:Component 1 is Set 
+2021-05-03 05:23:35,551:INFO:Component 2 is Set 
+2021-05-03 05:23:35,609:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-03 05:23:35,665:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-03 05:23:36,818:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-03 05:23:36,819:INFO:  MIXING HAS ENDED  
+2021-05-03 05:24:45,521:INFO:CREATED IMAGE 1 WITH SIZE: (500, 500) 
+2021-05-03 05:24:45,522:INFO:IMAGE 1 DATA HAS BEEN SET 
+2021-05-03 05:24:45,522:INFO:IMAGE 1 HAS BEEN IMPORTED 
+2021-05-03 05:24:45,522:INFO:ORIGINAL IMAGE 1 HAS BEEN DRAWN 
+2021-05-03 05:24:51,672:INFO:CREATED IMAGE 2 WITH SIZE: (500, 500) 
+2021-05-03 05:24:51,672:INFO:IMAGE 2 DATA HAS BEEN SET 
+2021-05-03 05:24:51,672:INFO:IMAGE 2 HAS BEEN IMPORTED 
+2021-05-03 05:24:51,672:INFO:ORIGINAL IMAGE 2 HAS BEEN DRAWN 
+2021-05-03 05:24:54,460:INFO:MAGNITUDE IMAGE 1 HAS BEEN DRAWN 
+2021-05-03 05:25:01,881:INFO:Options Restricted for user
+2021-05-03 05:25:05,054:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 05:25:05,054:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 05:25:05,054:INFO:MIX FUNCTION STARTED 
+2021-05-03 05:25:05,055:INFO:Component 1 is Set 
+2021-05-03 05:25:05,055:INFO:Component 2 is Set 
+2021-05-03 05:25:05,073:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-03 05:25:05,091:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-03 05:25:05,370:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-03 05:25:05,370:INFO:  MIXING HAS ENDED  
+2021-05-03 05:25:05,404:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 05:25:05,404:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 05:25:05,405:INFO:MIX FUNCTION STARTED 
+2021-05-03 05:25:05,405:INFO:Component 1 is Set 
+2021-05-03 05:25:05,405:INFO:Component 2 is Set 
+2021-05-03 05:25:05,431:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-03 05:25:05,450:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-03 05:25:05,728:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-03 05:25:05,728:INFO:  MIXING HAS ENDED  
+2021-05-03 05:25:08,953:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 05:25:08,953:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 05:25:08,954:INFO:MIX FUNCTION STARTED 
+2021-05-03 05:25:08,954:INFO:Component 1 is Set 
+2021-05-03 05:25:08,954:INFO:Component 2 is Set 
+2021-05-03 05:25:08,972:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-03 05:25:08,989:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-03 05:25:09,287:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-03 05:25:09,288:INFO:  MIXING HAS ENDED  
+2021-05-03 05:25:09,311:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 05:25:09,311:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 05:25:09,312:INFO:MIX FUNCTION STARTED 
+2021-05-03 05:25:09,312:INFO:Component 1 is Set 
+2021-05-03 05:25:09,312:INFO:Component 2 is Set 
+2021-05-03 05:25:09,331:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-03 05:25:09,349:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-03 05:25:09,647:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-03 05:25:09,647:INFO:  MIXING HAS ENDED  
+2021-05-03 05:25:10,553:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 05:25:10,554:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 05:25:10,554:INFO:MIX FUNCTION STARTED 
+2021-05-03 05:25:10,554:INFO:Component 1 is Set 
+2021-05-03 05:25:10,554:INFO:Component 2 is Set 
+2021-05-03 05:25:10,573:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-03 05:25:10,590:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-03 05:25:10,890:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-03 05:25:10,891:INFO:  MIXING HAS ENDED  
+2021-05-03 05:25:10,914:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 05:25:10,914:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 05:25:10,915:INFO:MIX FUNCTION STARTED 
+2021-05-03 05:25:10,915:INFO:Component 1 is Set 
+2021-05-03 05:25:10,915:INFO:Component 2 is Set 
+2021-05-03 05:25:10,933:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-03 05:25:10,951:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-03 05:25:11,250:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-03 05:25:11,250:INFO:  MIXING HAS ENDED  
+2021-05-03 05:25:13,497:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 05:25:13,497:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 05:25:13,498:INFO:MIX FUNCTION STARTED 
+2021-05-03 05:25:13,498:INFO:Component 1 is Set 
+2021-05-03 05:25:13,498:INFO:Component 2 is Set 
+2021-05-03 05:25:13,516:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-03 05:25:13,533:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-03 05:25:13,833:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-03 05:25:13,833:INFO:  MIXING HAS ENDED  
+2021-05-03 05:25:13,859:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 05:25:13,859:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 05:25:13,860:INFO:MIX FUNCTION STARTED 
+2021-05-03 05:25:13,860:INFO:Component 1 is Set 
+2021-05-03 05:25:13,860:INFO:Component 2 is Set 
+2021-05-03 05:25:13,879:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-03 05:25:13,897:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-03 05:25:14,195:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-03 05:25:14,195:INFO:  MIXING HAS ENDED  
+2021-05-03 05:25:14,738:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 05:25:14,738:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 05:25:14,738:INFO:MIX FUNCTION STARTED 
+2021-05-03 05:25:14,738:INFO:Component 1 is Set 
+2021-05-03 05:25:14,738:INFO:Component 2 is Set 
+2021-05-03 05:25:14,757:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-03 05:25:14,775:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-03 05:25:15,075:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-03 05:25:15,076:INFO:  MIXING HAS ENDED  
+2021-05-03 05:25:15,099:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 05:25:15,099:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 05:25:15,100:INFO:MIX FUNCTION STARTED 
+2021-05-03 05:25:15,100:INFO:Component 1 is Set 
+2021-05-03 05:25:15,100:INFO:Component 2 is Set 
+2021-05-03 05:25:15,120:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-03 05:25:15,139:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-03 05:25:15,437:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-03 05:25:15,437:INFO:  MIXING HAS ENDED  
+2021-05-03 05:25:19,522:INFO:Options Restricted for user
+2021-05-03 05:25:22,457:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 05:25:22,457:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 05:25:22,458:INFO:MIX FUNCTION STARTED 
+2021-05-03 05:25:22,458:INFO:Component 1 is Set 
+2021-05-03 05:25:22,458:INFO:Component 2 is Set 
+2021-05-03 05:25:22,476:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-03 05:25:22,493:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-03 05:25:22,793:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-03 05:25:22,793:INFO:  MIXING HAS ENDED  
+2021-05-03 05:25:22,816:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 05:25:22,816:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 05:25:22,816:INFO:MIX FUNCTION STARTED 
+2021-05-03 05:25:22,816:INFO:Component 1 is Set 
+2021-05-03 05:25:22,817:INFO:Component 2 is Set 
+2021-05-03 05:25:22,836:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-03 05:25:22,854:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-03 05:25:23,154:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-03 05:25:23,155:INFO:  MIXING HAS ENDED  
+2021-05-03 05:26:02,602:INFO:CREATED IMAGE 1 WITH SIZE: (1185, 674) 
+2021-05-03 05:26:02,603:INFO:IMAGE 1 DATA HAS BEEN SET 
+2021-05-03 05:26:02,603:INFO:IMAGE 1 HAS BEEN IMPORTED 
+2021-05-03 05:26:02,603:INFO:ORIGINAL IMAGE 1 HAS BEEN DRAWN 
+2021-05-03 05:26:53,171:INFO:CREATED IMAGE 1 WITH SIZE: (1185, 674) 
+2021-05-03 05:26:53,172:INFO:IMAGE 1 DATA HAS BEEN SET 
+2021-05-03 05:26:53,172:INFO:IMAGE 1 HAS BEEN IMPORTED 
+2021-05-03 05:26:53,172:INFO:ORIGINAL IMAGE 1 HAS BEEN DRAWN 
+2021-05-03 05:27:21,487:INFO:CREATED IMAGE 1 WITH SIZE: (1185, 674) 
+2021-05-03 05:27:21,488:INFO:IMAGE 1 DATA HAS BEEN SET 
+2021-05-03 05:27:21,488:INFO:IMAGE 1 HAS BEEN IMPORTED 
+2021-05-03 05:27:21,488:INFO:ORIGINAL IMAGE 1 HAS BEEN DRAWN 
+2021-05-03 05:27:41,117:INFO:CREATED IMAGE 2 WITH SIZE: (1185, 674) 
+2021-05-03 05:27:41,117:INFO:IMAGE 2 DATA HAS BEEN SET 
+2021-05-03 05:27:41,117:INFO:IMAGE 2 HAS BEEN IMPORTED 
+2021-05-03 05:27:41,118:INFO:ORIGINAL IMAGE 2 HAS BEEN DRAWN 
+2021-05-03 05:27:46,257:INFO:Options Restricted for user
+2021-05-03 05:27:46,958:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 05:27:46,958:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 05:27:46,959:INFO:MIX FUNCTION STARTED 
+2021-05-03 05:27:46,959:INFO:Component 1 is Set 
+2021-05-03 05:27:46,959:INFO:Component 2 is Set 
+2021-05-03 05:27:47,016:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-03 05:27:47,073:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-03 05:27:48,199:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-03 05:27:48,200:INFO:  MIXING HAS ENDED  
+2021-05-03 05:27:48,288:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 05:27:48,289:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 05:27:48,289:INFO:MIX FUNCTION STARTED 
+2021-05-03 05:27:48,289:INFO:Component 1 is Set 
+2021-05-03 05:27:48,289:INFO:Component 2 is Set 
+2021-05-03 05:27:48,347:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-03 05:27:48,403:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-03 05:27:49,533:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-03 05:27:49,533:INFO:  MIXING HAS ENDED  
+2021-05-03 05:27:55,862:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 05:27:55,863:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 05:27:55,863:INFO:MIX FUNCTION STARTED 
+2021-05-03 05:27:55,863:INFO:Component 1 is Set 
+2021-05-03 05:27:55,863:INFO:Component 2 is Set 
+2021-05-03 05:27:55,920:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-03 05:27:55,977:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-03 05:27:57,103:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-03 05:27:57,103:INFO:  MIXING HAS ENDED  
+2021-05-03 05:27:57,172:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 05:27:57,172:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 05:27:57,173:INFO:MIX FUNCTION STARTED 
+2021-05-03 05:27:57,173:INFO:Component 1 is Set 
+2021-05-03 05:27:57,173:INFO:Component 2 is Set 
+2021-05-03 05:27:57,231:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-03 05:27:57,287:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-03 05:27:58,417:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-03 05:27:58,417:INFO:  MIXING HAS ENDED  
+2021-05-03 05:28:01,254:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 05:28:01,255:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 05:28:01,255:INFO:MIX FUNCTION STARTED 
+2021-05-03 05:28:01,255:INFO:Component 1 is Set 
+2021-05-03 05:28:01,255:INFO:Component 2 is Set 
+2021-05-03 05:28:01,313:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-03 05:28:01,371:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-03 05:28:02,502:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-03 05:28:02,502:INFO:  MIXING HAS ENDED  
+2021-05-03 05:28:02,572:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 05:28:02,572:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 05:28:02,573:INFO:MIX FUNCTION STARTED 
+2021-05-03 05:28:02,573:INFO:Component 1 is Set 
+2021-05-03 05:28:02,573:INFO:Component 2 is Set 
+2021-05-03 05:28:02,635:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-03 05:28:02,691:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-03 05:28:03,813:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-03 05:28:03,814:INFO:  MIXING HAS ENDED  
+2021-05-03 05:28:05,358:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 05:28:05,358:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 05:28:05,359:INFO:MIX FUNCTION STARTED 
+2021-05-03 05:28:05,359:INFO:Component 1 is Set 
+2021-05-03 05:28:05,359:INFO:Component 2 is Set 
+2021-05-03 05:28:05,415:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-03 05:28:05,472:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-03 05:28:06,597:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-03 05:28:06,597:INFO:  MIXING HAS ENDED  
+2021-05-03 05:28:06,666:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 05:28:06,666:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 05:28:06,667:INFO:MIX FUNCTION STARTED 
+2021-05-03 05:28:06,667:INFO:Component 1 is Set 
+2021-05-03 05:28:06,667:INFO:Component 2 is Set 
+2021-05-03 05:28:06,724:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-03 05:28:06,781:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-03 05:28:07,907:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-03 05:28:07,907:INFO:  MIXING HAS ENDED  
+2021-05-03 05:28:11,695:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 05:28:11,695:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 05:28:11,695:INFO:MIX FUNCTION STARTED 
+2021-05-03 05:28:11,696:INFO:Component 1 is Set 
+2021-05-03 05:28:11,696:INFO:Component 2 is Set 
+2021-05-03 05:28:11,753:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-03 05:28:11,809:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-03 05:28:12,936:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-03 05:28:12,936:INFO:  MIXING HAS ENDED  
+2021-05-03 05:28:40,029:INFO:CREATED IMAGE 1 WITH SIZE: (1185, 674) 
+2021-05-03 05:28:40,029:INFO:IMAGE 1 DATA HAS BEEN SET 
+2021-05-03 05:28:40,030:INFO:IMAGE 1 HAS BEEN IMPORTED 
+2021-05-03 05:28:40,030:INFO:ORIGINAL IMAGE 1 HAS BEEN DRAWN 
+2021-05-03 05:37:23,340:INFO:CREATED IMAGE 1 WITH SIZE: (1185, 674) 
+2021-05-03 05:37:23,341:INFO:IMAGE 1 DATA HAS BEEN SET 
+2021-05-03 05:37:23,341:INFO:IMAGE 1 HAS BEEN IMPORTED 
+2021-05-03 05:37:23,341:INFO:ORIGINAL IMAGE 1 HAS BEEN DRAWN 
+2021-05-03 05:37:41,462:INFO:CREATED IMAGE 2 WITH SIZE: (1185, 674) 
+2021-05-03 05:37:41,462:INFO:IMAGE 2 DATA HAS BEEN SET 
+2021-05-03 05:37:41,463:INFO:IMAGE 2 HAS BEEN IMPORTED 
+2021-05-03 05:37:41,463:INFO:ORIGINAL IMAGE 2 HAS BEEN DRAWN 
+2021-05-03 05:37:44,975:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 05:37:44,975:INFO:MIX FUNCTION STARTED 
+2021-05-03 05:37:46,584:INFO:ERROR MESSAGE ACTION: The User Tried to Mix Without Choosing Output
+2021-05-03 05:37:47,082:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 05:37:47,082:INFO:MIX FUNCTION STARTED 
+2021-05-03 05:37:48,312:INFO:ERROR MESSAGE ACTION: The User Tried to Mix Without Choosing Output
+2021-05-03 05:37:49,569:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 05:37:49,569:INFO:MIX FUNCTION STARTED 
+2021-05-03 05:37:49,680:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 05:37:49,680:INFO:MIX FUNCTION STARTED 
+2021-05-03 05:37:51,288:INFO:ERROR MESSAGE ACTION: The User Tried to Mix Without Choosing Output
+2021-05-03 05:37:51,783:INFO:ERROR MESSAGE ACTION: The User Tried to Mix Without Choosing Output
+2021-05-03 05:37:54,631:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 05:37:54,631:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 05:37:54,631:INFO:MIX FUNCTION STARTED 
+2021-05-03 05:37:54,631:INFO:Component 1 is Set 
+2021-05-03 05:37:54,631:INFO:Component 2 is Set 
+2021-05-03 05:37:54,894:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 05:37:54,895:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 05:37:54,895:INFO:MIX FUNCTION STARTED 
+2021-05-03 05:37:54,895:INFO:Component 1 is Set 
+2021-05-03 05:37:54,895:INFO:Component 2 is Set 
+2021-05-03 05:37:54,926:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 05:37:54,927:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 05:37:54,927:INFO:MIX FUNCTION STARTED 
+2021-05-03 05:37:54,927:INFO:Component 1 is Set 
+2021-05-03 05:37:54,927:INFO:Component 2 is Set 
+2021-05-03 05:37:54,936:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 05:37:54,936:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 05:37:54,936:INFO:MIX FUNCTION STARTED 
+2021-05-03 05:37:54,937:INFO:Component 1 is Set 
+2021-05-03 05:37:54,937:INFO:Component 2 is Set 
+2021-05-03 05:37:54,944:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 05:37:54,945:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 05:37:54,945:INFO:MIX FUNCTION STARTED 
+2021-05-03 05:37:54,945:INFO:Component 1 is Set 
+2021-05-03 05:37:54,945:INFO:Component 2 is Set 
+2021-05-03 05:37:55,366:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 05:37:55,366:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 05:37:55,366:INFO:MIX FUNCTION STARTED 
+2021-05-03 05:37:55,367:INFO:Component 1 is Set 
+2021-05-03 05:37:55,367:INFO:Component 2 is Set 
+2021-05-03 05:38:00,663:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 05:38:00,663:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 05:38:00,663:INFO:MIX FUNCTION STARTED 
+2021-05-03 05:38:00,663:INFO:Component 1 is Set 
+2021-05-03 05:38:00,663:INFO:Component 2 is Set 
+2021-05-03 05:38:00,711:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 05:38:00,711:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 05:38:00,711:INFO:MIX FUNCTION STARTED 
+2021-05-03 05:38:00,711:INFO:Component 1 is Set 
+2021-05-03 05:38:00,712:INFO:Component 2 is Set 
+2021-05-03 05:38:00,727:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 05:38:00,727:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 05:38:00,727:INFO:MIX FUNCTION STARTED 
+2021-05-03 05:38:00,727:INFO:Component 1 is Set 
+2021-05-03 05:38:00,728:INFO:Component 2 is Set 
+2021-05-03 05:38:00,759:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 05:38:00,760:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 05:38:00,760:INFO:MIX FUNCTION STARTED 
+2021-05-03 05:38:00,760:INFO:Component 1 is Set 
+2021-05-03 05:38:00,760:INFO:Component 2 is Set 
+2021-05-03 05:38:00,958:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 05:38:00,959:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 05:38:00,959:INFO:MIX FUNCTION STARTED 
+2021-05-03 05:38:00,959:INFO:Component 1 is Set 
+2021-05-03 05:38:00,959:INFO:Component 2 is Set 
+2021-05-03 05:38:00,983:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 05:38:00,983:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 05:38:00,984:INFO:MIX FUNCTION STARTED 
+2021-05-03 05:38:00,984:INFO:Component 1 is Set 
+2021-05-03 05:38:00,984:INFO:Component 2 is Set 
+2021-05-03 05:38:03,144:INFO:Options Restricted for user
+2021-05-03 05:38:03,791:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 05:38:03,792:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 05:38:03,792:INFO:MIX FUNCTION STARTED 
+2021-05-03 05:38:03,792:INFO:Component 1 is Set 
+2021-05-03 05:38:03,792:INFO:Component 2 is Set 
+2021-05-03 05:38:03,857:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-03 05:38:03,917:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-03 05:38:05,043:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-03 05:38:05,044:INFO:  MIXING HAS ENDED  
+2021-05-03 05:38:05,131:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 05:38:05,132:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 05:38:05,132:INFO:MIX FUNCTION STARTED 
+2021-05-03 05:38:05,132:INFO:Component 1 is Set 
+2021-05-03 05:38:05,132:INFO:Component 2 is Set 
+2021-05-03 05:38:05,190:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-03 05:38:05,246:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-03 05:38:06,370:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-03 05:38:06,370:INFO:  MIXING HAS ENDED  
+2021-05-03 05:48:22,490:INFO:CREATED IMAGE 1 WITH SIZE: (1185, 674) 
+2021-05-03 05:48:22,490:INFO:IMAGE 1 DATA HAS BEEN SET 
+2021-05-03 05:48:22,490:INFO:IMAGE 1 HAS BEEN IMPORTED 
+2021-05-03 05:48:22,490:INFO:ORIGINAL IMAGE 1 HAS BEEN DRAWN 
+2021-05-03 06:44:02,825:INFO:CREATED IMAGE 1 WITH SIZE: (1185, 674) 
+2021-05-03 06:44:02,825:INFO:IMAGE 1 DATA HAS BEEN SET 
+2021-05-03 06:44:02,825:INFO:IMAGE 1 HAS BEEN IMPORTED 
+2021-05-03 06:44:02,825:INFO:ORIGINAL IMAGE 1 HAS BEEN DRAWN 
+2021-05-03 06:44:05,394:INFO:MAGNITUDE IMAGE 1 HAS BEEN DRAWN 
+2021-05-03 06:51:12,948:INFO:CREATED IMAGE 1 WITH SIZE: (1185, 674) 
+2021-05-03 06:51:12,948:INFO:IMAGE 1 DATA HAS BEEN SET 
+2021-05-03 06:51:12,948:INFO:IMAGE 1 HAS BEEN IMPORTED 
+2021-05-03 06:51:12,948:INFO:ORIGINAL IMAGE 1 HAS BEEN DRAWN 
+2021-05-03 06:51:20,546:INFO:CREATED IMAGE 2 WITH SIZE: (1185, 674) 
+2021-05-03 06:51:20,546:INFO:IMAGE 2 DATA HAS BEEN SET 
+2021-05-03 06:51:20,546:INFO:IMAGE 2 HAS BEEN IMPORTED 
+2021-05-03 06:51:20,546:INFO:ORIGINAL IMAGE 2 HAS BEEN DRAWN 
+2021-05-03 06:51:23,940:INFO:MAGNITUDE IMAGE 1 HAS BEEN DRAWN 
+2021-05-03 06:51:25,916:INFO:PHASE IMAGE 2 HAS BEEN DRAWN 
+2021-05-03 06:51:29,091:INFO:REAL IMAGE 1 HAS BEEN DRAWN 
+2021-05-03 06:51:31,763:INFO:IMAGINARY IMAGE 2 HAS BEEN DRAWN 
+2021-05-03 06:51:36,821:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 06:51:36,821:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 06:51:36,821:INFO:MIX FUNCTION STARTED 
+2021-05-03 06:51:36,821:INFO:Component 1 is Set 
+2021-05-03 06:51:36,821:INFO:Component 2 is Set 
+2021-05-03 06:51:36,838:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 06:51:36,838:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 06:51:36,838:INFO:MIX FUNCTION STARTED 
+2021-05-03 06:51:36,838:INFO:Component 1 is Set 
+2021-05-03 06:51:36,839:INFO:Component 2 is Set 
+2021-05-03 06:51:36,847:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 06:51:36,848:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 06:51:36,848:INFO:MIX FUNCTION STARTED 
+2021-05-03 06:51:36,848:INFO:Component 1 is Set 
+2021-05-03 06:51:36,848:INFO:Component 2 is Set 
+2021-05-03 06:51:36,856:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 06:51:36,857:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 06:51:36,857:INFO:MIX FUNCTION STARTED 
+2021-05-03 06:51:36,857:INFO:Component 1 is Set 
+2021-05-03 06:51:36,857:INFO:Component 2 is Set 
+2021-05-03 06:51:36,866:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 06:51:36,866:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 06:51:36,866:INFO:MIX FUNCTION STARTED 
+2021-05-03 06:51:36,867:INFO:Component 1 is Set 
+2021-05-03 06:51:36,867:INFO:Component 2 is Set 
+2021-05-03 06:51:36,926:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 06:51:36,926:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 06:51:36,927:INFO:MIX FUNCTION STARTED 
+2021-05-03 06:51:36,927:INFO:Component 1 is Set 
+2021-05-03 06:51:36,927:INFO:Component 2 is Set 
+2021-05-03 06:51:37,858:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 06:51:37,858:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 06:51:37,858:INFO:MIX FUNCTION STARTED 
+2021-05-03 06:51:37,858:INFO:Component 1 is Set 
+2021-05-03 06:51:37,858:INFO:Component 2 is Set 
+2021-05-03 06:51:37,886:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 06:51:37,887:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 06:51:37,887:INFO:MIX FUNCTION STARTED 
+2021-05-03 06:51:37,887:INFO:Component 1 is Set 
+2021-05-03 06:51:37,887:INFO:Component 2 is Set 
+2021-05-03 06:51:37,935:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 06:51:37,935:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 06:51:37,935:INFO:MIX FUNCTION STARTED 
+2021-05-03 06:51:37,935:INFO:Component 1 is Set 
+2021-05-03 06:51:37,935:INFO:Component 2 is Set 
+2021-05-03 06:51:37,951:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 06:51:37,951:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 06:51:37,951:INFO:MIX FUNCTION STARTED 
+2021-05-03 06:51:37,951:INFO:Component 1 is Set 
+2021-05-03 06:51:37,951:INFO:Component 2 is Set 
+2021-05-03 06:51:37,959:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 06:51:37,960:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 06:51:37,960:INFO:MIX FUNCTION STARTED 
+2021-05-03 06:51:37,960:INFO:Component 1 is Set 
+2021-05-03 06:51:37,960:INFO:Component 2 is Set 
+2021-05-03 06:51:37,991:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 06:51:37,991:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 06:51:37,991:INFO:MIX FUNCTION STARTED 
+2021-05-03 06:51:37,991:INFO:Component 1 is Set 
+2021-05-03 06:51:37,992:INFO:Component 2 is Set 
+2021-05-03 06:51:39,597:INFO:Options Restricted for user
+2021-05-03 06:51:40,735:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 06:51:40,743:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 06:51:40,743:INFO:MIX FUNCTION STARTED 
+2021-05-03 06:51:40,743:INFO:Component 1 is Set 
+2021-05-03 06:51:40,743:INFO:Component 2 is Set 
+2021-05-03 06:51:40,796:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-03 06:51:40,856:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-03 06:51:41,994:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-03 06:51:41,994:INFO:  MIXING HAS ENDED  
+2021-05-03 06:51:42,084:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 06:51:42,084:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 06:51:42,084:INFO:MIX FUNCTION STARTED 
+2021-05-03 06:51:42,084:INFO:Component 1 is Set 
+2021-05-03 06:51:42,084:INFO:Component 2 is Set 
+2021-05-03 06:51:42,145:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-03 06:51:42,196:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-03 06:51:43,329:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-03 06:51:43,329:INFO:  MIXING HAS ENDED  
+2021-05-03 06:51:43,400:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 06:51:43,400:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 06:51:43,400:INFO:MIX FUNCTION STARTED 
+2021-05-03 06:51:43,400:INFO:Component 1 is Set 
+2021-05-03 06:51:43,400:INFO:Component 2 is Set 
+2021-05-03 06:51:43,461:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-03 06:51:43,512:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-03 06:51:44,645:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-03 06:51:44,646:INFO:  MIXING HAS ENDED  
+2021-05-03 06:51:45,164:INFO:OUTPUT 1 has been chosen by user
+2021-05-03 06:51:45,164:INFO:Magnitude and Phase Mode Assigned
+2021-05-03 06:51:45,164:INFO:MIX FUNCTION STARTED 
+2021-05-03 06:51:45,164:INFO:Component 1 is Set 
+2021-05-03 06:51:45,164:INFO:Component 2 is Set 
+2021-05-03 06:51:45,223:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-03 06:51:45,277:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-03 06:51:46,398:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-03 06:51:46,398:INFO:  MIXING HAS ENDED  
+2021-05-03 06:54:39,624:INFO:CREATED IMAGE 1 WITH SIZE: (1185, 674) 
+2021-05-03 06:54:39,624:INFO:IMAGE 1 DATA HAS BEEN SET 
+2021-05-03 06:54:39,632:INFO:IMAGE 1 HAS BEEN IMPORTED 
+2021-05-03 06:54:39,632:INFO:ORIGINAL IMAGE 1 HAS BEEN DRAWN 
+2021-05-03 06:58:01,105:INFO:CREATED IMAGE 1 WITH SIZE: (1185, 674) 
+2021-05-03 06:58:01,105:INFO:IMAGE 1 DATA HAS BEEN SET 
+2021-05-03 06:58:01,105:INFO:IMAGE 1 HAS BEEN IMPORTED 
+2021-05-03 06:58:01,105:INFO:ORIGINAL IMAGE 1 HAS BEEN DRAWN 
+2021-05-03 06:58:04,178:INFO:MAGNITUDE IMAGE 1 HAS BEEN DRAWN 
+2021-05-03 06:58:07,356:INFO:PHASE IMAGE 1 HAS BEEN DRAWN 
+2021-05-05 02:05:11,672:INFO:CREATED IMAGE 1 WITH SIZE: (1185, 674) 
+2021-05-05 02:05:11,692:INFO:IMAGE 1 DATA HAS BEEN SET 
+2021-05-05 02:05:11,692:INFO:IMAGE 1 HAS BEEN IMPORTED 
+2021-05-05 02:05:11,692:INFO:ORIGINAL IMAGE 1 HAS BEEN DRAWN 
+2021-05-05 02:05:28,848:INFO:CREATED IMAGE 2 WITH SIZE: (1185, 674) 
+2021-05-05 02:05:28,848:INFO:IMAGE 2 DATA HAS BEEN SET 
+2021-05-05 02:05:28,848:INFO:IMAGE 2 HAS BEEN IMPORTED 
+2021-05-05 02:05:28,849:INFO:ORIGINAL IMAGE 2 HAS BEEN DRAWN 
+2021-05-05 02:05:32,894:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:05:32,894:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:05:32,895:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:05:32,895:INFO:Component 1 is Set 
+2021-05-05 02:05:32,895:INFO:Component 2 is Set 
+2021-05-05 02:05:32,925:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:05:32,926:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:05:32,926:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:05:32,926:INFO:Component 1 is Set 
+2021-05-05 02:05:32,926:INFO:Component 2 is Set 
+2021-05-05 02:05:32,989:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:05:32,989:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:05:32,989:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:05:32,989:INFO:Component 1 is Set 
+2021-05-05 02:05:32,989:INFO:Component 2 is Set 
+2021-05-05 02:05:33,038:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:05:33,038:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:05:33,038:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:05:33,038:INFO:Component 1 is Set 
+2021-05-05 02:05:33,039:INFO:Component 2 is Set 
+2021-05-05 02:05:33,199:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:05:33,199:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:05:33,200:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:05:33,200:INFO:Component 1 is Set 
+2021-05-05 02:05:33,206:INFO:Component 2 is Set 
+2021-05-05 02:05:33,654:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:05:33,654:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:05:33,655:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:05:33,655:INFO:Component 1 is Set 
+2021-05-05 02:05:33,655:INFO:Component 2 is Set 
+2021-05-05 02:05:33,717:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:05:33,717:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:05:33,717:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:05:33,718:INFO:Component 1 is Set 
+2021-05-05 02:05:33,718:INFO:Component 2 is Set 
+2021-05-05 02:05:33,733:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:05:33,733:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:05:33,734:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:05:33,734:INFO:Component 1 is Set 
+2021-05-05 02:05:33,734:INFO:Component 2 is Set 
+2021-05-05 02:05:33,749:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:05:33,749:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:05:33,750:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:05:33,750:INFO:Component 1 is Set 
+2021-05-05 02:05:33,750:INFO:Component 2 is Set 
+2021-05-05 02:05:38,400:INFO:Options Restricted for user
+2021-05-05 02:05:39,397:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:05:39,398:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:05:39,398:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:05:39,398:INFO:Component 1 is Set 
+2021-05-05 02:05:39,398:INFO:Component 2 is Set 
+2021-05-05 02:05:39,464:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:05:39,520:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:05:40,653:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:05:40,653:INFO:  MIXING HAS ENDED  
+2021-05-05 02:05:40,741:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:05:40,741:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:05:40,741:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:05:40,742:INFO:Component 1 is Set 
+2021-05-05 02:05:40,742:INFO:Component 2 is Set 
+2021-05-05 02:05:40,799:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:05:40,854:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:05:41,985:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:05:41,986:INFO:  MIXING HAS ENDED  
+2021-05-05 02:05:42,054:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:05:42,054:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:05:42,054:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:05:42,054:INFO:Component 1 is Set 
+2021-05-05 02:05:42,055:INFO:Component 2 is Set 
+2021-05-05 02:05:42,112:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:05:42,178:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:05:43,321:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:05:43,321:INFO:  MIXING HAS ENDED  
+2021-05-05 02:05:43,389:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:05:43,390:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:05:43,390:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:05:43,390:INFO:Component 1 is Set 
+2021-05-05 02:05:43,390:INFO:Component 2 is Set 
+2021-05-05 02:05:43,446:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:05:43,502:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:05:44,634:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:05:44,634:INFO:  MIXING HAS ENDED  
+2021-05-05 02:06:08,482:INFO:CREATED IMAGE 1 WITH SIZE: (500, 500) 
+2021-05-05 02:06:08,482:INFO:IMAGE 1 DATA HAS BEEN SET 
+2021-05-05 02:06:08,482:INFO:IMAGE 1 HAS BEEN IMPORTED 
+2021-05-05 02:06:08,482:INFO:ORIGINAL IMAGE 1 HAS BEEN DRAWN 
+2021-05-05 02:06:14,292:INFO:CREATED IMAGE 2 WITH SIZE: (500, 500) 
+2021-05-05 02:06:14,293:INFO:IMAGE 2 DATA HAS BEEN SET 
+2021-05-05 02:06:14,293:INFO:IMAGE 2 HAS BEEN IMPORTED 
+2021-05-05 02:06:14,293:INFO:ORIGINAL IMAGE 2 HAS BEEN DRAWN 
+2021-05-05 02:06:21,079:INFO:Options Restricted for user
+2021-05-05 02:06:22,405:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:06:22,405:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:06:22,405:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:06:22,406:INFO:Component 1 is Set 
+2021-05-05 02:06:22,406:INFO:Component 2 is Set 
+2021-05-05 02:06:22,428:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:06:22,449:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:06:22,768:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:06:22,768:INFO:  MIXING HAS ENDED  
+2021-05-05 02:06:22,797:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:06:22,798:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:06:22,798:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:06:22,798:INFO:Component 1 is Set 
+2021-05-05 02:06:22,798:INFO:Component 2 is Set 
+2021-05-05 02:06:22,824:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:06:22,842:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:06:23,145:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:06:23,145:INFO:  MIXING HAS ENDED  
+2021-05-05 02:06:25,087:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:06:25,088:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:06:25,088:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:06:25,088:INFO:Component 1 is Set 
+2021-05-05 02:06:25,088:INFO:Component 2 is Set 
+2021-05-05 02:06:25,106:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:06:25,123:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:06:25,428:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:06:25,428:INFO:  MIXING HAS ENDED  
+2021-05-05 02:06:25,451:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:06:25,452:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:06:25,452:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:06:25,452:INFO:Component 1 is Set 
+2021-05-05 02:06:25,452:INFO:Component 2 is Set 
+2021-05-05 02:06:25,471:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:06:25,488:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:06:25,790:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:06:25,790:INFO:  MIXING HAS ENDED  
+2021-05-05 02:06:25,814:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:06:25,814:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:06:25,814:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:06:25,814:INFO:Component 1 is Set 
+2021-05-05 02:06:25,814:INFO:Component 2 is Set 
+2021-05-05 02:06:25,833:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:06:25,849:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:06:26,151:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:06:26,152:INFO:  MIXING HAS ENDED  
+2021-05-05 02:06:26,174:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:06:26,175:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:06:26,175:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:06:26,175:INFO:Component 1 is Set 
+2021-05-05 02:06:26,175:INFO:Component 2 is Set 
+2021-05-05 02:06:26,194:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:06:26,211:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:06:26,514:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:06:26,514:INFO:  MIXING HAS ENDED  
+2021-05-05 02:06:26,538:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:06:26,538:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:06:26,538:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:06:26,538:INFO:Component 1 is Set 
+2021-05-05 02:06:26,538:INFO:Component 2 is Set 
+2021-05-05 02:06:26,557:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:06:26,575:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:06:26,877:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:06:26,877:INFO:  MIXING HAS ENDED  
+2021-05-05 02:06:26,882:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:06:26,882:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:06:26,882:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:06:26,882:INFO:Component 1 is Set 
+2021-05-05 02:06:26,882:INFO:Component 2 is Set 
+2021-05-05 02:06:26,900:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:06:26,918:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:06:27,226:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:06:27,226:INFO:  MIXING HAS ENDED  
+2021-05-05 02:06:27,255:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:06:27,255:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:06:27,255:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:06:27,255:INFO:Component 1 is Set 
+2021-05-05 02:06:27,255:INFO:Component 2 is Set 
+2021-05-05 02:06:27,276:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:06:27,297:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:06:27,612:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:06:27,613:INFO:  MIXING HAS ENDED  
+2021-05-05 02:06:27,641:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:06:27,641:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:06:27,641:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:06:27,642:INFO:Component 1 is Set 
+2021-05-05 02:06:27,642:INFO:Component 2 is Set 
+2021-05-05 02:06:27,663:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:06:27,683:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:06:28,002:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:06:28,002:INFO:  MIXING HAS ENDED  
+2021-05-05 02:06:29,151:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:06:29,151:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:06:29,152:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:06:29,152:INFO:Component 1 is Set 
+2021-05-05 02:06:29,152:INFO:Component 2 is Set 
+2021-05-05 02:06:29,172:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:06:29,191:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:06:29,509:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:06:29,509:INFO:  MIXING HAS ENDED  
+2021-05-05 02:06:29,532:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:06:29,533:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:06:29,533:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:06:29,533:INFO:Component 1 is Set 
+2021-05-05 02:06:29,534:INFO:Component 2 is Set 
+2021-05-05 02:06:29,552:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:06:29,571:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:06:29,877:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:06:29,878:INFO:  MIXING HAS ENDED  
+2021-05-05 02:06:29,903:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:06:29,903:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:06:29,903:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:06:29,904:INFO:Component 1 is Set 
+2021-05-05 02:06:29,904:INFO:Component 2 is Set 
+2021-05-05 02:06:29,922:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:06:29,940:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:06:30,244:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:06:30,244:INFO:  MIXING HAS ENDED  
+2021-05-05 02:06:30,268:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:06:30,268:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:06:30,268:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:06:30,268:INFO:Component 1 is Set 
+2021-05-05 02:06:30,268:INFO:Component 2 is Set 
+2021-05-05 02:06:30,287:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:06:30,305:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:06:30,607:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:06:30,608:INFO:  MIXING HAS ENDED  
+2021-05-05 02:06:30,633:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:06:30,633:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:06:30,633:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:06:30,634:INFO:Component 1 is Set 
+2021-05-05 02:06:30,634:INFO:Component 2 is Set 
+2021-05-05 02:06:30,653:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:06:30,670:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:06:30,971:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:06:30,971:INFO:  MIXING HAS ENDED  
+2021-05-05 02:06:30,995:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:06:30,995:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:06:30,995:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:06:30,995:INFO:Component 1 is Set 
+2021-05-05 02:06:30,995:INFO:Component 2 is Set 
+2021-05-05 02:06:31,014:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:06:31,032:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:06:31,333:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:06:31,333:INFO:  MIXING HAS ENDED  
+2021-05-05 02:06:31,376:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:06:31,376:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:06:31,376:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:06:31,376:INFO:Component 1 is Set 
+2021-05-05 02:06:31,376:INFO:Component 2 is Set 
+2021-05-05 02:06:31,395:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:06:31,413:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:06:31,716:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:06:31,717:INFO:  MIXING HAS ENDED  
+2021-05-05 02:06:31,741:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:06:31,741:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:06:31,741:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:06:31,741:INFO:Component 1 is Set 
+2021-05-05 02:06:31,741:INFO:Component 2 is Set 
+2021-05-05 02:06:31,760:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:06:31,778:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:06:32,080:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:06:32,081:INFO:  MIXING HAS ENDED  
+2021-05-05 02:06:32,104:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:06:32,105:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:06:32,105:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:06:32,105:INFO:Component 1 is Set 
+2021-05-05 02:06:32,105:INFO:Component 2 is Set 
+2021-05-05 02:06:32,125:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:06:32,146:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:06:32,466:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:06:32,466:INFO:  MIXING HAS ENDED  
+2021-05-05 02:06:32,847:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:06:32,848:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:06:32,848:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:06:32,848:INFO:Component 1 is Set 
+2021-05-05 02:06:32,848:INFO:Component 2 is Set 
+2021-05-05 02:06:32,866:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:06:32,883:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:06:33,186:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:06:33,186:INFO:  MIXING HAS ENDED  
+2021-05-05 02:06:33,210:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:06:33,210:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:06:33,210:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:06:33,210:INFO:Component 1 is Set 
+2021-05-05 02:06:33,211:INFO:Component 2 is Set 
+2021-05-05 02:06:33,229:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:06:33,248:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:06:33,553:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:06:33,553:INFO:  MIXING HAS ENDED  
+2021-05-05 02:06:33,576:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:06:33,577:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:06:33,577:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:06:33,577:INFO:Component 1 is Set 
+2021-05-05 02:06:33,577:INFO:Component 2 is Set 
+2021-05-05 02:06:33,595:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:06:33,614:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:06:33,917:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:06:33,917:INFO:  MIXING HAS ENDED  
+2021-05-05 02:06:34,967:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:06:34,968:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:06:34,968:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:06:34,968:INFO:Component 1 is Set 
+2021-05-05 02:06:34,968:INFO:Component 2 is Set 
+2021-05-05 02:06:34,986:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:06:35,004:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:06:35,306:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:06:35,306:INFO:  MIXING HAS ENDED  
+2021-05-05 02:06:35,331:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:06:35,332:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:06:35,332:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:06:35,332:INFO:Component 1 is Set 
+2021-05-05 02:06:35,332:INFO:Component 2 is Set 
+2021-05-05 02:06:35,351:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:06:35,369:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:06:35,673:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:06:35,673:INFO:  MIXING HAS ENDED  
+2021-05-05 02:06:35,697:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:06:35,698:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:06:35,698:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:06:35,698:INFO:Component 1 is Set 
+2021-05-05 02:06:35,698:INFO:Component 2 is Set 
+2021-05-05 02:06:35,717:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:06:35,735:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:06:36,038:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:06:36,038:INFO:  MIXING HAS ENDED  
+2021-05-05 02:06:36,880:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:06:36,880:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:06:36,880:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:06:36,881:INFO:Component 1 is Set 
+2021-05-05 02:06:36,881:INFO:Component 2 is Set 
+2021-05-05 02:06:36,898:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:06:36,916:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:06:37,231:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:06:37,231:INFO:  MIXING HAS ENDED  
+2021-05-05 02:06:38,056:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:06:38,056:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:06:38,056:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:06:38,057:INFO:Component 1 is Set 
+2021-05-05 02:06:38,057:INFO:Component 2 is Set 
+2021-05-05 02:06:38,074:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:06:38,092:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:06:38,392:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:06:38,393:INFO:  MIXING HAS ENDED  
+2021-05-05 02:06:40,407:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:06:40,408:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:06:40,408:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:06:40,408:INFO:Component 1 is Set 
+2021-05-05 02:06:40,408:INFO:Component 2 is Set 
+2021-05-05 02:06:40,426:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:06:40,445:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:06:40,749:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:06:40,749:INFO:  MIXING HAS ENDED  
+2021-05-05 02:11:00,637:INFO:CREATED IMAGE 1 WITH SIZE: (500, 500) 
+2021-05-05 02:11:00,637:INFO:IMAGE 1 DATA HAS BEEN SET 
+2021-05-05 02:11:00,637:INFO:IMAGE 1 HAS BEEN IMPORTED 
+2021-05-05 02:11:00,638:INFO:ORIGINAL IMAGE 1 HAS BEEN DRAWN 
+2021-05-05 02:11:06,875:INFO:CREATED IMAGE 2 WITH SIZE: (500, 500) 
+2021-05-05 02:11:06,875:INFO:IMAGE 2 DATA HAS BEEN SET 
+2021-05-05 02:11:06,875:INFO:IMAGE 2 HAS BEEN IMPORTED 
+2021-05-05 02:11:06,875:INFO:ORIGINAL IMAGE 2 HAS BEEN DRAWN 
+2021-05-05 02:11:08,893:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:11:08,894:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:11:08,894:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:11:08,894:INFO:Component 1 is Set 
+2021-05-05 02:11:08,895:INFO:Component 2 is Set 
+2021-05-05 02:11:08,941:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:11:08,942:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:11:08,942:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:11:08,942:INFO:Component 1 is Set 
+2021-05-05 02:11:08,942:INFO:Component 2 is Set 
+2021-05-05 02:11:08,957:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:11:08,958:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:11:08,958:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:11:08,958:INFO:Component 1 is Set 
+2021-05-05 02:11:08,958:INFO:Component 2 is Set 
+2021-05-05 02:11:08,966:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:11:08,966:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:11:08,967:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:11:08,967:INFO:Component 1 is Set 
+2021-05-05 02:11:08,967:INFO:Component 2 is Set 
+2021-05-05 02:11:08,976:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:11:08,976:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:11:08,977:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:11:08,977:INFO:Component 1 is Set 
+2021-05-05 02:11:08,977:INFO:Component 2 is Set 
+2021-05-05 02:11:08,985:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:11:08,986:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:11:08,986:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:11:08,986:INFO:Component 1 is Set 
+2021-05-05 02:11:08,986:INFO:Component 2 is Set 
+2021-05-05 02:11:08,997:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:11:08,998:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:11:08,998:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:11:08,998:INFO:Component 1 is Set 
+2021-05-05 02:11:08,998:INFO:Component 2 is Set 
+2021-05-05 02:11:09,558:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:11:09,558:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:11:09,558:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:11:09,559:INFO:Component 1 is Set 
+2021-05-05 02:11:09,559:INFO:Component 2 is Set 
+2021-05-05 02:11:09,575:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:11:09,575:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:11:09,575:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:11:09,576:INFO:Component 1 is Set 
+2021-05-05 02:11:09,576:INFO:Component 2 is Set 
+2021-05-05 02:11:09,589:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:11:09,589:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:11:09,589:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:11:09,590:INFO:Component 1 is Set 
+2021-05-05 02:11:09,590:INFO:Component 2 is Set 
+2021-05-05 02:11:09,606:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:11:09,606:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:11:09,606:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:11:09,607:INFO:Component 1 is Set 
+2021-05-05 02:11:09,607:INFO:Component 2 is Set 
+2021-05-05 02:11:09,614:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:11:09,614:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:11:09,614:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:11:09,614:INFO:Component 1 is Set 
+2021-05-05 02:11:09,615:INFO:Component 2 is Set 
+2021-05-05 02:11:09,622:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:11:09,622:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:11:09,622:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:11:09,623:INFO:Component 1 is Set 
+2021-05-05 02:11:09,623:INFO:Component 2 is Set 
+2021-05-05 02:11:09,645:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:11:09,645:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:11:09,646:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:11:09,646:INFO:Component 1 is Set 
+2021-05-05 02:11:09,646:INFO:Component 2 is Set 
+2021-05-05 02:11:11,167:INFO:Options Restricted for user
+2021-05-05 02:11:12,373:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:11:12,373:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:11:12,373:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:11:12,373:INFO:Component 1 is Set 
+2021-05-05 02:11:12,374:INFO:Component 2 is Set 
+2021-05-05 02:11:12,394:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:11:12,415:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:11:12,728:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:11:12,729:INFO:  MIXING HAS ENDED  
+2021-05-05 02:11:12,762:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:11:12,762:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:11:12,762:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:11:12,763:INFO:Component 1 is Set 
+2021-05-05 02:11:12,763:INFO:Component 2 is Set 
+2021-05-05 02:11:12,789:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:11:12,808:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:11:13,107:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:11:13,107:INFO:  MIXING HAS ENDED  
+2021-05-05 02:11:13,130:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:11:13,131:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:11:13,131:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:11:13,131:INFO:Component 1 is Set 
+2021-05-05 02:11:13,131:INFO:Component 2 is Set 
+2021-05-05 02:11:13,150:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:11:13,168:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:11:13,468:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:11:13,468:INFO:  MIXING HAS ENDED  
+2021-05-05 02:11:13,493:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:11:13,493:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:11:13,493:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:11:13,493:INFO:Component 1 is Set 
+2021-05-05 02:11:13,494:INFO:Component 2 is Set 
+2021-05-05 02:11:13,513:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:11:13,531:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:11:13,830:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:11:13,830:INFO:  MIXING HAS ENDED  
+2021-05-05 02:11:14,106:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:11:14,107:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:11:14,107:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:11:14,107:INFO:Component 1 is Set 
+2021-05-05 02:11:14,108:INFO:Component 2 is Set 
+2021-05-05 02:11:14,126:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:11:14,144:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:11:14,443:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:11:14,443:INFO:  MIXING HAS ENDED  
+2021-05-05 02:11:14,467:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:11:14,467:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:11:14,467:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:11:14,467:INFO:Component 1 is Set 
+2021-05-05 02:11:14,468:INFO:Component 2 is Set 
+2021-05-05 02:11:14,486:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:11:14,504:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:11:14,803:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:11:14,803:INFO:  MIXING HAS ENDED  
+2021-05-05 02:11:15,426:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:11:15,427:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:11:15,427:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:11:15,427:INFO:Component 1 is Set 
+2021-05-05 02:11:15,427:INFO:Component 2 is Set 
+2021-05-05 02:11:15,445:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:11:15,463:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:11:15,760:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:11:15,760:INFO:  MIXING HAS ENDED  
+2021-05-05 02:11:15,784:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:11:15,784:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:11:15,784:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:11:15,784:INFO:Component 1 is Set 
+2021-05-05 02:11:15,785:INFO:Component 2 is Set 
+2021-05-05 02:11:15,803:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:11:15,821:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:11:16,119:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:11:16,120:INFO:  MIXING HAS ENDED  
+2021-05-05 02:11:16,691:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:11:16,691:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:11:16,692:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:11:16,692:INFO:Component 1 is Set 
+2021-05-05 02:11:16,692:INFO:Component 2 is Set 
+2021-05-05 02:11:16,709:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:11:16,727:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:11:17,029:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:11:17,029:INFO:  MIXING HAS ENDED  
+2021-05-05 02:11:17,053:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:11:17,053:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:11:17,053:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:11:17,053:INFO:Component 1 is Set 
+2021-05-05 02:11:17,053:INFO:Component 2 is Set 
+2021-05-05 02:11:17,072:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:11:17,089:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:11:17,403:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:11:17,403:INFO:  MIXING HAS ENDED  
+2021-05-05 02:12:37,022:INFO:CREATED IMAGE 1 WITH SIZE: (500, 500) 
+2021-05-05 02:12:37,022:INFO:IMAGE 1 DATA HAS BEEN SET 
+2021-05-05 02:12:37,023:INFO:IMAGE 1 HAS BEEN IMPORTED 
+2021-05-05 02:12:37,023:INFO:ORIGINAL IMAGE 1 HAS BEEN DRAWN 
+2021-05-05 02:12:44,615:INFO:CREATED IMAGE 2 WITH SIZE: (500, 500) 
+2021-05-05 02:12:44,616:INFO:IMAGE 2 DATA HAS BEEN SET 
+2021-05-05 02:12:44,616:INFO:IMAGE 2 HAS BEEN IMPORTED 
+2021-05-05 02:12:44,616:INFO:ORIGINAL IMAGE 2 HAS BEEN DRAWN 
+2021-05-05 02:12:49,743:INFO:Options Restricted for user
+2021-05-05 02:12:51,196:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:12:51,196:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:12:51,197:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:12:51,197:INFO:Component 1 is Set 
+2021-05-05 02:12:51,197:INFO:Component 2 is Set 
+2021-05-05 02:12:51,216:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:12:51,234:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:12:51,536:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:12:51,538:INFO:  MIXING HAS ENDED  
+2021-05-05 02:12:51,569:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:12:51,569:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:12:51,570:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:12:51,570:INFO:Component 1 is Set 
+2021-05-05 02:12:51,570:INFO:Component 2 is Set 
+2021-05-05 02:12:51,596:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:12:51,615:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:12:51,916:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:12:51,916:INFO:  MIXING HAS ENDED  
+2021-05-05 02:12:51,940:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:12:51,940:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:12:51,940:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:12:51,940:INFO:Component 1 is Set 
+2021-05-05 02:12:51,940:INFO:Component 2 is Set 
+2021-05-05 02:12:51,959:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:12:51,977:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:12:52,287:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:12:52,287:INFO:  MIXING HAS ENDED  
+2021-05-05 02:12:52,943:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:12:52,943:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:12:52,943:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:12:52,944:INFO:Component 1 is Set 
+2021-05-05 02:12:52,944:INFO:Component 2 is Set 
+2021-05-05 02:12:52,962:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:12:52,979:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:12:53,282:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:12:53,282:INFO:  MIXING HAS ENDED  
+2021-05-05 02:12:53,305:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:12:53,305:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:12:53,306:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:12:53,306:INFO:Component 1 is Set 
+2021-05-05 02:12:53,306:INFO:Component 2 is Set 
+2021-05-05 02:12:53,325:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:12:53,342:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:12:53,643:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:12:53,643:INFO:  MIXING HAS ENDED  
+2021-05-05 02:12:53,670:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:12:53,670:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:12:53,670:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:12:53,670:INFO:Component 1 is Set 
+2021-05-05 02:12:53,670:INFO:Component 2 is Set 
+2021-05-05 02:12:53,689:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:12:53,707:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:12:54,009:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:12:54,010:INFO:  MIXING HAS ENDED  
+2021-05-05 02:22:55,070:INFO:Options Restricted for user
+2021-05-05 02:23:02,813:INFO:CREATED IMAGE 1 WITH SIZE: (500, 500) 
+2021-05-05 02:23:02,813:INFO:IMAGE 1 DATA HAS BEEN SET 
+2021-05-05 02:23:02,814:INFO:IMAGE 1 HAS BEEN IMPORTED 
+2021-05-05 02:23:02,814:INFO:ORIGINAL IMAGE 1 HAS BEEN DRAWN 
+2021-05-05 02:23:04,781:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:23:04,782:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:23:04,995:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:23:04,996:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:23:05,189:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:23:05,189:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:23:06,766:INFO:ERROR MESSAGE ACTION: The User Tried To Mix Without Inserting Images 
+2021-05-05 02:23:07,335:INFO:ERROR MESSAGE ACTION: The User Tried To Mix Without Inserting Images 
+2021-05-05 02:23:07,845:INFO:ERROR MESSAGE ACTION: The User Tried To Mix Without Inserting Images 
+2021-05-05 02:23:11,949:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:23:11,949:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:23:11,949:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:23:12,165:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:23:12,165:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:23:12,166:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:23:12,285:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:23:12,286:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:23:12,286:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:23:12,408:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:23:12,408:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:23:12,408:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:23:14,269:INFO:ERROR MESSAGE ACTION: The User Tried To Mix Without Inserting Images 
+2021-05-05 02:23:14,679:INFO:ERROR MESSAGE ACTION: The User Tried To Mix Without Inserting Images 
+2021-05-05 02:23:15,207:INFO:ERROR MESSAGE ACTION: The User Tried To Mix Without Inserting Images 
+2021-05-05 02:23:15,807:INFO:ERROR MESSAGE ACTION: The User Tried To Mix Without Inserting Images 
+2021-05-05 02:23:24,254:INFO:CREATED IMAGE 2 WITH SIZE: (500, 500) 
+2021-05-05 02:23:24,255:INFO:IMAGE 2 DATA HAS BEEN SET 
+2021-05-05 02:23:24,255:INFO:IMAGE 2 HAS BEEN IMPORTED 
+2021-05-05 02:23:24,255:INFO:ORIGINAL IMAGE 2 HAS BEEN DRAWN 
+2021-05-05 02:23:26,069:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:23:26,070:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:23:26,070:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:23:26,070:INFO:Component 1 is Set 
+2021-05-05 02:23:26,071:INFO:Component 2 is Set 
+2021-05-05 02:23:26,101:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:23:26,119:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:23:26,388:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:23:26,389:INFO:  MIXING HAS ENDED  
+2021-05-05 02:23:26,422:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:23:26,422:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:23:26,423:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:23:26,423:INFO:Component 1 is Set 
+2021-05-05 02:23:26,423:INFO:Component 2 is Set 
+2021-05-05 02:23:26,459:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:23:26,476:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:23:26,745:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:23:26,746:INFO:  MIXING HAS ENDED  
+2021-05-05 02:23:27,352:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:23:27,352:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:23:27,353:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:23:27,353:INFO:Component 1 is Set 
+2021-05-05 02:23:27,353:INFO:Component 2 is Set 
+2021-05-05 02:23:27,387:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:23:27,409:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:23:27,706:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:23:27,706:INFO:  MIXING HAS ENDED  
+2021-05-05 02:23:27,738:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:23:27,738:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:23:27,738:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:23:27,739:INFO:Component 1 is Set 
+2021-05-05 02:23:27,739:INFO:Component 2 is Set 
+2021-05-05 02:23:27,768:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:23:27,786:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:23:28,060:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:23:28,060:INFO:  MIXING HAS ENDED  
+2021-05-05 02:23:29,648:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:23:29,648:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:23:29,648:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:23:29,648:INFO:Component 1 is Set 
+2021-05-05 02:23:29,648:INFO:Component 2 is Set 
+2021-05-05 02:23:29,677:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:23:29,694:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:23:29,968:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:23:29,969:INFO:  MIXING HAS ENDED  
+2021-05-05 02:23:29,993:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:23:29,993:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:23:29,994:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:23:29,994:INFO:Component 1 is Set 
+2021-05-05 02:23:29,994:INFO:Component 2 is Set 
+2021-05-05 02:23:30,024:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:23:30,042:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:23:30,315:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:23:30,315:INFO:  MIXING HAS ENDED  
+2021-05-05 02:23:30,339:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:23:30,339:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:23:30,339:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:23:30,339:INFO:Component 1 is Set 
+2021-05-05 02:23:30,339:INFO:Component 2 is Set 
+2021-05-05 02:23:30,369:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:23:30,387:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:23:30,662:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:23:30,662:INFO:  MIXING HAS ENDED  
+2021-05-05 02:23:30,687:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:23:30,687:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:23:30,687:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:23:30,687:INFO:Component 1 is Set 
+2021-05-05 02:23:30,687:INFO:Component 2 is Set 
+2021-05-05 02:23:30,716:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:23:30,735:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:23:31,007:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:23:31,007:INFO:  MIXING HAS ENDED  
+2021-05-05 02:23:31,032:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:23:31,032:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:23:31,032:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:23:31,032:INFO:Component 1 is Set 
+2021-05-05 02:23:31,032:INFO:Component 2 is Set 
+2021-05-05 02:23:31,063:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:23:31,080:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:23:31,351:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:23:31,351:INFO:  MIXING HAS ENDED  
+2021-05-05 02:43:11,550:INFO:CREATED IMAGE 1 WITH SIZE: (500, 500) 
+2021-05-05 02:43:11,550:INFO:IMAGE 1 DATA HAS BEEN SET 
+2021-05-05 02:43:11,550:INFO:IMAGE 1 HAS BEEN IMPORTED 
+2021-05-05 02:43:11,550:INFO:ORIGINAL IMAGE 1 HAS BEEN DRAWN 
+2021-05-05 02:43:16,751:INFO:CREATED IMAGE 2 WITH SIZE: (500, 500) 
+2021-05-05 02:43:16,751:INFO:IMAGE 2 DATA HAS BEEN SET 
+2021-05-05 02:43:16,751:INFO:IMAGE 2 HAS BEEN IMPORTED 
+2021-05-05 02:43:16,751:INFO:ORIGINAL IMAGE 2 HAS BEEN DRAWN 
+2021-05-05 02:43:17,945:INFO:MAGNITUDE IMAGE 1 HAS BEEN DRAWN 
+2021-05-05 02:43:19,746:INFO:PHASE IMAGE 2 HAS BEEN DRAWN 
+2021-05-05 02:43:22,916:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:43:22,916:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:43:22,916:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:43:22,916:INFO:Component 1 is Set 
+2021-05-05 02:43:22,916:INFO:Component 2 is Set 
+2021-05-05 02:43:22,957:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:43:22,957:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:43:22,957:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:43:22,957:INFO:Component 1 is Set 
+2021-05-05 02:43:22,958:INFO:Component 2 is Set 
+2021-05-05 02:43:22,973:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:43:22,973:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:43:22,973:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:43:22,974:INFO:Component 1 is Set 
+2021-05-05 02:43:22,974:INFO:Component 2 is Set 
+2021-05-05 02:43:22,982:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:43:22,982:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:43:22,982:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:43:22,982:INFO:Component 1 is Set 
+2021-05-05 02:43:22,983:INFO:Component 2 is Set 
+2021-05-05 02:43:22,998:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:43:22,998:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:43:22,998:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:43:22,998:INFO:Component 1 is Set 
+2021-05-05 02:43:22,998:INFO:Component 2 is Set 
+2021-05-05 02:43:23,068:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:43:23,068:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:43:23,068:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:43:23,068:INFO:Component 1 is Set 
+2021-05-05 02:43:23,068:INFO:Component 2 is Set 
+2021-05-05 02:43:23,190:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:43:23,190:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:43:23,190:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:43:23,190:INFO:Component 1 is Set 
+2021-05-05 02:43:23,190:INFO:Component 2 is Set 
+2021-05-05 02:43:26,718:INFO:Options Restricted for user
+2021-05-05 02:43:27,366:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:43:27,366:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:43:27,366:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:43:27,366:INFO:Component 1 is Set 
+2021-05-05 02:43:27,374:INFO:Component 2 is Set 
+2021-05-05 02:43:27,386:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:43:27,407:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:43:27,704:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:43:27,704:INFO:  MIXING HAS ENDED  
+2021-05-05 02:43:27,744:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:43:27,744:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:43:27,744:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:43:27,745:INFO:Component 1 is Set 
+2021-05-05 02:43:27,745:INFO:Component 2 is Set 
+2021-05-05 02:43:27,771:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:43:27,784:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:43:28,080:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:43:28,088:INFO:  MIXING HAS ENDED  
+2021-05-05 02:55:13,688:INFO:CREATED IMAGE 1 WITH SIZE: (500, 500) 
+2021-05-05 02:55:13,688:INFO:IMAGE 1 DATA HAS BEEN SET 
+2021-05-05 02:55:13,696:INFO:IMAGE 1 HAS BEEN IMPORTED 
+2021-05-05 02:55:13,696:INFO:ORIGINAL IMAGE 1 HAS BEEN DRAWN 
+2021-05-05 02:55:21,041:INFO:CREATED IMAGE 2 WITH SIZE: (500, 500) 
+2021-05-05 02:55:21,041:INFO:IMAGE 2 DATA HAS BEEN SET 
+2021-05-05 02:55:21,041:INFO:IMAGE 2 HAS BEEN IMPORTED 
+2021-05-05 02:55:21,041:INFO:ORIGINAL IMAGE 2 HAS BEEN DRAWN 
+2021-05-05 02:55:22,190:INFO:MAGNITUDE IMAGE 1 HAS BEEN DRAWN 
+2021-05-05 02:55:23,930:INFO:PHASE IMAGE 2 HAS BEEN DRAWN 
+2021-05-05 02:55:26,889:INFO:Options Restricted for user
+2021-05-05 02:55:27,636:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:55:27,636:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:55:27,636:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:55:27,636:INFO:Component 1 is Set 
+2021-05-05 02:55:27,636:INFO:Component 2 is Set 
+2021-05-05 02:55:27,655:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:55:27,667:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:55:27,970:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:55:27,970:INFO:  MIXING HAS ENDED  
+2021-05-05 02:55:30,688:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:55:30,688:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:55:30,688:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:55:30,688:INFO:Component 1 is Set 
+2021-05-05 02:55:30,688:INFO:Component 2 is Set 
+2021-05-05 02:55:30,706:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:55:30,718:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:55:31,041:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:55:31,041:INFO:  MIXING HAS ENDED  
+2021-05-05 02:55:31,063:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:55:31,063:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:55:31,063:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:55:31,063:INFO:Component 1 is Set 
+2021-05-05 02:55:31,063:INFO:Component 2 is Set 
+2021-05-05 02:55:31,083:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:55:31,102:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:55:31,397:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:55:31,397:INFO:  MIXING HAS ENDED  
+2021-05-05 02:55:34,245:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:55:34,245:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:55:34,245:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:55:34,245:INFO:Component 1 is Set 
+2021-05-05 02:55:34,245:INFO:Component 2 is Set 
+2021-05-05 02:55:34,266:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:55:34,284:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:55:34,579:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:55:34,579:INFO:  MIXING HAS ENDED  
+2021-05-05 02:55:34,608:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:55:34,608:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:55:34,608:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:55:34,610:INFO:Component 1 is Set 
+2021-05-05 02:55:34,610:INFO:Component 2 is Set 
+2021-05-05 02:55:34,628:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:55:34,640:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:55:34,948:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:55:34,948:INFO:  MIXING HAS ENDED  
+2021-05-05 02:55:37,101:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:55:37,101:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:55:37,101:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:55:37,101:INFO:Component 1 is Set 
+2021-05-05 02:55:37,101:INFO:Component 2 is Set 
+2021-05-05 02:55:37,121:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:55:37,139:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:55:37,435:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:55:37,435:INFO:  MIXING HAS ENDED  
+2021-05-05 02:55:37,465:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:55:37,465:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:55:37,465:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:55:37,465:INFO:Component 1 is Set 
+2021-05-05 02:55:37,465:INFO:Component 2 is Set 
+2021-05-05 02:55:37,484:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:55:37,496:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:55:37,800:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:55:37,800:INFO:  MIXING HAS ENDED  
+2021-05-05 02:55:38,423:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:55:38,423:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:55:38,423:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:55:38,423:INFO:Component 1 is Set 
+2021-05-05 02:55:38,423:INFO:Component 2 is Set 
+2021-05-05 02:55:38,435:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:55:38,455:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:55:38,769:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:55:38,769:INFO:  MIXING HAS ENDED  
+2021-05-05 02:55:38,789:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:55:38,789:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:55:38,789:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:55:38,789:INFO:Component 1 is Set 
+2021-05-05 02:55:38,789:INFO:Component 2 is Set 
+2021-05-05 02:55:38,810:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:55:38,830:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:55:39,133:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:55:39,135:INFO:  MIXING HAS ENDED  
+2021-05-05 02:55:39,782:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:55:39,782:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:55:39,782:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:55:39,782:INFO:Component 1 is Set 
+2021-05-05 02:55:39,782:INFO:Component 2 is Set 
+2021-05-05 02:55:39,802:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:55:39,820:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:55:40,116:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:55:40,116:INFO:  MIXING HAS ENDED  
+2021-05-05 02:55:40,147:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:55:40,147:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:55:40,147:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:55:40,147:INFO:Component 1 is Set 
+2021-05-05 02:55:40,147:INFO:Component 2 is Set 
+2021-05-05 02:55:40,167:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:55:40,185:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:55:40,481:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:55:40,489:INFO:  MIXING HAS ENDED  
+2021-05-05 02:55:41,169:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:55:41,169:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:55:41,169:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:55:41,169:INFO:Component 1 is Set 
+2021-05-05 02:55:41,169:INFO:Component 2 is Set 
+2021-05-05 02:55:41,189:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:55:41,210:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:55:41,526:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:55:41,528:INFO:  MIXING HAS ENDED  
+2021-05-05 02:55:41,548:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:55:41,548:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:55:41,548:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:55:41,548:INFO:Component 1 is Set 
+2021-05-05 02:55:41,548:INFO:Component 2 is Set 
+2021-05-05 02:55:41,568:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:55:41,589:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:55:41,888:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:55:41,889:INFO:  MIXING HAS ENDED  
+2021-05-05 02:55:41,913:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:55:41,913:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:55:41,913:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:55:41,913:INFO:Component 1 is Set 
+2021-05-05 02:55:41,913:INFO:Component 2 is Set 
+2021-05-05 02:55:41,925:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:55:41,946:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:55:42,243:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:55:42,243:INFO:  MIXING HAS ENDED  
+2021-05-05 02:55:42,469:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:55:42,469:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:55:42,469:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:55:42,469:INFO:Component 1 is Set 
+2021-05-05 02:55:42,469:INFO:Component 2 is Set 
+2021-05-05 02:55:42,489:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:55:42,507:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:55:42,803:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:55:42,803:INFO:  MIXING HAS ENDED  
+2021-05-05 02:55:42,832:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:55:42,832:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:55:42,832:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:55:42,832:INFO:Component 1 is Set 
+2021-05-05 02:55:42,832:INFO:Component 2 is Set 
+2021-05-05 02:55:42,852:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:55:42,864:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:55:43,168:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:55:43,168:INFO:  MIXING HAS ENDED  
+2021-05-05 02:55:44,368:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:55:44,368:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:55:44,368:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:55:44,368:INFO:Component 1 is Set 
+2021-05-05 02:55:44,368:INFO:Component 2 is Set 
+2021-05-05 02:55:44,380:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:55:44,400:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:55:44,707:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:55:44,707:INFO:  MIXING HAS ENDED  
+2021-05-05 02:55:51,611:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:55:51,611:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:55:51,612:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:55:51,612:INFO:Component 1 is Set 
+2021-05-05 02:55:51,612:INFO:Component 2 is Set 
+2021-05-05 02:55:51,629:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:55:51,647:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:55:51,948:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:55:51,948:INFO:  MIXING HAS ENDED  
+2021-05-05 02:55:51,972:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:55:51,972:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:55:51,972:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:55:51,973:INFO:Component 1 is Set 
+2021-05-05 02:55:51,973:INFO:Component 2 is Set 
+2021-05-05 02:55:51,991:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:55:52,008:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:55:52,309:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:55:52,309:INFO:  MIXING HAS ENDED  
+2021-05-05 02:55:53,594:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:55:53,595:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:55:53,595:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:55:53,595:INFO:Component 1 is Set 
+2021-05-05 02:55:53,595:INFO:Component 2 is Set 
+2021-05-05 02:55:53,613:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:55:53,630:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:55:53,932:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:55:53,932:INFO:  MIXING HAS ENDED  
+2021-05-05 02:55:53,956:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:55:53,956:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:55:53,956:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:55:53,956:INFO:Component 1 is Set 
+2021-05-05 02:55:53,956:INFO:Component 2 is Set 
+2021-05-05 02:55:53,975:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:55:53,992:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:55:54,295:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:55:54,295:INFO:  MIXING HAS ENDED  
+2021-05-05 02:55:54,319:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:55:54,319:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:55:54,319:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:55:54,319:INFO:Component 1 is Set 
+2021-05-05 02:55:54,319:INFO:Component 2 is Set 
+2021-05-05 02:55:54,338:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:55:54,357:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:55:54,659:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:55:54,659:INFO:  MIXING HAS ENDED  
+2021-05-05 02:55:54,683:INFO:OUTPUT 1 has been chosen by user
+2021-05-05 02:55:54,683:INFO:Magnitude and Phase Mode Assigned
+2021-05-05 02:55:54,683:INFO:MIX FUNCTION STARTED 
+2021-05-05 02:55:54,683:INFO:Component 1 is Set 
+2021-05-05 02:55:54,683:INFO:Component 2 is Set 
+2021-05-05 02:55:54,702:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-05 02:55:54,720:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-05 02:55:55,020:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-05 02:55:55,020:INFO:  MIXING HAS ENDED  
+2021-05-09 12:36:29,366:INFO:CREATED IMAGE 1 WITH SIZE: (500, 500) 
+2021-05-09 12:36:29,406:INFO:IMAGE 1 DATA HAS BEEN SET 
+2021-05-09 12:36:29,407:INFO:IMAGE 1 HAS BEEN IMPORTED 
+2021-05-09 12:36:29,407:INFO:ORIGINAL IMAGE 1 HAS BEEN DRAWN 
+2021-05-09 12:36:34,570:INFO:CREATED IMAGE 2 WITH SIZE: (500, 500) 
+2021-05-09 12:36:34,570:INFO:IMAGE 2 DATA HAS BEEN SET 
+2021-05-09 12:36:34,570:INFO:IMAGE 2 HAS BEEN IMPORTED 
+2021-05-09 12:36:34,570:INFO:ORIGINAL IMAGE 2 HAS BEEN DRAWN 
+2021-05-09 12:36:39,176:INFO:OUTPUT 1 has been chosen by user
+2021-05-09 12:36:39,177:INFO:Magnitude and Phase Mode Assigned
+2021-05-09 12:36:39,177:INFO:MIX FUNCTION STARTED 
+2021-05-09 12:36:39,177:INFO:Component 1 is Set 
+2021-05-09 12:36:39,178:INFO:Component 2 is Set 
+2021-05-09 12:36:40,277:INFO:OUTPUT 1 has been chosen by user
+2021-05-09 12:36:40,277:INFO:Magnitude and Phase Mode Assigned
+2021-05-09 12:36:40,277:INFO:MIX FUNCTION STARTED 
+2021-05-09 12:36:40,278:INFO:Component 1 is Set 
+2021-05-09 12:36:40,278:INFO:Component 2 is Set 
+2021-05-09 12:36:43,199:INFO:Options Restricted for user
+2021-05-09 12:36:43,917:INFO:OUTPUT 1 has been chosen by user
+2021-05-09 12:36:43,917:INFO:Magnitude and Phase Mode Assigned
+2021-05-09 12:36:43,917:INFO:MIX FUNCTION STARTED 
+2021-05-09 12:36:43,917:INFO:Component 1 is Set 
+2021-05-09 12:36:43,917:INFO:Component 2 is Set 
+2021-05-09 12:36:43,937:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-09 12:36:43,957:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-09 12:36:44,265:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-09 12:36:44,265:INFO:  MIXING HAS ENDED  
+2021-05-09 12:36:44,305:INFO:OUTPUT 1 has been chosen by user
+2021-05-09 12:36:44,305:INFO:Magnitude and Phase Mode Assigned
+2021-05-09 12:36:44,305:INFO:MIX FUNCTION STARTED 
+2021-05-09 12:36:44,305:INFO:Component 1 is Set 
+2021-05-09 12:36:44,306:INFO:Component 2 is Set 
+2021-05-09 12:36:44,332:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-09 12:36:44,351:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-09 12:36:44,659:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-09 12:36:44,660:INFO:  MIXING HAS ENDED  
+2021-05-09 12:36:44,683:INFO:OUTPUT 1 has been chosen by user
+2021-05-09 12:36:44,684:INFO:Magnitude and Phase Mode Assigned
+2021-05-09 12:36:44,684:INFO:MIX FUNCTION STARTED 
+2021-05-09 12:36:44,684:INFO:Component 1 is Set 
+2021-05-09 12:36:44,684:INFO:Component 2 is Set 
+2021-05-09 12:36:44,703:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-09 12:36:44,720:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-09 12:36:45,028:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-09 12:36:45,028:INFO:  MIXING HAS ENDED  
+2021-05-09 12:36:48,711:INFO:OUTPUT 1 has been chosen by user
+2021-05-09 12:36:48,711:INFO:Magnitude and Phase Mode Assigned
+2021-05-09 12:36:48,712:INFO:MIX FUNCTION STARTED 
+2021-05-09 12:36:48,712:INFO:Component 1 is Set 
+2021-05-09 12:36:48,712:INFO:Component 2 is Set 
+2021-05-09 12:36:48,732:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-09 12:36:48,753:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-09 12:36:49,062:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-09 12:36:49,062:INFO:  MIXING HAS ENDED  
+2021-05-09 12:36:49,087:INFO:OUTPUT 1 has been chosen by user
+2021-05-09 12:36:49,087:INFO:Magnitude and Phase Mode Assigned
+2021-05-09 12:36:49,087:INFO:MIX FUNCTION STARTED 
+2021-05-09 12:36:49,087:INFO:Component 1 is Set 
+2021-05-09 12:36:49,087:INFO:Component 2 is Set 
+2021-05-09 12:36:49,107:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-09 12:36:49,127:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-09 12:36:49,439:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-09 12:36:49,439:INFO:  MIXING HAS ENDED  
+2021-05-09 12:36:52,269:INFO:OUTPUT 2 has been chosen by user
+2021-05-09 12:36:52,269:INFO:Magnitude and Phase Mode Assigned
+2021-05-09 12:36:52,269:INFO:MIX FUNCTION STARTED 
+2021-05-09 12:36:52,269:INFO:Component 1 is Set 
+2021-05-09 12:36:52,269:INFO:Component 2 is Set 
+2021-05-09 12:36:52,289:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-09 12:36:52,308:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-09 12:36:52,623:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-09 12:36:52,623:INFO:  MIXING HAS ENDED  
+2021-05-09 12:36:52,650:INFO:OUTPUT 2 has been chosen by user
+2021-05-09 12:36:52,650:INFO:Magnitude and Phase Mode Assigned
+2021-05-09 12:36:52,651:INFO:MIX FUNCTION STARTED 
+2021-05-09 12:36:52,651:INFO:Component 1 is Set 
+2021-05-09 12:36:52,651:INFO:Component 2 is Set 
+2021-05-09 12:36:52,671:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-09 12:36:52,691:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-09 12:36:53,027:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-09 12:36:53,027:INFO:  MIXING HAS ENDED  
+2021-05-09 12:36:57,455:INFO:OUTPUT 2 has been chosen by user
+2021-05-09 12:36:57,456:INFO:Magnitude and Phase Mode Assigned
+2021-05-09 12:36:57,456:INFO:MIX FUNCTION STARTED 
+2021-05-09 12:36:57,456:INFO:Component 1 is Set 
+2021-05-09 12:36:57,456:INFO:Component 2 is Set 
+2021-05-09 12:36:57,474:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-09 12:36:57,494:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-09 12:36:57,802:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-09 12:36:57,803:INFO:  MIXING HAS ENDED  
+2021-05-09 12:36:57,828:INFO:OUTPUT 2 has been chosen by user
+2021-05-09 12:36:57,828:INFO:Magnitude and Phase Mode Assigned
+2021-05-09 12:36:57,828:INFO:MIX FUNCTION STARTED 
+2021-05-09 12:36:57,828:INFO:Component 1 is Set 
+2021-05-09 12:36:57,829:INFO:Component 2 is Set 
+2021-05-09 12:36:57,848:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-09 12:36:57,867:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-09 12:36:58,176:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-09 12:36:58,176:INFO:  MIXING HAS ENDED  
+2021-05-09 12:36:58,383:INFO:OUTPUT 2 has been chosen by user
+2021-05-09 12:36:58,383:INFO:Magnitude and Phase Mode Assigned
+2021-05-09 12:36:58,384:INFO:MIX FUNCTION STARTED 
+2021-05-09 12:36:58,384:INFO:Component 1 is Set 
+2021-05-09 12:36:58,384:INFO:Component 2 is Set 
+2021-05-09 12:36:58,402:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-09 12:36:58,421:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-09 12:36:58,731:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-09 12:36:58,731:INFO:  MIXING HAS ENDED  
+2021-05-09 12:36:58,755:INFO:OUTPUT 2 has been chosen by user
+2021-05-09 12:36:58,755:INFO:Magnitude and Phase Mode Assigned
+2021-05-09 12:36:58,755:INFO:MIX FUNCTION STARTED 
+2021-05-09 12:36:58,756:INFO:Component 1 is Set 
+2021-05-09 12:36:58,756:INFO:Component 2 is Set 
+2021-05-09 12:36:58,775:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-09 12:36:58,794:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-09 12:36:59,102:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-09 12:36:59,102:INFO:  MIXING HAS ENDED  
+2021-05-09 12:36:59,128:INFO:OUTPUT 2 has been chosen by user
+2021-05-09 12:36:59,128:INFO:Magnitude and Phase Mode Assigned
+2021-05-09 12:36:59,128:INFO:MIX FUNCTION STARTED 
+2021-05-09 12:36:59,128:INFO:Component 1 is Set 
+2021-05-09 12:36:59,128:INFO:Component 2 is Set 
+2021-05-09 12:36:59,148:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-09 12:36:59,167:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-09 12:36:59,478:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-09 12:36:59,478:INFO:  MIXING HAS ENDED  
+2021-05-09 12:37:00,751:INFO:OUTPUT 2 has been chosen by user
+2021-05-09 12:37:00,752:INFO:Magnitude and Phase Mode Assigned
+2021-05-09 12:37:00,752:INFO:MIX FUNCTION STARTED 
+2021-05-09 12:37:00,752:INFO:Component 1 is Set 
+2021-05-09 12:37:00,752:INFO:Component 2 is Set 
+2021-05-09 12:37:00,772:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-09 12:37:00,791:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-09 12:37:01,112:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-09 12:37:01,113:INFO:  MIXING HAS ENDED  
+2021-05-09 12:37:01,142:INFO:OUTPUT 2 has been chosen by user
+2021-05-09 12:37:01,142:INFO:Magnitude and Phase Mode Assigned
+2021-05-09 12:37:01,142:INFO:MIX FUNCTION STARTED 
+2021-05-09 12:37:01,142:INFO:Component 1 is Set 
+2021-05-09 12:37:01,143:INFO:Component 2 is Set 
+2021-05-09 12:37:01,164:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-09 12:37:01,185:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-09 12:37:01,505:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-09 12:37:01,506:INFO:  MIXING HAS ENDED  
+2021-05-09 12:37:03,879:INFO:OUTPUT 2 has been chosen by user
+2021-05-09 12:37:03,879:INFO:Magnitude and Phase Mode Assigned
+2021-05-09 12:37:03,880:INFO:MIX FUNCTION STARTED 
+2021-05-09 12:37:03,880:INFO:Component 1 is Set 
+2021-05-09 12:37:03,880:INFO:Component 2 is Set 
+2021-05-09 12:37:03,899:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-09 12:37:03,918:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-09 12:37:04,228:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-09 12:37:04,228:INFO:  MIXING HAS ENDED  
+2021-05-09 12:37:04,253:INFO:OUTPUT 2 has been chosen by user
+2021-05-09 12:37:04,254:INFO:Magnitude and Phase Mode Assigned
+2021-05-09 12:37:04,254:INFO:MIX FUNCTION STARTED 
+2021-05-09 12:37:04,254:INFO:Component 1 is Set 
+2021-05-09 12:37:04,254:INFO:Component 2 is Set 
+2021-05-09 12:37:04,274:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-09 12:37:04,293:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-09 12:37:04,605:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-09 12:37:04,605:INFO:  MIXING HAS ENDED  
+2021-05-09 12:37:10,759:INFO:OUTPUT 2 has been chosen by user
+2021-05-09 12:37:10,759:INFO:Magnitude and Phase Mode Assigned
+2021-05-09 12:37:10,760:INFO:MIX FUNCTION STARTED 
+2021-05-09 12:37:10,760:INFO:Component 1 is Set 
+2021-05-09 12:37:10,760:INFO:Component 2 is Set 
+2021-05-09 12:37:10,780:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-09 12:37:10,800:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-09 12:37:11,109:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-09 12:37:11,109:INFO:  MIXING HAS ENDED  
+2021-05-09 12:37:11,133:INFO:OUTPUT 2 has been chosen by user
+2021-05-09 12:37:11,133:INFO:Magnitude and Phase Mode Assigned
+2021-05-09 12:37:11,134:INFO:MIX FUNCTION STARTED 
+2021-05-09 12:37:11,134:INFO:Component 1 is Set 
+2021-05-09 12:37:11,134:INFO:Component 2 is Set 
+2021-05-09 12:37:11,153:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-09 12:37:11,172:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-09 12:37:11,483:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-09 12:37:11,484:INFO:  MIXING HAS ENDED  
+2021-05-09 17:13:51,421:INFO:CREATED IMAGE 1 WITH SIZE: (500, 500) 
+2021-05-09 17:13:51,421:INFO:IMAGE 1 DATA HAS BEEN SET 
+2021-05-09 17:13:51,422:INFO:IMAGE 1 HAS BEEN IMPORTED 
+2021-05-09 17:13:51,422:INFO:ORIGINAL IMAGE 1 HAS BEEN DRAWN 
+2021-05-09 17:13:53,372:INFO:PHASE IMAGE 1 HAS BEEN DRAWN 
+2021-05-09 17:14:10,918:INFO:MAGNITUDE IMAGE 1 HAS BEEN DRAWN 
+2021-05-09 17:14:12,557:INFO:PHASE IMAGE 1 HAS BEEN DRAWN 
+2021-05-09 17:14:14,293:INFO:REAL IMAGE 1 HAS BEEN DRAWN 
+2021-05-09 17:14:32,182:INFO:Options Restricted for user
+2021-05-09 17:14:33,444:INFO:OUTPUT 1 has been chosen by user
+2021-05-09 17:14:33,444:INFO:Magnitude and Phase Mode Assigned
+2021-05-09 17:14:33,444:INFO:MIX FUNCTION STARTED 
+2021-05-09 17:14:34,399:INFO:OUTPUT 1 has been chosen by user
+2021-05-09 17:14:34,399:INFO:Magnitude and Phase Mode Assigned
+2021-05-09 17:14:34,400:INFO:MIX FUNCTION STARTED 
+2021-05-09 17:14:37,965:INFO:ERROR MESSAGE ACTION: The User Tried To Mix Without Inserting Images 
+2021-05-09 17:14:38,589:INFO:ERROR MESSAGE ACTION: The User Tried To Mix Without Inserting Images 
+2021-05-09 17:14:43,421:INFO:OUTPUT 1 has been chosen by user
+2021-05-09 17:14:43,421:INFO:Magnitude and Phase Mode Assigned
+2021-05-09 17:14:43,421:INFO:MIX FUNCTION STARTED 
+2021-05-09 17:14:43,548:INFO:OUTPUT 1 has been chosen by user
+2021-05-09 17:14:43,549:INFO:Magnitude and Phase Mode Assigned
+2021-05-09 17:14:43,549:INFO:MIX FUNCTION STARTED 
+2021-05-09 17:14:44,592:INFO:ERROR MESSAGE ACTION: The User Tried To Mix Without Inserting Images 
+2021-05-09 17:14:45,301:INFO:ERROR MESSAGE ACTION: The User Tried To Mix Without Inserting Images 
+2021-05-09 17:14:51,300:INFO:CREATED IMAGE 2 WITH SIZE: (500, 500) 
+2021-05-09 17:14:51,300:INFO:IMAGE 2 DATA HAS BEEN SET 
+2021-05-09 17:14:51,301:INFO:IMAGE 2 HAS BEEN IMPORTED 
+2021-05-09 17:14:51,301:INFO:ORIGINAL IMAGE 2 HAS BEEN DRAWN 
+2021-05-09 17:14:53,500:INFO:OUTPUT 1 has been chosen by user
+2021-05-09 17:14:53,500:INFO:Magnitude and Phase Mode Assigned
+2021-05-09 17:14:53,500:INFO:MIX FUNCTION STARTED 
+2021-05-09 17:14:53,501:INFO:Component 1 is Set 
+2021-05-09 17:14:53,501:INFO:Component 2 is Set 
+2021-05-09 17:14:53,531:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-09 17:14:53,555:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-09 17:14:53,951:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-09 17:14:53,951:INFO:  MIXING HAS ENDED  
+2021-05-09 17:14:53,992:INFO:OUTPUT 1 has been chosen by user
+2021-05-09 17:14:53,993:INFO:Magnitude and Phase Mode Assigned
+2021-05-09 17:14:53,993:INFO:MIX FUNCTION STARTED 
+2021-05-09 17:14:53,993:INFO:Component 1 is Set 
+2021-05-09 17:14:53,994:INFO:Component 2 is Set 
+2021-05-09 17:14:54,033:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-09 17:14:54,059:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-09 17:14:54,409:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-09 17:14:54,409:INFO:  MIXING HAS ENDED  
+2021-05-09 17:14:55,216:INFO:OUTPUT 1 has been chosen by user
+2021-05-09 17:14:55,216:INFO:Magnitude and Phase Mode Assigned
+2021-05-09 17:14:55,217:INFO:MIX FUNCTION STARTED 
+2021-05-09 17:14:55,217:INFO:Component 1 is Set 
+2021-05-09 17:14:55,217:INFO:Component 2 is Set 
+2021-05-09 17:14:55,243:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-09 17:14:55,269:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-09 17:14:55,597:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-09 17:14:55,597:INFO:  MIXING HAS ENDED  
+2021-05-09 17:14:55,621:INFO:OUTPUT 1 has been chosen by user
+2021-05-09 17:14:55,622:INFO:Magnitude and Phase Mode Assigned
+2021-05-09 17:14:55,622:INFO:MIX FUNCTION STARTED 
+2021-05-09 17:14:55,622:INFO:Component 1 is Set 
+2021-05-09 17:14:55,622:INFO:Component 2 is Set 
+2021-05-09 17:14:55,643:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-09 17:14:55,668:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-09 17:14:55,985:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-09 17:14:55,985:INFO:  MIXING HAS ENDED  
+2021-05-09 17:14:59,623:INFO:OUTPUT 1 has been chosen by user
+2021-05-09 17:14:59,623:INFO:Magnitude and Phase Mode Assigned
+2021-05-09 17:14:59,624:INFO:MIX FUNCTION STARTED 
+2021-05-09 17:14:59,624:INFO:Component 1 is Set 
+2021-05-09 17:14:59,624:INFO:Component 2 is Set 
+2021-05-09 17:14:59,648:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-09 17:14:59,672:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-09 17:15:00,006:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-09 17:15:00,006:INFO:  MIXING HAS ENDED  
+2021-05-09 17:15:00,035:INFO:OUTPUT 1 has been chosen by user
+2021-05-09 17:15:00,035:INFO:Magnitude and Phase Mode Assigned
+2021-05-09 17:15:00,036:INFO:MIX FUNCTION STARTED 
+2021-05-09 17:15:00,036:INFO:Component 1 is Set 
+2021-05-09 17:15:00,036:INFO:Component 2 is Set 
+2021-05-09 17:15:00,058:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-09 17:15:00,086:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-09 17:15:00,394:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-09 17:15:00,395:INFO:  MIXING HAS ENDED  
+2021-05-09 17:15:00,432:INFO:OUTPUT 1 has been chosen by user
+2021-05-09 17:15:00,433:INFO:Magnitude and Phase Mode Assigned
+2021-05-09 17:15:00,433:INFO:MIX FUNCTION STARTED 
+2021-05-09 17:15:00,433:INFO:Component 1 is Set 
+2021-05-09 17:15:00,433:INFO:Component 2 is Set 
+2021-05-09 17:15:00,454:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-09 17:15:00,475:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-09 17:15:00,793:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-09 17:15:00,793:INFO:  MIXING HAS ENDED  
+2021-05-09 17:15:00,826:INFO:OUTPUT 1 has been chosen by user
+2021-05-09 17:15:00,826:INFO:Magnitude and Phase Mode Assigned
+2021-05-09 17:15:00,826:INFO:MIX FUNCTION STARTED 
+2021-05-09 17:15:00,826:INFO:Component 1 is Set 
+2021-05-09 17:15:00,826:INFO:Component 2 is Set 
+2021-05-09 17:15:00,850:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-09 17:15:00,872:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-09 17:15:01,192:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-09 17:15:01,192:INFO:  MIXING HAS ENDED  
+2021-05-09 17:15:01,229:INFO:OUTPUT 1 has been chosen by user
+2021-05-09 17:15:01,229:INFO:Magnitude and Phase Mode Assigned
+2021-05-09 17:15:01,229:INFO:MIX FUNCTION STARTED 
+2021-05-09 17:15:01,230:INFO:Component 1 is Set 
+2021-05-09 17:15:01,230:INFO:Component 2 is Set 
+2021-05-09 17:15:01,256:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-09 17:15:01,279:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-09 17:15:01,604:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-09 17:15:01,605:INFO:  MIXING HAS ENDED  
+2021-05-09 17:15:01,629:INFO:OUTPUT 1 has been chosen by user
+2021-05-09 17:15:01,629:INFO:Magnitude and Phase Mode Assigned
+2021-05-09 17:15:01,630:INFO:MIX FUNCTION STARTED 
+2021-05-09 17:15:01,630:INFO:Component 1 is Set 
+2021-05-09 17:15:01,630:INFO:Component 2 is Set 
+2021-05-09 17:15:01,655:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-09 17:15:01,677:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-09 17:15:01,990:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-09 17:15:01,990:INFO:  MIXING HAS ENDED  
+2021-05-09 17:15:05,007:INFO:OUTPUT 1 has been chosen by user
+2021-05-09 17:15:05,008:INFO:Magnitude and Phase Mode Assigned
+2021-05-09 17:15:05,008:INFO:MIX FUNCTION STARTED 
+2021-05-09 17:15:05,008:INFO:Component 1 is Set 
+2021-05-09 17:15:05,008:INFO:Component 2 is Set 
+2021-05-09 17:15:05,033:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-09 17:15:05,053:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-09 17:15:05,391:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-09 17:15:05,391:INFO:  MIXING HAS ENDED  
+2021-05-09 17:15:05,425:INFO:OUTPUT 1 has been chosen by user
+2021-05-09 17:15:05,426:INFO:Magnitude and Phase Mode Assigned
+2021-05-09 17:15:05,426:INFO:MIX FUNCTION STARTED 
+2021-05-09 17:15:05,426:INFO:Component 1 is Set 
+2021-05-09 17:15:05,426:INFO:Component 2 is Set 
+2021-05-09 17:15:05,453:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-09 17:15:05,475:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-09 17:15:05,801:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-09 17:15:05,801:INFO:  MIXING HAS ENDED  
+2021-05-09 17:15:05,837:INFO:OUTPUT 1 has been chosen by user
+2021-05-09 17:15:05,837:INFO:Magnitude and Phase Mode Assigned
+2021-05-09 17:15:05,838:INFO:MIX FUNCTION STARTED 
+2021-05-09 17:15:05,838:INFO:Component 1 is Set 
+2021-05-09 17:15:05,838:INFO:Component 2 is Set 
+2021-05-09 17:15:05,864:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-09 17:15:05,887:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-09 17:15:06,211:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-09 17:15:06,212:INFO:  MIXING HAS ENDED  
+2021-05-09 17:15:06,236:INFO:OUTPUT 1 has been chosen by user
+2021-05-09 17:15:06,237:INFO:Magnitude and Phase Mode Assigned
+2021-05-09 17:15:06,237:INFO:MIX FUNCTION STARTED 
+2021-05-09 17:15:06,237:INFO:Component 1 is Set 
+2021-05-09 17:15:06,237:INFO:Component 2 is Set 
+2021-05-09 17:15:06,257:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-09 17:15:06,284:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-09 17:15:06,596:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-09 17:15:06,597:INFO:  MIXING HAS ENDED  
+2021-05-09 17:15:06,631:INFO:OUTPUT 1 has been chosen by user
+2021-05-09 17:15:06,631:INFO:Magnitude and Phase Mode Assigned
+2021-05-09 17:15:06,631:INFO:MIX FUNCTION STARTED 
+2021-05-09 17:15:06,631:INFO:Component 1 is Set 
+2021-05-09 17:15:06,632:INFO:Component 2 is Set 
+2021-05-09 17:15:06,653:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-09 17:15:06,680:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-09 17:15:07,002:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-09 17:15:07,002:INFO:  MIXING HAS ENDED  
+2021-05-09 17:15:07,029:INFO:OUTPUT 1 has been chosen by user
+2021-05-09 17:15:07,029:INFO:Magnitude and Phase Mode Assigned
+2021-05-09 17:15:07,030:INFO:MIX FUNCTION STARTED 
+2021-05-09 17:15:07,030:INFO:Component 1 is Set 
+2021-05-09 17:15:07,030:INFO:Component 2 is Set 
+2021-05-09 17:15:07,062:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-09 17:15:07,083:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-09 17:15:07,425:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-09 17:15:07,425:INFO:  MIXING HAS ENDED  
+2021-05-09 17:15:11,399:INFO:Options Restricted for user
+2021-05-09 17:15:12,939:INFO:OUTPUT 1 has been chosen by user
+2021-05-09 17:15:12,940:INFO:Magnitude and Phase Mode Assigned
+2021-05-09 17:15:12,940:INFO:MIX FUNCTION STARTED 
+2021-05-09 17:15:12,941:INFO:Component 1 is Set 
+2021-05-09 17:15:12,941:INFO:Component 2 is Set 
+2021-05-09 17:15:12,963:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-09 17:15:12,987:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-09 17:15:13,301:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-09 17:15:13,301:INFO:  MIXING HAS ENDED  
+2021-05-09 17:15:13,335:INFO:OUTPUT 1 has been chosen by user
+2021-05-09 17:15:13,335:INFO:Magnitude and Phase Mode Assigned
+2021-05-09 17:15:13,336:INFO:MIX FUNCTION STARTED 
+2021-05-09 17:15:13,336:INFO:Component 1 is Set 
+2021-05-09 17:15:13,336:INFO:Component 2 is Set 
+2021-05-09 17:15:13,356:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-09 17:15:13,380:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-09 17:15:13,696:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-09 17:15:13,698:INFO:  MIXING HAS ENDED  
+2021-05-09 17:15:24,001:INFO:OUTPUT 1 has been chosen by user
+2021-05-09 17:15:24,001:INFO:Magnitude and Phase Mode Assigned
+2021-05-09 17:15:24,001:INFO:MIX FUNCTION STARTED 
+2021-05-09 17:15:24,002:INFO:Component 1 is Set 
+2021-05-09 17:15:24,002:INFO:Component 2 is Set 
+2021-05-09 17:15:24,025:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-09 17:15:24,057:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-09 17:15:24,390:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-09 17:15:24,391:INFO:  MIXING HAS ENDED  
+2021-05-09 17:15:24,416:INFO:OUTPUT 1 has been chosen by user
+2021-05-09 17:15:24,416:INFO:Magnitude and Phase Mode Assigned
+2021-05-09 17:15:24,417:INFO:MIX FUNCTION STARTED 
+2021-05-09 17:15:24,417:INFO:Component 1 is Set 
+2021-05-09 17:15:24,417:INFO:Component 2 is Set 
+2021-05-09 17:15:24,443:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-09 17:15:24,463:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-09 17:15:24,777:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-09 17:15:24,777:INFO:  MIXING HAS ENDED  
+2021-05-09 17:45:57,836:INFO:CREATED IMAGE 1 WITH SIZE: (500, 500) 
+2021-05-09 17:45:57,837:INFO:IMAGE 1 DATA HAS BEEN SET 
+2021-05-09 17:45:57,837:INFO:IMAGE 1 HAS BEEN IMPORTED 
+2021-05-09 17:45:57,837:INFO:ORIGINAL IMAGE 1 HAS BEEN DRAWN 
+2021-05-09 17:46:03,441:INFO:CREATED IMAGE 2 WITH SIZE: (500, 500) 
+2021-05-09 17:46:03,442:INFO:IMAGE 2 DATA HAS BEEN SET 
+2021-05-09 17:46:03,442:INFO:IMAGE 2 HAS BEEN IMPORTED 
+2021-05-09 17:46:03,442:INFO:ORIGINAL IMAGE 2 HAS BEEN DRAWN 
+2021-05-09 17:46:07,839:INFO:Options Restricted for user
+2021-05-09 17:46:08,507:INFO:OUTPUT 1 has been chosen by user
+2021-05-09 17:46:08,507:INFO:Magnitude and Phase Mode Assigned
+2021-05-09 17:46:08,509:INFO:Mix Function Has Started 
+2021-05-09 17:46:08,509:INFO:Component 1 is Set 
+2021-05-09 17:46:08,509:INFO:Component 2 is Set 
+2021-05-09 17:46:08,545:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-09 17:46:08,573:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-09 17:46:08,910:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-09 17:46:08,910:INFO:  MIXING HAS ENDED  
+2021-05-09 17:46:08,950:INFO:OUTPUT 1 has been chosen by user
+2021-05-09 17:46:08,951:INFO:Magnitude and Phase Mode Assigned
+2021-05-09 17:46:08,952:INFO:Mix Function Has Started 
+2021-05-09 17:46:08,952:INFO:Component 1 is Set 
+2021-05-09 17:46:08,952:INFO:Component 2 is Set 
+2021-05-09 17:46:08,994:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-09 17:46:09,018:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-09 17:46:09,341:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-09 17:46:09,341:INFO:  MIXING HAS ENDED  
+2021-05-09 17:46:09,368:INFO:OUTPUT 1 has been chosen by user
+2021-05-09 17:46:09,368:INFO:Magnitude and Phase Mode Assigned
+2021-05-09 17:46:09,368:INFO:Mix Function Has Started 
+2021-05-09 17:46:09,369:INFO:Component 1 is Set 
+2021-05-09 17:46:09,369:INFO:Component 2 is Set 
+2021-05-09 17:46:09,388:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-09 17:46:09,413:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-09 17:46:09,748:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-09 17:46:09,749:INFO:  MIXING HAS ENDED  
+2021-05-09 17:46:10,150:INFO:OUTPUT 1 has been chosen by user
+2021-05-09 17:46:10,151:INFO:Magnitude and Phase Mode Assigned
+2021-05-09 17:46:10,151:INFO:Mix Function Has Started 
+2021-05-09 17:46:10,151:INFO:Component 1 is Set 
+2021-05-09 17:46:10,151:INFO:Component 2 is Set 
+2021-05-09 17:46:10,176:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-09 17:46:10,201:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-09 17:46:10,535:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-09 17:46:10,536:INFO:  MIXING HAS ENDED  
+2021-05-09 17:46:10,573:INFO:OUTPUT 1 has been chosen by user
+2021-05-09 17:46:10,573:INFO:Magnitude and Phase Mode Assigned
+2021-05-09 17:46:10,573:INFO:Mix Function Has Started 
+2021-05-09 17:46:10,573:INFO:Component 1 is Set 
+2021-05-09 17:46:10,574:INFO:Component 2 is Set 
+2021-05-09 17:46:10,595:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-09 17:46:10,622:INFO:SLIDER 2 VALUE APPLIED TO CHOSSEN COMPONENT 2 
+2021-05-09 17:46:10,937:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-09 17:46:10,937:INFO:  MIXING HAS ENDED  
+2021-05-09 17:47:03,632:INFO:CREATED IMAGE 1 WITH SIZE: (500, 500) 
+2021-05-09 17:47:03,633:INFO:IMAGE 1 DATA HAS BEEN SET 
+2021-05-09 17:47:03,633:INFO:IMAGE 1 HAS BEEN IMPORTED 
+2021-05-09 17:47:03,633:INFO:ORIGINAL IMAGE 1 HAS BEEN DRAWN 
+2021-05-09 17:47:17,163:INFO:CREATED IMAGE 2 WITH SIZE: (500, 500) 
+2021-05-09 17:47:17,163:INFO:IMAGE 2 DATA HAS BEEN SET 
+2021-05-09 17:47:17,163:INFO:IMAGE 2 HAS BEEN IMPORTED 
+2021-05-09 17:47:17,163:INFO:ORIGINAL IMAGE 2 HAS BEEN DRAWN 
+2021-05-09 17:47:20,455:INFO:Options Restricted for user
+2021-05-09 17:47:22,044:INFO:Options Restricted for user
+2021-05-09 17:47:22,604:INFO:OUTPUT 1 has been chosen by user
+2021-05-09 17:47:22,604:INFO:Magnitude and Phase Mode Assigned
+2021-05-09 17:47:22,604:INFO:Mix Function Has Started 
+2021-05-09 17:47:22,604:INFO:Component 1 is Set 
+2021-05-09 17:47:22,604:INFO:Component 2 is Set 
+2021-05-09 17:47:22,629:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-09 17:47:22,666:INFO:OUTPUT 1 has been chosen by user
+2021-05-09 17:47:22,666:INFO:Magnitude and Phase Mode Assigned
+2021-05-09 17:47:22,667:INFO:Mix Function Has Started 
+2021-05-09 17:47:22,667:INFO:Component 1 is Set 
+2021-05-09 17:47:22,667:INFO:Component 2 is Set 
+2021-05-09 17:47:22,699:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-09 17:47:22,760:INFO:OUTPUT 1 has been chosen by user
+2021-05-09 17:47:22,760:INFO:Magnitude and Phase Mode Assigned
+2021-05-09 17:47:22,761:INFO:Mix Function Has Started 
+2021-05-09 17:47:22,761:INFO:Component 1 is Set 
+2021-05-09 17:47:22,761:INFO:Component 2 is Set 
+2021-05-09 17:47:22,789:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-09 17:47:22,876:INFO:OUTPUT 1 has been chosen by user
+2021-05-09 17:47:22,877:INFO:Magnitude and Phase Mode Assigned
+2021-05-09 17:47:22,877:INFO:Mix Function Has Started 
+2021-05-09 17:47:22,877:INFO:Component 1 is Set 
+2021-05-09 17:47:22,877:INFO:Component 2 is Set 
+2021-05-09 17:47:22,901:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-09 17:47:22,943:INFO:OUTPUT 1 has been chosen by user
+2021-05-09 17:47:22,944:INFO:Magnitude and Phase Mode Assigned
+2021-05-09 17:47:22,944:INFO:Mix Function Has Started 
+2021-05-09 17:47:22,944:INFO:Component 1 is Set 
+2021-05-09 17:47:22,944:INFO:Component 2 is Set 
+2021-05-09 17:47:22,971:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-09 17:47:23,012:INFO:OUTPUT 1 has been chosen by user
+2021-05-09 17:47:23,012:INFO:Magnitude and Phase Mode Assigned
+2021-05-09 17:47:23,012:INFO:Mix Function Has Started 
+2021-05-09 17:47:23,013:INFO:Component 1 is Set 
+2021-05-09 17:47:23,013:INFO:Component 2 is Set 
+2021-05-09 17:47:23,044:INFO:SLIDER 1 VALUE APPLIED TO CHOSSEN COMPONENT 1 
+2021-05-09 18:03:20,298:INFO:CREATED IMAGE 1 WITH SIZE: (500, 500) 
+2021-05-09 18:03:20,299:INFO:IMAGE 1 DATA HAS BEEN SET 
+2021-05-09 18:03:20,299:INFO:IMAGE 1 HAS BEEN IMPORTED 
+2021-05-09 18:03:20,299:INFO:ORIGINAL IMAGE 1 HAS BEEN DRAWN 
+2021-05-09 18:03:25,946:INFO:CREATED IMAGE 2 WITH SIZE: (500, 500) 
+2021-05-09 18:03:25,946:INFO:IMAGE 2 DATA HAS BEEN SET 
+2021-05-09 18:03:25,946:INFO:IMAGE 2 HAS BEEN IMPORTED 
+2021-05-09 18:03:25,947:INFO:ORIGINAL IMAGE 2 HAS BEEN DRAWN 
+2021-05-09 18:03:32,358:INFO:Options Restricted for user
+2021-05-09 18:03:36,140:INFO:OUTPUT 1 has been chosen by user
+2021-05-09 18:03:36,140:INFO:Magnitude and Phase Mode Assigned
+2021-05-09 18:03:36,141:INFO:Mix Function Has Started 
+2021-05-09 18:03:36,507:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-09 18:03:36,507:INFO:  MIXING HAS ENDED  
+2021-05-09 18:03:36,561:INFO:OUTPUT 1 has been chosen by user
+2021-05-09 18:03:36,562:INFO:Magnitude and Phase Mode Assigned
+2021-05-09 18:03:36,562:INFO:Mix Function Has Started 
+2021-05-09 18:03:36,945:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-09 18:03:36,946:INFO:  MIXING HAS ENDED  
+2021-05-09 18:03:37,798:INFO:OUTPUT 1 has been chosen by user
+2021-05-09 18:03:37,799:INFO:Magnitude and Phase Mode Assigned
+2021-05-09 18:03:37,799:INFO:Mix Function Has Started 
+2021-05-09 18:03:38,146:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-09 18:03:38,146:INFO:  MIXING HAS ENDED  
+2021-05-09 18:03:38,170:INFO:OUTPUT 1 has been chosen by user
+2021-05-09 18:03:38,170:INFO:Magnitude and Phase Mode Assigned
+2021-05-09 18:03:38,170:INFO:Mix Function Has Started 
+2021-05-09 18:03:38,501:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-09 18:03:38,501:INFO:  MIXING HAS ENDED  
+2021-05-09 18:03:39,119:INFO:OUTPUT 1 has been chosen by user
+2021-05-09 18:03:39,120:INFO:Magnitude and Phase Mode Assigned
+2021-05-09 18:03:39,120:INFO:Mix Function Has Started 
+2021-05-09 18:03:39,459:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-09 18:03:39,459:INFO:  MIXING HAS ENDED  
+2021-05-09 18:03:39,493:INFO:OUTPUT 1 has been chosen by user
+2021-05-09 18:03:39,493:INFO:Magnitude and Phase Mode Assigned
+2021-05-09 18:03:39,494:INFO:Mix Function Has Started 
+2021-05-09 18:03:39,831:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-09 18:03:39,831:INFO:  MIXING HAS ENDED  
+2021-05-09 18:03:39,855:INFO:OUTPUT 1 has been chosen by user
+2021-05-09 18:03:39,856:INFO:Magnitude and Phase Mode Assigned
+2021-05-09 18:03:39,856:INFO:Mix Function Has Started 
+2021-05-09 18:03:40,219:INFO:MIX Has BEEN DRAWN WITH MODE Modes.magnitudeAndPhase  
+2021-05-09 18:03:40,219:INFO:  MIXING HAS ENDED  
