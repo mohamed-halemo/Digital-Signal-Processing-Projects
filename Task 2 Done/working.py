@@ -244,37 +244,6 @@ class ApplicationWindow(QtWidgets.QMainWindow):
             self.graph2.setXRange(0,self.xx_range[0]+self.xx_range[1]/20)
             self.graph2.setYRange(-100,300)
             
-            # for i in range (len(self.Y)):
-            #     if self.Y[i] < -50 : #4500
-            #         self.Hrange.append(self.Y[i]*self.value_1)
-
-            #     elif -50<self.Y[i]<-20 :
-            #         self.H2range.append(self.Y[i]*self.value_2)
-            #     elif -20<self.Y[i]<0 :
-            #         self.H3range.append(self.Y[i]*self.value_3)
-            #     elif 0<self.Y[i]<10 :
-            #         self.H6range.append(self.Y[i]*self.value_4)    
-            #     elif 10<self.Y[i]<15 :
-            #         self.H7range.append(self.Y[i]*self.value_5)    
-            #     elif 15<self.Y[i]<20 :
-            #         self.H8range.append(self.Y[i]*self.value_6)    
-            #     elif 20<self.Y[i]<25 :
-            #         self.H9range.append(self.Y[i]*self.value_7)    
-            #     elif 25<self.Y[i]<30 :
-            #         self.H10range.append(self.Y[i]*self.value_8)    
-            #     elif 30<self.Y[i]<35 :
-            #         self.H11range.append(self.Y[i]*self.value_9)    
-            #     elif 35<self.Y[i]<45 :
-            #         self.H12range.append(self.Y[i]*self.value_10)    
-
-
-            # for i in range (len(self.Y)):
-            #     if self.Y[i] > 90 : #4500
-            #         self.H4range.append(self.Y[i])
-
-            #     elif self.Y[i]<50 :
-            #         self.H5range.append(self.Y[i])
-            #spectrogram
             self.lay = QtWidgets.QVBoxLayout(self.graph3)  
             self.lay.setContentsMargins(0, 0, 0, 0)      
             self.lay.addWidget(self.plotWidget)
