@@ -74,29 +74,21 @@ class ImageModel():
 
 
     def ImageDataToMix(self,n):
-        fname= n
-        img = Image.open(fname).convert("RGB") #using image from PLI library to display the image and make it in RGB format
+        # ImageDataToMixx(self,n)
+        # logging.info('Mix Function Has Taken The Image '.format())
+        # logging.info('Mix Function is now  Ready '.format())
+        # img,self.real,self.imaginary,self.magnitude,self.phase=ApplicationWindow.IMPORT()
+        img=ApplicationWindow.IMPORT()
+          # self.IMAGEPLOTTER.clear() #clearing when importing
+        # self.EDIT.clear()    #clearing when importing
+        # fname, _ =QtWidgets.QFileDialog.getOpenFileName(None, 'Open File', '/PC', "Image Files (*.jpg *.png *.jpeg)")
+        # img = Image.open(fname).convert("RGB") #using image from PLI library to display the image and make it in RGB format
         self.imgByte = img.size #setting image size
         self.dft=fft2(np.asarray(img))#2D fourier transform for the image
         self.real=self.dft.real ##getting real values
         self.imaginary=self.dft.imag  ##getting imaginary
         self.magnitude=np.abs(self.dft) ##magnitude
         self.phase=np.angle(self.dft)  ## phase
-        
-        logging.info('Mix Function Has Taken The Image '.format())
-        logging.info('Mix Function is now  Ready '.format())
-        
-        return    self.real, self.imaginary, self.magnitude, self.phase
-        # self.IMAGEPLOTTER.clear() #clearing when importing
-        # self.EDIT.clear()    #clearing when importing
-        # fname, _ =QtWidgets.QFileDialog.getOpenFileName(None, 'Open File', '/PC', "Image Files (*.jpg *.png *.jpeg)")
-        # img = Image.open(fname).convert("RGB") #using image from PLI library to display the image and make it in RGB format
-        # self.imgByte = img.size #setting image size
-        # self.dft=fft2(np.asarray(img))#2D fourier transform for the image
-        # self.real=self.dft.real ##getting real values
-        # self.imaginary=self.dft.imag  ##getting imaginary
-        # self.magnitude=np.abs(self.dft) ##magnitude
-        # self.phase=np.angle(self.dft)  ## phase
       
         # if ((n!= 0 ) & (img.size != n)): #so if n=0 no images and if img.size!=1 or 0 then we won't be able to add more
         #     print('Not Same Size')
@@ -234,25 +226,6 @@ class ImageModel():
             logging.info('MIX Has BEEN DRAWN WITH MODE {}  '.format(self.MODE))
             logging.info('  MIXING HAS ENDED  '.format())
 
-    # def compoo(self, img):
-    #     self.dft=fft2(np.asarray(img))#2D fourier transform for the image
-    #     self.real=self.dft.real ##getting real values
-    #     self.imaginary=self.dft.imag  ##getting imaginary
-    #     self.magnitude=np.abs(self.dft) ##magnitude
-    #     self.phase=np.angle(self.dft)  ## phase
-    #     return    self.real, self.imaginary, self.magnitude, self.phase  
-    # def components(self,n, img):
-    #     if(n==0):
-    #             self.compoo(img)
-    #     if(n==1):
-    #             self.compoo(img)
-    #         # self.dft2=fft2(np.asarray(img))#2D fourier transform for the image
-    #         # self.real2=self.dft2.real ##getting real values
-    #         # self.imaginary2=self.dft2.imag  ##getting imaginary
-    #         # self.magnitude2=np.abs(self.dft2) ##magnitude
-    #         # self.phase2=np.angle(self.dft2)  ## phase
-    #         # self.Draw(np.asarray(img),self.imageplotter2,1) #sending image to function Draw,asarray converts image to array
-
 
 
 
@@ -284,12 +257,8 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         self.ui.setupUi(self)
         self.img1=ImageModel("IMAGE 1",self.ui.Image1,self.ui.Image2,self.ui.IMAGECOMB1)#assigning name and widgets and comboboxes
         self.img2=ImageModel("IMAGE 2",self.ui.Image3,self.ui.Image4,self.ui.IMAGECOMB2)
-        self.fname ='C:/Users/Yumna-HP/Downloads/forest.jpeg'
-        
-       
         
         self.imageplotter=self.ui.Image1
-        self.real, self.imaginary, self.magnitude, self.phase = self.img1.ImageDataToMix(self.fname)
         self.PickedImage1=self.ui.IMAGECOMB1
         self.Edited1=self.ui.Image2
 
@@ -298,16 +267,11 @@ class ApplicationWindow(QtWidgets.QMainWindow):
 
         self.ui.actionImport_Image_1.triggered.connect(lambda:self.IMPORT(0))#import function from imagemodel class
         self.ui.actionImport_Image_2.triggered.connect(lambda: self.IMPORT(1))#giving img size to have both of same size
-        
-        
-        self.fname2 ='C:/Users/Yumna-HP/Downloads/try.jpeg'
 
-        
-
-        # self.ui.actionImport_Image_1.triggered.connect(self.img1.ImageDataToMix)#import function from imagemodel class
-        # self.ui.actionImport_Image_2.triggered.connect(lambda: self.img2.ImageDataToMix(self.img1.imgByte))#giving img size to have both of same size
+        self.ui.actionImport_Image_1.triggered.connect(self.img1.ImageDataToMix)#import function from imagemodel class
+        self.ui.actionImport_Image_2.triggered.connect(lambda: self.img2.ImageDataToMix(self.img1.imgByte))#giving img size to have both of same size
         self.ui.COMB1.currentTextChanged.connect(self.RestrictingComboBox)
-        self.real2, self.imaginary2, self.magnitude2, self.phase2 = self.img2.ImageDataToMix(self.fname2)
+
         self.imageplotter2=self.ui.Image3
         self.PickedImage2=self.ui.IMAGECOMB2
         self.Edited2=self.ui.Image4
@@ -323,31 +287,30 @@ class ApplicationWindow(QtWidgets.QMainWindow):
     def IMPORT(self,n):
         
         fname, _ =QtWidgets.QFileDialog.getOpenFileName(None, 'Open File', '/PC', "Image Files (*.jpg *.png *.jpeg)")
-        self.fname=fname
         img = Image.open(fname).convert("RGB") #using image from PLI library to display the image and make it in RGB format
 
         self.imgByte = img.size #setting image size
-        
+        toreturn=img
         if(n==0):
-            # self.dft=fft2(np.asarray(img))#2D fourier transform for the image
-            # self.real=self.dft.real ##getting real values
-            # self.imaginary=self.dft.imag  ##getting imaginary
-            # self.magnitude=np.abs(self.dft) ##magnitude
-            # self.phase=np.angle(self.dft)  ## phase
+            self.dft=fft2(np.asarray(img))#2D fourier transform for the image
+            self.real=self.dft.real ##getting real values
+            self.imaginary=self.dft.imag  ##getting imaginary
+            self.magnitude=np.abs(self.dft) ##magnitude
+            self.phase=np.angle(self.dft)  ## phase
             self.Draw(np.asarray(img),self.imageplotter,1) #sending image to function Draw,asarray converts image to array
+    
         if(n==1):
-            # self.dft2=fft2(np.asarray(img))#2D fourier transform for the image
-            # self.real2=self.dft2.real ##getting real values
-            # self.imaginary2=self.dft2.imag  ##getting imaginary
-            # self.magnitude2=np.abs(self.dft2) ##magnitude
-            # self.phase2=np.angle(self.dft2)  ## phase
+            self.dft2=fft2(np.asarray(img))#2D fourier transform for the image
+            self.real2=self.dft2.real ##getting real values
+            self.imaginary2=self.dft2.imag  ##getting imaginary
+            self.magnitude2=np.abs(self.dft2) ##magnitude
+            self.phase2=np.angle(self.dft2)  ## phase
             self.Draw(np.asarray(img),self.imageplotter2,1) #sending image to function Draw,asarray converts image to array
-
         logging.info('CREATED {} WITH SIZE: {} '.format(self.MessaAge, self.imgByte))#message is the number of image 
         logging.info('{} DATA HAS BEEN SET '.format(self.MessaAge))
         logging.info('{} HAS BEEN IMPORTED '.format(self.MessaAge))
         logging.info('ORIGINAL {} HAS BEEN DRAWN '.format(self.MessaAge))
-
+        return toreturn
     def DrawChosen(self):
         if self.PickedImage1.currentIndex()==0 :
             self.Edited1.clear()
@@ -361,6 +324,7 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         elif self.PickedImage1.currentIndex()==4:
             self.Draw(self.imaginary,self.Edited1,2)
 
+
         
 
     def Draw(self,TODRAW,selfarea,n):
@@ -370,7 +334,8 @@ class ApplicationWindow(QtWidgets.QMainWindow):
             selfarea.addItem(pg.ImageItem(np.rot90(TODRAW ,3))) #the second widget after each image >>
 
 
-    
+
+
 
     def GetOutPutMix(self):
         if self.ui.OUTOPTION.currentIndex()==0:#on choosing nothing keep it cleared
