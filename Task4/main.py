@@ -40,7 +40,10 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         self.signal=[] 
         self.data= []
         self.songs=[]
-      
+        self.ui.BrowseS1.clicked.connect(lambda: self.browse(1))
+        self.ui.BrowseS2.clicked.connect(lambda: self.browse(2))
+        self.ui.Mixer.clicked.connect(self.Mixing)
+
         self.data_dir='./Songs/'
         self.SpectroGram=glob(self.data_dir+'*.wav')  #to add . use * and glob which takes file path
         for i in range(len(self.SpectroGram)):  #loop on the songs
@@ -65,6 +68,31 @@ class ApplicationWindow(QtWidgets.QMainWindow):
 
 
 
+    def browse(self,n):
+            
+        fileName, _ = QtWidgets.QFileDialog.getOpenFileName(self)
+
+        FS, data = wavfile.read(fileName)  # read wav file
+        data=data[0:60*FS]
+        if n==1:
+            self.data1=data
+            self.fs1=FS
+            
+        elif n==2:
+            
+            self.data2=data
+            self.fs2=FS 
+
+    def Mixing(self):
+        self.MixerValue=self.ui.MixSlider.value()/100
+        output=np.add(self.data1[0:2646000,0:2]*self.MixerValue,self.data2[0:2646000,0:2]*(1-self.MixerValue))
+        data=np.array(output,dtype=np.float64)
+        output=data.astype(np.int16)
+        write("Mixed.wav", 44100, output)
+        plt.specgram(output[:,0], Fs=self.fs1, NFFT=128, noverlap=0)
+        ax = plt.axes()
+        ax.set_axis_off()
+        plt.savefig('Mixed.png')
 
 
 
