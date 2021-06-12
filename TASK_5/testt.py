@@ -1,9 +1,11 @@
-from bokeh.layouts import row
-from bokeh.plotting import figure, output_file, show, Column
+from bokeh.layouts import row,column
+from bokeh.palettes import RdYlBu3
+
+from bokeh.plotting import figure, output_file, show, Column,curdoc
 from bokeh.models import DataTable, TableColumn, PointDrawTool, ColumnDataSource
 from math import *
 from cmath import*
-output_file("templates\Main.html")
+
 
 s1 = figure(plot_width=300, plot_height=300,x_range=(-1.5, 1.5), y_range=(-1.5, 1.5),toolbar_location="below")
 s1.circle(x=[0], y=[0], color="grey",
@@ -33,12 +35,11 @@ draw_tool = PointDrawTool(renderers=[renderer], empty_value='red')
 draw_tool_2 = PointDrawTool(renderers=[renderer_2], empty_value='blue')
 pole=[]
 zero=[]
-pole.append(source.data["x"]+source.data["y"]*1j)
-zero.append(source_2.data["x"]+source.data["y"]*1j)
+
 s1.add_tools(draw_tool,draw_tool_2)
 s1.toolbar.active_tap = draw_tool
 s2 = figure(width=400, height=400, title=None)
 s2.toolbar.logo = None
 s2.toolbar_location = None
 plot=Column(s1,s2)
-show(row(plot, table,table_2))
+curdoc().add_root(row(plot,table,table_2))
