@@ -5,7 +5,8 @@ from bokeh.plotting import figure, output_file, show, Column,curdoc
 from bokeh.models import DataTable, TableColumn, PointDrawTool, ColumnDataSource
 from math import *
 from cmath import*
-
+ 
+""" To Run the file ( python -m bokeh serve --show testt.py) in the terminal   """
 
 s1 = figure(plot_width=300, plot_height=300,x_range=(-1.5, 1.5), y_range=(-1.5, 1.5),toolbar_location="below")
 s1.circle(x=[0], y=[0], color="grey",
