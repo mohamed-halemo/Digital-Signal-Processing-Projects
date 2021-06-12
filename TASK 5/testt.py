@@ -1,7 +1,8 @@
 from bokeh.layouts import row
 from bokeh.plotting import figure, output_file, show, Column
 from bokeh.models import DataTable, TableColumn, PointDrawTool, ColumnDataSource
-
+from math import *
+from cmath import*
 output_file("templates\Main.html")
 
 s1 = figure(plot_width=300, plot_height=300,x_range=(-1.5, 1.5), y_range=(-1.5, 1.5),toolbar_location="below")
@@ -30,7 +31,10 @@ table_2 = DataTable(source=source_2, columns=columns_2, editable=True, height=20
 #########################################################################################
 draw_tool = PointDrawTool(renderers=[renderer], empty_value='red')
 draw_tool_2 = PointDrawTool(renderers=[renderer_2], empty_value='blue')
-
+pole=[]
+zero=[]
+pole.append(source.data["x"]+source.data["y"]*1j)
+zero.append(source_2.data["x"]+source.data["y"]*1j)
 s1.add_tools(draw_tool,draw_tool_2)
 s1.toolbar.active_tap = draw_tool
 s2 = figure(width=400, height=400, title=None)
