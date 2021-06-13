@@ -1,5 +1,6 @@
 from bokeh.layouts import row,column
 from bokeh.models.layouts import Row
+from bokeh.models.widgets.buttons import Button
 from bokeh.palettes import RdYlBu3
 from bokeh.plotting import figure, output_file, show, Column,curdoc
 from bokeh.models import DataTable, TableColumn, PointDrawTool, ColumnDataSource,CDSView, IndexFilter
@@ -11,7 +12,7 @@ from cmath import *
 
 """ To Run the file ( python -m bokeh serve --show testt.py) in the terminal   """
 
-s1 = figure(plot_width=300, plot_height=300,x_range=(-1.5, 1.5), y_range=(-1.5, 1.5),toolbar_location="below")
+s1 = figure(plot_width=300, plot_height=300,x_range=(-1.5, 1.5), y_range=(-1.5, 1.5),title='zPolar',toolbar_location="below")
 s1.circle(x=[0], y=[0], color="grey",
               radius=1,alpha=0.3 )
 MagGraph=figure(x_range=(0,3.14), y_range=(0,10), tools=[],
@@ -26,16 +27,16 @@ source4= ColumnDataSource({
 source = ColumnDataSource(data=dict(x_of_poles=[], y_of_poles=[]))
 
 renderer = s1.circle(x="x_of_poles", y="y_of_poles", source=source, color='red', size=10)
-columns = [TableColumn(field="x_of_poles", title="x_of_poles"),
-           TableColumn(field="y_of_poles", title="y_of_poles")
+columns = [TableColumn(field="x_of_poles", title="x coordinates of zeros"),
+           TableColumn(field="y_of_poles", title="y coordinates of zeros")
            ]
 table = DataTable(source=source, columns=columns, editable=True, height=200)
 ############################poles#########################################
 source_2 = ColumnDataSource(data=dict(x_of_zeros=[], y_of_zeros=[]))
 
 renderer_2 = s1.asterisk(x='x_of_zeros', y='y_of_zeros', source=source_2, color='blue', size=10)
-columns_2 = [TableColumn(field="x_of_zeros", title="x_of_zeros"),
-           TableColumn(field="y_of_zeros", title="y_of_zeros")
+columns_2 = [TableColumn(field="x_of_zeros", title="x coordinates of poles"),
+           TableColumn(field="y_of_zeros", title="y coordinates of poles")
            ]
 table_2 = DataTable(source=source_2, columns=columns_2, editable=True, height=200)
 ##########################################################################
@@ -59,6 +60,7 @@ def ZeorsAndPoles():
         Zero.append(source_2.data['x_of_zeros'][i]+source_2.data['y_of_zeros'][i]*1j)
     for i in range(len(source.data['x_of_poles'])):
         Pole.append(source.data['x_of_poles'][i]+source.data['y_of_poles'][i]*1j)
+        #print("poles = ",len(Pole))
     
     MagAndPhase()
     
@@ -75,21 +77,34 @@ def MagAndPhase():
     w,h=freqz(num,den,worN=10000)
     MagAndPhase=np.sqrt(h.real**2+h.imag**2)
     phase=np.arctan(h.imag/h.real)
-    if len(source.data['x_of_poles'])==0:
+    if len(Zero)==0 and len(Pole)==0:
         MagAndPhase=[]
         w=[]
         phase=[]
         source_3.data={'w': [], 'h': [] }
-
     source_3.stream({
     'h': w, 'w': MagAndPhase
     })
     source4.stream({
         'w':w, 'p':phase
     })
+##########################################################################
 
+def clear_all():
+    source.data['x_of_poles'].clear()
+    source.data['y_of_poles'].clear()
+    new_data={'x_of_poles':source.data['x_of_poles'],'y_of_poles':source.data['y_of_poles'],}
+    source.data=new_data
+    ########################################################################
+    source_2.data['x_of_zeros'].clear()
+    source_2.data['y_of_zeros'].clear()
+    new_data_2={'x_of_zeros':source_2.data['x_of_zeros'],'y_of_zeros':source_2.data['y_of_zeros'],}
+    source_2.data=new_data_2
+    print('deleted')
 
-###########################################################################3
+Clear_button=Button(label="Clear All",button_type="primary",width=100)
+Clear_button.on_click(clear_all)
+##########################################################################
 draw_tool = PointDrawTool(renderers=[renderer], empty_value='red')
 draw_tool_2 = PointDrawTool(renderers=[renderer_2], empty_value='blue')
 
@@ -102,4 +117,4 @@ phaseGraph.toolbar.logo = None
 phaseGraph.toolbar_location = None
 plot2=Row(MagGraph,phaseGraph)
 plot=Row(s1,table,table_2)
-curdoc().add_root(column(plot,plot2))
+curdoc().add_root(column(plot,Clear_button,plot2))
