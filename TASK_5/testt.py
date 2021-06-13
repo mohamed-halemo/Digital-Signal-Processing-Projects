@@ -18,6 +18,10 @@ MagGraph=figure(x_range=(0,3.14), y_range=(0,10), tools=[],
 title='Magnitude',plot_width=400, plot_height=400)
 phaseGraph=figure(x_range=(0,3.14), y_range=(0,10), tools=[],
 title='Phase',plot_width=400, plot_height=400)
+source4= ColumnDataSource({
+    'w':[], 'p':[]
+})
+
 #######################ZERO###############################################
 source = ColumnDataSource(data=dict(x_of_poles=[], y_of_poles=[]))
 
@@ -38,42 +42,52 @@ table_2 = DataTable(source=source_2, columns=columns_2, editable=True, height=20
 source_3= ColumnDataSource({
     'h':[], 'w':[]
 })
+phaseGraph.line(x='w',y='p',source=source4)
+
 MagGraph.line(x='h',y='w',source=source_3)
 def update(attr, old, new):
     ZeorsAndPoles()
 source.on_change('data',update)
 source_2.on_change('data',update)
-global Zero,Pole
-Zero = []
-Pole = []
+
 def ZeorsAndPoles():
+    global Zero,Pole
+    Zero = []
+    Pole = []
     
     for i in range(len(source_2.data['x_of_zeros'])):
         Zero.append(source_2.data['x_of_zeros'][i]+source_2.data['y_of_zeros'][i]*1j)
     for i in range(len(source.data['x_of_poles'])):
         Pole.append(source.data['x_of_poles'][i]+source.data['y_of_poles'][i]*1j)
     
-    Mag()
+    MagAndPhase()
     
-def Mag():
+def MagAndPhase():
+    source4.data={
+    'w':[], 'p':[]
+    }
+
     source_3.data={
     'h': [], 'w': []
     }
    
     num, den=zpk2tf(Zero,Pole,1)
     w,h=freqz(num,den,worN=10000)
-    mag=np.sqrt(h.real**2+h.imag**2)
+    MagAndPhase=np.sqrt(h.real**2+h.imag**2)
     phase=np.arctan(h.imag/h.real)
-    """ if len(source_2.data['x_of_zeros']) and len(source.data['x_of_poles']) ==0:
-        mag=[]
+    if len(source.data['x_of_poles'])==0:
+        MagAndPhase=[]
         w=[]
         phase=[]
         source_3.data={'w': [], 'h': [] }
- """
+
     source_3.stream({
-    'h': w, 'w': mag
+    'h': w, 'w': MagAndPhase
     })
-   
+    source4.stream({
+        'w':w, 'p':phase
+    })
+
 
 ###########################################################################3
 draw_tool = PointDrawTool(renderers=[renderer], empty_value='red')
