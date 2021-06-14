@@ -235,7 +235,7 @@ def clear_all():
     new_data_3={'x_of_poles_2':source5.data['x_of_poles_2'],'y_of_poles_2':source5.data['y_of_poles_2'],}
     source5.data=new_data_3
 ###################################################################################3
-menu = Select(options=['None','Filter_1', 'Filter_2', 'Filter_3'],value='None' ,title='Filters')
+menu = Select(options=['None','Filter_1', 'Filter_2', 'Filter_3','Select_All'],value='None' ,title='Filters')
 def FilterTypes(attr,old,new):
     #print('entered func')
         if menu.value=="None":
@@ -252,7 +252,10 @@ def FilterTypes(attr,old,new):
             source5.data=dict(x_of_poles_2=[-2,-3,0], y_of_poles_2=[-1.5,2,1.5])
             new_data_6={'x_of_poles_2':source5.data['x_of_poles_2'],'y_of_poles_2':source5.data['y_of_poles_2'],}
             source5.data=new_data_6
-            
+        elif  menu.value== "Select_All" :
+            source5.data=dict(x_of_poles_2=[1,1,-2,-1,-1,2,-2,-2.5,0], y_of_poles_2=[1,1.3,-1,-1,-1.3,1,-1.5,2,1.5])
+            new_data_6={'x_of_poles_2':source5.data['x_of_poles_2'],'y_of_poles_2':source5.data['y_of_poles_2'],}
+            source5.data=new_data_6    
 
 menu.on_change('value', FilterTypes) 
 #####################################################################################
