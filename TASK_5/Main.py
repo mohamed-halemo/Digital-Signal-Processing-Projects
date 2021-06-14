@@ -25,22 +25,22 @@ s2.circle(x=[0], y=[0], color="grey",
               radius=1,alpha=0.3 )
 ##################################################################
 MagGraph=figure(x_range=(-3.14,3.14), y_range=(-10,10), tools=[],
-title='Magnitude',plot_width=400, plot_height=400)
+title='Magnitude',plot_width=385, plot_height=385)
 MagGraph.line(x_co,y_co, color='black', line_width=2)
 MagGraph.line(x_co_1,y_co_1,color='black', line_width=2)
 ##################################################################
 MagGraph_2=figure(x_range=(-3.14,3.14), y_range=(-10,10), tools=[],
-title='Magnitude of filter',plot_width=400, plot_height=400)
+title='Magnitude of filter',plot_width=385, plot_height=385)
 MagGraph_2.line(x_co,y_co,color='black', line_width=2)
 MagGraph_2.line(x_co_1,y_co_1,color='black', line_width=2)
 ###################################################################
 phaseGraph=figure(x_range=(-3.14,3.14), y_range=(-10,10), tools=[],
-title='Phase',plot_width=400, plot_height=400)
+title='Phase',plot_width=385, plot_height=385)
 phaseGraph.line(x_co,y_co,color='black', line_width=2)
 phaseGraph.line(x_co_1,y_co_1,color='black', line_width=2)
 ####################################################################
 phaseGraph_2=figure(x_range=(-3.14,3.14), y_range=(-10,10), tools=[],
-title='Phase of filter',plot_width=400, plot_height=400)
+title='Phase of filter',plot_width=385, plot_height=385)
 phaseGraph_2.line(x_co,y_co,color='black', line_width=2)
 phaseGraph_2.line(x_co_1,y_co_1,color='black', line_width=2)
 ######################################################################
