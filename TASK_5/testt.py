@@ -11,21 +11,37 @@ from scipy.signal import zpk2ss, ss2zpk, tf2zpk, zpk2tf
 from cmath import *
 
 """ To Run the file ( python -m bokeh serve --show testt.py) in the terminal   """
-
+x_co = [-3.14,3.14]
+y_co = [0,0]
+x_co_1=[0,0]
+y_co_1=[-10,10]
 s1 = figure(plot_width=300, plot_height=300,x_range=(-3, 2), y_range=(-2, 2),toolbar_location="below",title="zPolar")
 s1.circle(x=[0], y=[0], color="grey",
               radius=1,alpha=0.3 )
 s2 = figure(plot_width=300, plot_height=300,x_range=(-3, 2), y_range=(-2, 2),toolbar_location="below",title="zPolar of filter")
 s2.circle(x=[0], y=[0], color="grey",
               radius=1,alpha=0.3 )
-MagGraph=figure(x_range=(0,3.14), y_range=(0,10), tools=[],
+##################################################################
+MagGraph=figure(x_range=(-3.14,3.14), y_range=(-10,10), tools=[],
 title='Magnitude',plot_width=400, plot_height=400)
-MagGraph_2=figure(x_range=(0,3.14), y_range=(0,10), tools=[],
+MagGraph.line(x_co,y_co, color='black', line_width=2)
+MagGraph.line(x_co_1,y_co_1,color='black', line_width=2)
+##################################################################
+MagGraph_2=figure(x_range=(-3.14,3.14), y_range=(-10,10), tools=[],
 title='Magnitude of filter',plot_width=400, plot_height=400)
-phaseGraph=figure(x_range=(0,3.14), y_range=(0,10), tools=[],
+MagGraph_2.line(x_co,y_co,color='black', line_width=2)
+MagGraph_2.line(x_co_1,y_co_1,color='black', line_width=2)
+###################################################################
+phaseGraph=figure(x_range=(-3.14,3.14), y_range=(-10,10), tools=[],
 title='Phase',plot_width=400, plot_height=400)
-phaseGraph_2=figure(x_range=(0,3.14), y_range=(0,10), tools=[],
+phaseGraph.line(x_co,y_co,color='black', line_width=2)
+phaseGraph.line(x_co_1,y_co_1,color='black', line_width=2)
+####################################################################
+phaseGraph_2=figure(x_range=(-3.14,3.14), y_range=(-10,10), tools=[],
 title='Phase of filter',plot_width=400, plot_height=400)
+phaseGraph_2.line(x_co,y_co,color='black', line_width=2)
+phaseGraph_2.line(x_co_1,y_co_1,color='black', line_width=2)
+######################################################################
 source4= ColumnDataSource({
     'w':[], 'p':[]
 })
@@ -158,7 +174,7 @@ def MagAndPhase_2():
     w,h=freqz(num,den,worN=10000)
     MagAndPhase=np.sqrt(h.real**2+h.imag**2)
     phase=np.arctan(h.imag/h.real)
-    if len(Zero_2)==0:
+    if len(source5.data['x_of_poles_2'])==0:
         MagAndPhase=[]
         w=[]
         phase=[]
