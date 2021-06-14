@@ -9,6 +9,8 @@ from scipy.signal import freqz
 import numpy as np
 from scipy.signal import zpk2ss, ss2zpk, tf2zpk, zpk2tf
 from cmath import *
+from bokeh.models.widgets import RadioButtonGroup
+from bokeh.events import DoubleTap, Tap,Press,PanEnd,Pan,SelectionGeometry
 
 """ To Run the file ( python -m bokeh serve --show testt.py) in the terminal   """
 x_co = [-3.14,3.14]
@@ -90,10 +92,34 @@ phaseGraph_2.line(x='w2',y='p2',source=source6)
 
 MagGraph.line(x='h',y='w',source=source_3)
 MagGraph_2.line(x='h2',y='w2',source=source_7)
+############################################################################
+Conjugate = ColumnDataSource({
+    'x': [], 'y': []
+})
+dropdown2 = RadioButtonGroup(labels=['No conjugate', 'Conjugate'], active=0, width=100)
 
+conj = 0
+def UpdateConj():
+    global conj,Conjugate,s1,draw_tool
+    conj = dropdown2.active
+    if conj == 0:
+        Conjugate.data = {'x': [], 'y': []}
+    else:
+        generate_conj()
+def generate_conj():
+    global conj
+    if conj:
+        Conjugate.data = {'x':[],'y':[]}
+        for i in range(len(source.data['x_of_poles'])):
+            Conjugate.stream({'x':[source.data['x_of_poles'][i]],'y':[source.data['y_of_poles'][i]*-1]})
+        for i in range(len(source_2.data['x_of_zeros'])):
+            Conjugate.stream({'x':[source_2.data['x_of_zeros'][i]],'y':[source_2.data['y_of_zeros'][i]*-1]})
+#######################################################################3
 def update(attr, old, new):
     ZeorsAndPoles()
     ZeorsAndPoles_2()
+    generate_conj()
+
 source.on_change('data',update)
 source5.on_change('data',update)
 source_2.on_change('data',update)
@@ -233,6 +259,7 @@ draw_tool = PointDrawTool(renderers=[renderer], empty_value='red')
 draw_tool_5 = PointDrawTool(renderers=[renderer_5], empty_value='red')
 draw_tool_2 = PointDrawTool(renderers=[renderer_2], empty_value='blue')
 
+dropdown2.on_change('active', lambda attr, old, new: UpdateConj())
 
 s1.add_tools(draw_tool,draw_tool_2)
 s1.toolbar.active_tap = draw_tool
@@ -249,4 +276,5 @@ phaseGraph_2.toolbar_location = None
 plot3=Row(MagGraph,phaseGraph,MagGraph_2,phaseGraph_2)
 plot=Row(s1,s2,table,table_5, table_2)
 buttonss=Row(Clear_button,menu)
-curdoc().add_root(column(plot,buttonss,plot3))
+curdoc().theme = 'dark_minimal'
+curdoc().add_root(column(dropdown2,plot,buttonss,plot3))
