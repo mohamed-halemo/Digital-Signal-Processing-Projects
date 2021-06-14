@@ -104,19 +104,22 @@ def UpdateConj():
     conj = dropdown2.active
     if conj == 0:
         Conjugate.data = {'x': [], 'y': []}
+        ZeorsAndPoles(1)
     else:
         generate_conj()
 def generate_conj():
     global conj
     if conj:
         Conjugate.data = {'x':[],'y':[]}
-        for i in range(len(source.data['x_of_poles'])):
-            Conjugate.stream({'x':[source.data['x_of_poles'][i]],'y':[source.data['y_of_poles'][i]*-1]})
-        for i in range(len(source_2.data['x_of_zeros'])):
-            Conjugate.stream({'x':[source_2.data['x_of_zeros'][i]],'y':[source_2.data['y_of_zeros'][i]*-1]})
+        ZeorsAndPoles(-1)
+        # for i in range(len(source.data['x_of_poles'])):
+        #     Conjugate.stream({'x':[source.data['x_of_poles'][i]],'y':[source.data['y_of_poles'][i]*(-1)]})
+        # for i in range(len(source_2.data['x_of_zeros'])):
+        #     Conjugate.stream({'x':[source_2.data['x_of_zeros'][i]],'y':[source_2.data['y_of_zeros'][i]*(-1)]})
+        
 #######################################################################3
 def update(attr, old, new):
-    ZeorsAndPoles()
+    ZeorsAndPoles(1)
     ZeorsAndPoles_2()
     generate_conj()
 
@@ -124,18 +127,19 @@ source.on_change('data',update)
 source5.on_change('data',update)
 source_2.on_change('data',update)
 
-def ZeorsAndPoles():
+def ZeorsAndPoles(a):
     global Zero,Pole
     Zero = []
     Pole = []
     
     for i in range(len(source_2.data['x_of_zeros'])):
-        Zero.append(source_2.data['x_of_zeros'][i]+source_2.data['y_of_zeros'][i]*1j)
+        Zero.append(source_2.data['x_of_zeros'][i]+source_2.data['y_of_zeros'][i]*1j*a)
     for i in range(len(source.data['x_of_poles'])):
-        Pole.append(source.data['x_of_poles'][i]+source.data['y_of_poles'][i]*1j)
+        Pole.append(source.data['x_of_poles'][i]+source.data['y_of_poles'][i]*1j*a)
     
     MagAndPhase()
 
+    print(Zero)
 
 #for all pass filter
 def ZeorsAndPoles_2():
