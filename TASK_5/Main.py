@@ -104,8 +104,8 @@ def UpdateConj():
     conj = dropdown2.active
     if conj == 0:
         Conjugate.data = {'x': [], 'y': []}
-        ZeorsAndPoles(1)
-        ZeorsAndPoles_2(1)
+        ZeorsAndPoles(0)
+        ZeorsAndPoles_2(0)
     else:
         generate_conj()
 def generate_conj():
@@ -121,8 +121,8 @@ def generate_conj():
         
 #######################################################################3
 def update(attr, old, new):
-    ZeorsAndPoles(1)
-    ZeorsAndPoles_2(1)
+    ZeorsAndPoles(0)
+    ZeorsAndPoles_2(0)
     generate_conj()
 
 source.on_change('data',update)
@@ -135,8 +135,10 @@ def ZeorsAndPoles(a):
     Pole = []
     
     for i in range(len(source_2.data['x_of_zeros'])):
+        Zero.append(source_2.data['x_of_zeros'][i]+source_2.data['y_of_zeros'][i]*1j)
         Zero.append(source_2.data['x_of_zeros'][i]+source_2.data['y_of_zeros'][i]*1j*a)
     for i in range(len(source.data['x_of_poles'])):
+        Pole.append(source.data['x_of_poles'][i]+source.data['y_of_poles'][i]*1j)
         Pole.append(source.data['x_of_poles'][i]+source.data['y_of_poles'][i]*1j*a)
     
     MagAndPhase()
@@ -150,17 +152,24 @@ def ZeorsAndPoles_2(a):
     Pole_2= []
     
     for i in range(len(source5.data['x_of_poles_2'])):
+        Pole_2.append(source5.data['x_of_poles_2'][i]+source5.data['y_of_poles_2'][i]*1j)
         Pole_2.append(source5.data['x_of_poles_2'][i]+source5.data['y_of_poles_2'][i]*1j*a)
 
     for i in range(len(source.data['x_of_poles'])):
+        Pole_2.append(source.data['x_of_poles'][i]+source.data['y_of_poles'][i]*1j)
         Pole_2.append(source.data['x_of_poles'][i]+source.data['y_of_poles'][i]*1j*a)
 
     for i in range(len(source5.data['x_of_poles_2'])):
+        Zero_2.append(source5.data['x_of_poles_2'][i]+source5.data['y_of_poles_2'][i]*1j/
+        ((source5.data['x_of_poles_2'][i])**2+(source5.data['y_of_poles_2'][i])**2))
         Zero_2.append(source5.data['x_of_poles_2'][i]+source5.data['y_of_poles_2'][i]*1j*a/
         ((source5.data['x_of_poles_2'][i])**2+(source5.data['y_of_poles_2'][i])**2))
 
+
     for i in range(len(source_2.data['x_of_zeros'])):
+        Zero_2.append(source_2.data['x_of_zeros'][i]+source_2.data['y_of_zeros'][i]*1j)  
         Zero_2.append(source_2.data['x_of_zeros'][i]+source_2.data['y_of_zeros'][i]*1j*a)  
+    print(Zero_2)
     print(Zero_2)
     MagAndPhase_2()
     #print(Pole_2)
