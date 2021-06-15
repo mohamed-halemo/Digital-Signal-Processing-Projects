@@ -239,7 +239,10 @@ menu = Select(options=['None','Filter_1', 'Filter_2', 'Filter_3','Select_All'],v
 def FilterTypes(attr,old,new):
     #print('entered func')
         if menu.value=="None":
-            clear_all()
+            source5.data['x_of_poles_2'].clear()
+            source5.data['y_of_poles_2'].clear()
+            new_data_3={'x_of_poles_2':source5.data['x_of_poles_2'],'y_of_poles_2':source5.data['y_of_poles_2'],}
+            source5.data=new_data_3
         elif  menu.value== "Filter_1" :
             source5.data=dict(x_of_poles_2=[1,1,-2], y_of_poles_2=[1,1.3,-1])
             new_data_4={'x_of_poles_2':source5.data['x_of_poles_2'],'y_of_poles_2':source5.data['y_of_poles_2'],}
