@@ -24,22 +24,22 @@ s2 = figure(plot_width=300, plot_height=300,x_range=(-3, 2), y_range=(-2, 2),too
 s2.circle(x=[0], y=[0], color="grey",
               radius=1,alpha=0.3 )
 ##################################################################
-MagGraph=figure(x_range=(-3.14,3.14), y_range=(-10,10), tools=[],
+MagGraph=figure(x_range=(-3.14,3.14), y_range=(-10,10), tools=["pan,wheel_zoom"],
 title='Magnitude',plot_width=385, plot_height=385)
 MagGraph.line(x_co,y_co, color='black', line_width=2)
 MagGraph.line(x_co_1,y_co_1,color='black', line_width=2)
 ##################################################################
-MagGraph_2=figure(x_range=(-3.14,3.14), y_range=(-10,10), tools=[],
+MagGraph_2=figure(x_range=(-3.14,3.14), y_range=(-10,10), tools=["pan,wheel_zoom"],
 title='Magnitude of filter',plot_width=385, plot_height=385)
 MagGraph_2.line(x_co,y_co,color='black', line_width=2)
 MagGraph_2.line(x_co_1,y_co_1,color='black', line_width=2)
 ###################################################################
-phaseGraph=figure(x_range=(-3.14,3.14), y_range=(-10,10), tools=[],
+phaseGraph=figure(x_range=(-3.14,3.14), y_range=(-10,10), tools=["pan,wheel_zoom"],
 title='Phase',plot_width=385, plot_height=385)
 phaseGraph.line(x_co,y_co,color='black', line_width=2)
 phaseGraph.line(x_co_1,y_co_1,color='black', line_width=2)
 ####################################################################
-phaseGraph_2=figure(x_range=(-3.14,3.14), y_range=(-10,10), tools=[],
+phaseGraph_2=figure(x_range=(-3.14,3.14), y_range=(-10,10), tools=["pan,wheel_zoom"],
 title='Phase of filter',plot_width=385, plot_height=385)
 phaseGraph_2.line(x_co,y_co,color='black', line_width=2)
 phaseGraph_2.line(x_co_1,y_co_1,color='black', line_width=2)
@@ -51,7 +51,7 @@ source6= ColumnDataSource({
     'w2':[], 'p2':[]
 })
 
-#######################ZERO###############################################
+#########################ZERO##########################################
 source = ColumnDataSource(data=dict(x_of_poles=[], y_of_poles=[]))
 
 renderer = s1.circle(x="x_of_poles", y="y_of_poles", source=source, color='red', size=10)
@@ -104,7 +104,8 @@ def UpdateConj():
     conj = dropdown2.active
     if conj == 0:
         Conjugate.data = {'x': [], 'y': []}
-        ZeorsAndPoles(1)
+        ZeorsAndPoles(0)
+        ZeorsAndPoles_2(0)
     else:
         generate_conj()
 def generate_conj():
@@ -112,6 +113,7 @@ def generate_conj():
     if conj:
         Conjugate.data = {'x':[],'y':[]}
         ZeorsAndPoles(-1)
+        ZeorsAndPoles_2(-1)
         # for i in range(len(source.data['x_of_poles'])):
         #     Conjugate.stream({'x':[source.data['x_of_poles'][i]],'y':[source.data['y_of_poles'][i]*(-1)]})
         # for i in range(len(source_2.data['x_of_zeros'])):
@@ -119,8 +121,8 @@ def generate_conj():
         
 #######################################################################3
 def update(attr, old, new):
-    ZeorsAndPoles(1)
-    ZeorsAndPoles_2()
+    ZeorsAndPoles(0)
+    ZeorsAndPoles_2(0)
     generate_conj()
 
 source.on_change('data',update)
@@ -133,8 +135,10 @@ def ZeorsAndPoles(a):
     Pole = []
     
     for i in range(len(source_2.data['x_of_zeros'])):
+        Zero.append(source_2.data['x_of_zeros'][i]+source_2.data['y_of_zeros'][i]*1j)
         Zero.append(source_2.data['x_of_zeros'][i]+source_2.data['y_of_zeros'][i]*1j*a)
     for i in range(len(source.data['x_of_poles'])):
+        Pole.append(source.data['x_of_poles'][i]+source.data['y_of_poles'][i]*1j)
         Pole.append(source.data['x_of_poles'][i]+source.data['y_of_poles'][i]*1j*a)
     
     MagAndPhase()
@@ -142,23 +146,30 @@ def ZeorsAndPoles(a):
     print(Zero)
 
 #for all pass filter
-def ZeorsAndPoles_2():
+def ZeorsAndPoles_2(a):
     global Zero_2,Pole_2
     Zero_2 = []
     Pole_2= []
     
     for i in range(len(source5.data['x_of_poles_2'])):
         Pole_2.append(source5.data['x_of_poles_2'][i]+source5.data['y_of_poles_2'][i]*1j)
+        Pole_2.append(source5.data['x_of_poles_2'][i]+source5.data['y_of_poles_2'][i]*1j*a)
 
     for i in range(len(source.data['x_of_poles'])):
         Pole_2.append(source.data['x_of_poles'][i]+source.data['y_of_poles'][i]*1j)
+        Pole_2.append(source.data['x_of_poles'][i]+source.data['y_of_poles'][i]*1j*a)
 
     for i in range(len(source5.data['x_of_poles_2'])):
         Zero_2.append(source5.data['x_of_poles_2'][i]+source5.data['y_of_poles_2'][i]*1j/
         ((source5.data['x_of_poles_2'][i])**2+(source5.data['y_of_poles_2'][i])**2))
+        Zero_2.append(source5.data['x_of_poles_2'][i]+source5.data['y_of_poles_2'][i]*1j*a/
+        ((source5.data['x_of_poles_2'][i])**2+(source5.data['y_of_poles_2'][i])**2))
+
 
     for i in range(len(source_2.data['x_of_zeros'])):
         Zero_2.append(source_2.data['x_of_zeros'][i]+source_2.data['y_of_zeros'][i]*1j)  
+        Zero_2.append(source_2.data['x_of_zeros'][i]+source_2.data['y_of_zeros'][i]*1j*a)  
+    print(Zero_2)
     print(Zero_2)
     MagAndPhase_2()
     #print(Pole_2)
@@ -235,11 +246,14 @@ def clear_all():
     new_data_3={'x_of_poles_2':source5.data['x_of_poles_2'],'y_of_poles_2':source5.data['y_of_poles_2'],}
     source5.data=new_data_3
 ###################################################################################3
-menu = Select(options=['None','Filter_1', 'Filter_2', 'Filter_3'],value='None' ,title='Filters')
+menu = Select(options=['None','Filter_1', 'Filter_2', 'Filter_3','Select_All'],value='None' ,title='Filters')
 def FilterTypes(attr,old,new):
     #print('entered func')
         if menu.value=="None":
-            clear_all()
+            source5.data['x_of_poles_2'].clear()
+            source5.data['y_of_poles_2'].clear()
+            new_data_3={'x_of_poles_2':source5.data['x_of_poles_2'],'y_of_poles_2':source5.data['y_of_poles_2'],}
+            source5.data=new_data_3
         elif  menu.value== "Filter_1" :
             source5.data=dict(x_of_poles_2=[1,1,-2], y_of_poles_2=[1,1.3,-1])
             new_data_4={'x_of_poles_2':source5.data['x_of_poles_2'],'y_of_poles_2':source5.data['y_of_poles_2'],}
@@ -252,7 +266,10 @@ def FilterTypes(attr,old,new):
             source5.data=dict(x_of_poles_2=[-2,-3,0], y_of_poles_2=[-1.5,2,1.5])
             new_data_6={'x_of_poles_2':source5.data['x_of_poles_2'],'y_of_poles_2':source5.data['y_of_poles_2'],}
             source5.data=new_data_6
-            
+        elif  menu.value== "Select_All" :
+            source5.data=dict(x_of_poles_2=[1,1,-2,-1,-1,2,-2,-2.5,0], y_of_poles_2=[1,1.3,-1,-1,-1.3,1,-1.5,2,1.5])
+            new_data_6={'x_of_poles_2':source5.data['x_of_poles_2'],'y_of_poles_2':source5.data['y_of_poles_2'],}
+            source5.data=new_data_6    
 
 menu.on_change('value', FilterTypes) 
 #####################################################################################
@@ -269,14 +286,6 @@ s1.add_tools(draw_tool,draw_tool_2)
 s1.toolbar.active_tap = draw_tool
 s2.add_tools(draw_tool_5)
 s2.toolbar.active_tap = draw_tool
-MagGraph.toolbar.logo = None
-MagGraph.toolbar_location = None
-phaseGraph.toolbar.logo = None
-phaseGraph.toolbar_location = None
-MagGraph_2.toolbar.logo = None
-MagGraph_2.toolbar_location = None
-phaseGraph_2.toolbar.logo = None
-phaseGraph_2.toolbar_location = None
 plot3=Row(MagGraph,phaseGraph,MagGraph_2,phaseGraph_2)
 plot=Row(s1,s2,table,table_5, table_2)
 buttonss=Row(Clear_button,menu)
