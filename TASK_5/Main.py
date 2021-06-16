@@ -80,6 +80,16 @@ columns_2 = [TableColumn(field="x_of_zeros", title="x_of_zeros"),
            ]
 table_2 = DataTable(source=source_2, columns=columns_2, editable=True, height=200)
 ##########################################################################
+def ConjugateBool():
+    global conj,Conjugate,s1,draw_tool,Conjugate2
+    conj = dropdown2.active
+    if conj == 0:
+        Conjugate.data = {'x': [], 'y': []}
+        Conjugate2.data = {'x': [], 'y': []}
+        ZeorsAndPoles(0)
+        ZeorsAndPoles_2(0)
+    else:
+        GenerateConjugate()
 source_3= ColumnDataSource({
     'h':[], 'w':[]
 })
@@ -113,18 +123,12 @@ columns_4 = [TableColumn(field="x", title="x_of_zeros1"),
 table4 = DataTable(source=Conjugate2, columns=columns_4, editable=True, height=200)
 dropdown2 = RadioButtonGroup(labels=['No conjugate', 'Conjugate'], active=0, width=100)
 
+
+
+
 conj = 0
-def UpdateConj():
-    global conj,Conjugate,s1,draw_tool,Conjugate2
-    conj = dropdown2.active
-    if conj == 0:
-        Conjugate.data = {'x': [], 'y': []}
-        Conjugate2.data = {'x': [], 'y': []}
-        ZeorsAndPoles(0)
-        ZeorsAndPoles_2(0)
-    else:
-        generate_conj()
-def generate_conj():
+
+def GenerateConjugate():
     global conj
     x_of_poles1=[]
     y_of_poles1=[]
@@ -146,12 +150,16 @@ def generate_conj():
         Conjugate2.stream({'x': x_of_zeros1,'y':y_of_zeros1})
         renderer_4 = s1.asterisk(x='x', y='y', source=Conjugate2, color='blue', size=10)
 
+
+
+
+
         
 #######################################################################3
 def update(attr, old, new):
     ZeorsAndPoles(0)
     ZeorsAndPoles_2(0)
-    generate_conj()
+    GenerateConjugate()
 
 source.on_change('data',update)
 source5.on_change('data',update)
@@ -308,7 +316,7 @@ draw_tool = PointDrawTool(renderers=[renderer], empty_value='red')
 draw_tool_5 = PointDrawTool(renderers=[renderer_5], empty_value='red')
 draw_tool_2 = PointDrawTool(renderers=[renderer_2], empty_value='blue')
 
-dropdown2.on_change('active', lambda attr, old, new: UpdateConj())
+dropdown2.on_change('active', lambda attr, old, new: ConjugateBool())
 
 s1.add_tools(draw_tool,draw_tool_2)
 s1.toolbar.active_tap = draw_tool
