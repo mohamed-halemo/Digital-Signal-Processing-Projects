@@ -25,22 +25,22 @@ s2.circle(x=[0], y=[0], color="grey",
               radius=1,alpha=0.3 )
 ##################################################################
 MagGraph=figure(x_range=(-3.14,3.14), y_range=(-10,10), tools=["pan,wheel_zoom"],
-title='Magnitude',plot_width=385, plot_height=385)
+title='Magnitude',plot_width=370, plot_height=385)
 MagGraph.line(x_co,y_co, color='black', line_width=2)
 MagGraph.line(x_co_1,y_co_1,color='black', line_width=2)
 ##################################################################
 MagGraph_2=figure(x_range=(-3.14,3.14), y_range=(-10,10), tools=["pan,wheel_zoom"],
-title='Magnitude of filter',plot_width=385, plot_height=385)
+title='Magnitude of filter',plot_width=370, plot_height=385)
 MagGraph_2.line(x_co,y_co,color='black', line_width=2)
 MagGraph_2.line(x_co_1,y_co_1,color='black', line_width=2)
 ###################################################################
 phaseGraph=figure(x_range=(-3.14,3.14), y_range=(-10,10), tools=["pan,wheel_zoom"],
-title='Phase',plot_width=385, plot_height=385)
+title='Phase',plot_width=370, plot_height=385)
 phaseGraph.line(x_co,y_co,color='black', line_width=2)
 phaseGraph.line(x_co_1,y_co_1,color='black', line_width=2)
 ####################################################################
 phaseGraph_2=figure(x_range=(-3.14,3.14), y_range=(-10,10), tools=["pan,wheel_zoom"],
-title='Phase of filter',plot_width=385, plot_height=385)
+title='Phase of filter',plot_width=370, plot_height=385)
 phaseGraph_2.line(x_co,y_co,color='black', line_width=2)
 phaseGraph_2.line(x_co_1,y_co_1,color='black', line_width=2)
 ######################################################################
@@ -51,7 +51,7 @@ source6= ColumnDataSource({
     'w2':[], 'p2':[]
 })
 
-#########################ZERO##########################################
+#########################poles##########################################
 source = ColumnDataSource(data=dict(x_of_poles=[], y_of_poles=[]))
 
 renderer = s1.circle(x="x_of_poles", y="y_of_poles", source=source, color='red', size=10)
@@ -60,7 +60,7 @@ columns_1 = [TableColumn(field="x_of_poles", title="x_of_poles"),
            ]
 table = DataTable(source=source, columns=columns_1, editable=True, height=200)
 
-
+#source poles ,source 2 zeors
 #################################FILTER####################################
 
 source5 = ColumnDataSource(data=dict(x_of_poles_2=[], y_of_poles_2=[]))
@@ -71,7 +71,7 @@ columns_5 = [TableColumn(field="x_of_poles_2", title="x_of_poles_2"),
            ]
 table_5 = DataTable(source=source5, columns=columns_5, editable=True, height=200)
 
-############################poles#########################################
+############################zeros#########################################
 source_2 = ColumnDataSource(data=dict(x_of_zeros=[], y_of_zeros=[]))
 
 renderer_2 = s1.asterisk(x='x_of_zeros', y='y_of_zeros', source=source_2, color='blue', size=10)
@@ -96,28 +96,56 @@ MagGraph_2.line(x='h2',y='w2',source=source_7)
 Conjugate = ColumnDataSource({
     'x': [], 'y': []
 })
+Conjugate2 = ColumnDataSource({
+    'x': [], 'y': []
+})
+renderer3 = s1.circle(x="x", y="y", source=Conjugate, color='red', size=10)
+renderer_4 = s1.asterisk(x='x', y='y', source=Conjugate2, color='blue', size=10)
+
+columns_3 = [TableColumn(field="x", title="x_of_poles1"),
+           TableColumn(field="y", title="y_of_poles1")
+           ]
+table3 = DataTable(source=Conjugate, columns=columns_3, editable=True, height=200)
+
+columns_4 = [TableColumn(field="x", title="x_of_zeros1"),
+           TableColumn(field="y", title="y_of_zeros1")
+           ]
+table4 = DataTable(source=Conjugate2, columns=columns_4, editable=True, height=200)
 dropdown2 = RadioButtonGroup(labels=['No conjugate', 'Conjugate'], active=0, width=100)
 
 conj = 0
 def UpdateConj():
-    global conj,Conjugate,s1,draw_tool
+    global conj,Conjugate,s1,draw_tool,Conjugate2
     conj = dropdown2.active
     if conj == 0:
         Conjugate.data = {'x': [], 'y': []}
+        Conjugate2.data = {'x': [], 'y': []}
         ZeorsAndPoles(0)
         ZeorsAndPoles_2(0)
     else:
         generate_conj()
 def generate_conj():
     global conj
+    x_of_poles1=[]
+    y_of_poles1=[]
+    x_of_zeros1=[]
+    y_of_zeros1=[]
     if conj:
         Conjugate.data = {'x':[],'y':[]}
+        Conjugate2.data={'x':[],'y':[]}
         ZeorsAndPoles(-1)
         ZeorsAndPoles_2(-1)
-        # for i in range(len(source.data['x_of_poles'])):
-        #     Conjugate.stream({'x':[source.data['x_of_poles'][i]],'y':[source.data['y_of_poles'][i]*(-1)]})
-        # for i in range(len(source_2.data['x_of_zeros'])):
-        #     Conjugate.stream({'x':[source_2.data['x_of_zeros'][i]],'y':[source_2.data['y_of_zeros'][i]*(-1)]})
+        for i in range(len(source.data['x_of_poles'])):
+            x_of_poles1.append(source.data['x_of_poles'][i])
+            y_of_poles1.append(source.data['y_of_poles'][i]*-1)
+        Conjugate.stream({'x': x_of_poles1,'y':y_of_poles1})
+        renderer3 = s1.circle(x="x", y="y", source=Conjugate, color='red', size=10)
+        for i in range(len(source_2.data['x_of_zeros'])):
+            x_of_zeros1.append(source_2.data['x_of_zeros'][i])
+            y_of_zeros1.append(source_2.data['y_of_zeros'][i]*-1)
+        Conjugate2.stream({'x': x_of_zeros1,'y':y_of_zeros1})
+        renderer_4 = s1.asterisk(x='x', y='y', source=Conjugate2, color='blue', size=10)
+
         
 #######################################################################3
 def update(attr, old, new):
@@ -287,7 +315,7 @@ s1.toolbar.active_tap = draw_tool
 s2.add_tools(draw_tool_5)
 s2.toolbar.active_tap = draw_tool
 plot3=Row(MagGraph,phaseGraph,MagGraph_2,phaseGraph_2)
-plot=Row(s1,s2,table,table_5, table_2)
+plot=Row(s1,s2,table,table_5, table_2,table3,table4)
 buttonss=Row(Clear_button,menu)
 curdoc().theme = 'dark_minimal'
 curdoc().add_root(column(dropdown2,plot,buttonss,plot3))
