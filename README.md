@@ -1,6 +1,6 @@
 # Digital Signal Processing Projects
 
-Signal processing apps I built during my biomedical engineering degree (Python/PyQt, plus a C++ FFT with pybind11).
+Signal processing apps we built as a team during our biomedical engineering degree (Python/PyQt, plus a C++ FFT with pybind11).
 
 ## Try it online
 
@@ -13,3 +13,7 @@ These now run in the browser in [BioMed Lab](https://mohamed-halemo.github.io/bi
 | Images mixer | Mix the magnitude of one image with the phase of another | [Image mixer →](https://mohamed-halemo.github.io/biomed-lab/#/mixer) |
 | Z-transform and plotting website | Place poles and zeros, see the frequency response | [Z-transform designer →](https://mohamed-halemo.github.io/biomed-lab/#/ztransform) |
 | Shazam Like app | Spectrogram features and song matching | [Audio fingerprinting →](https://mohamed-halemo.github.io/biomed-lab/#/fingerprint) |
+
+## Team
+
+[Mohamed Hafez](https://github.com/mohamed-halemo) · [Yumna Hamdy](https://github.com/Yumna-Hamdy) · [Mohamed Fathy](https://github.com/FathyJr10) · [Ahmed Osama](https://github.com/ahmedosama8)
