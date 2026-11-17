@@ -1,0 +1,8 @@
+PyQt5
+pyqtgraph
+numpy
+scipy
+matplotlib
+pandas
+pillow
+reportlab
